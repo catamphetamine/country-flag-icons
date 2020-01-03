@@ -1,0 +1,62 @@
+{
+  "name": "country-flag-icons",
+  "version": "1.0.0",
+  "description": "Country flag icons (SVG, React)",
+  "main": "index.commonjs.js",
+  "module": "index.js",
+  "devDependencies": {
+    "@babel/cli": "^7.7.7",
+    "@babel/core": "^7.7.7",
+    "@babel/node": "^7.7.7",
+    "@babel/plugin-proposal-class-properties": "^7.7.4",
+    "@babel/plugin-proposal-object-rest-spread": "^7.7.7",
+    "@babel/plugin-transform-destructuring": "^7.7.4",
+    "@babel/polyfill": "^7.7.0",
+    "@babel/preset-env": "^7.7.7",
+    "@babel/preset-react": "^7.7.4",
+    "@babel/register": "^7.7.7",
+    "@svgr/core": "^4.3.0",
+    "@svgr/plugin-jsx": "^4.3.0",
+    "@svgr/plugin-prettier": "^4.2.0",
+    "@svgr/plugin-svgo": "^4.2.0",
+    "chai": "^4.2.0",
+    "copyfiles": "^1.2.0",
+    "cross-env": "^6.0.3",
+    "esm": "^3.2.25",
+    "libphonenumber-js": "^1.7.30",
+    "mocha": "^6.2.2",
+    "npm-run-all": "^1.4.0",
+    "react": "^16.12.0",
+    "rimraf": "^2.5.0"
+  },
+  "scripts": {
+    "generate-countries": "babel-node runnable/generate-countries",
+    "generate-react-flags": "babel-node runnable/generate-react-flags",
+    "generate-flags-page": "babel-node runnable/generate-flags-page",
+    "copy-flags": "copyfiles --flat 3x2/*.svg demo/3x2",
+    "copy-es6-countries": "copyfiles --flat source/countries.json modules",
+    "copy-commonjs-countries": "copyfiles --flat source/countries.json commonjs",
+    "clean-for-build": "rimraf ./commonjs/**/* ./modules/**/*",
+    "build-commonjs-modules": "cross-env BABEL_ENV=commonjs babel ./source --out-dir ./commonjs --source-maps --ignore *.test.js",
+    "build-es6-modules": "cross-env BABEL_ENV=es6 babel ./source --out-dir ./modules --source-maps --ignore *.test.js",
+    "build": "npm-run-all clean-for-build generate-countries copy-es6-countries copy-commonjs-countries generate-react-flags build-commonjs-modules build-es6-modules copy-flags generate-flags-page",
+    "test": "mocha --bail --require @babel/register --require esm --require ./test/setup.js \"source/**/*.test.js\" \"test/**/*.test.js\"",
+    "prepublish": "npm-run-all build test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/catamphetamine/country-flag-icons.git"
+  },
+  "keywords": [
+    "country",
+    "flag",
+    "icons",
+    "svg",
+    "react"
+  ],
+  "author": "catamphetamine <purecatamphetamine@gmail.com>",
+  "bugs": {
+    "url": "https://github.com/catamphetamine/country-flag-icons/issues"
+  },
+  "homepage": "https://github.com/catamphetamine/country-flag-icons#readme"
+}

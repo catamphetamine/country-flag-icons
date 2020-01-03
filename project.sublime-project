@@ -1,0 +1,16 @@
+{
+	"folders":
+	[
+		{
+			"follow_symlinks": true,
+			"path": ".",
+			"folder_exclude_patterns": ["node_modules", ".nyc_output", "react-phone-number-input/coverage", "commonjs", "react-phone-number-input/lib", "project.sublime-workspace", "bundle", "npm-debug.log", "modules"]
+		}
+	],
+	"settings":
+	{
+		"tab_size": 3,
+		"translate_tabs_to_spaces": false,
+		"trim_trailing_white_space_on_save": true
+	}
+}

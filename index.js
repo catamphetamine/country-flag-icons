@@ -1,0 +1,1 @@
+export { default as hasFlag } from './modules/hasFlag'

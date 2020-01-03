@@ -1,0 +1,49 @@
+# git
+.gitignore
+.gitattributes
+
+# Babel
+.babelrc
+
+# Sources aren't needed for npm
+/source
+
+# Exclude scripts from npm
+/runnable
+
+# testing package
+/react-phone-number-input-*.tgz
+
+# Travis CI
+.travis.yml
+
+# test coverage folder
+/coverage/
+/.nyc_output/
+
+# npm errors
+npm-debug.log
+
+# github pages
+/gh-pages/
+
+# for OS X users
+.DS_Store
+
+# cache files for sublime text
+*.tmlanguage.cache
+*.tmPreferences.cache
+*.stTheme.cache
+
+# workspace files are user-specific
+*.sublime-workspace
+*.sublime-project
+
+# webpack is used in development
+/webpack.config.babel.js
+
+# tests aren't needed for npm
+/test/
+
+# Website
+/website
