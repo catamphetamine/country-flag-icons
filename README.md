@@ -34,7 +34,9 @@ hasFlag('ZZ') === false
 Flags can be linked directly from this library's github pages website.
 
 ```html
-<img src="http://catamphetamine.github.io/country-flag-icons/3x2/us.svg"/>
+<img
+  alt="United States"
+  src="http://catamphetamine.github.io/country-flag-icons/3x2/US.svg"/>
 ```
 
 ### Unicode
