@@ -33,7 +33,7 @@
     "generate-countries": "babel-node runnable/generate-countries",
     "generate-react-flags": "babel-node runnable/generate-react-flags",
     "generate-flags-page": "babel-node runnable/generate-flags-page",
-    "copy-flags": "copyfiles --flat 3x2/*.svg demo/3x2",
+    "copy-flags": "copyfiles --flat 3x2/*.svg website/3x2",
     "copy-es6-countries": "copyfiles --flat source/countries.json modules",
     "copy-commonjs-countries": "copyfiles --flat source/countries.json commonjs",
     "clean-for-build": "rimraf ./commonjs/**/* ./modules/**/*",
