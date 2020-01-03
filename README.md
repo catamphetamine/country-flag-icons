@@ -64,6 +64,10 @@ import Flags from 'country-flag-icons/react/3x2'
 <Flags.US title="United States" className="..."/>
 ```
 
+## Alternatives
+
+* [FlagKit](https://github.com/madebybowtie/FlagKit) — Simple and beautiful flags. `4x3` aspect ratio. MIT licence.
+
 ## Licence
 
 * Most flags are from this [262 country flag icons pack](https://www.flaticon.com/packs/countrys-flags). The license quoted there requires "attribution" and doesn't allow "distributing" the icons, so this icon pack including the icons is most likely not legal, even if you have "Premium" subscription on their website, and even if the "attribution" text is included on a page.
