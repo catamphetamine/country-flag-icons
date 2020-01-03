@@ -3,7 +3,7 @@
 [![npm version](https://img.shields.io/npm/v/country-flag-icons.svg?style=flat-square)](https://www.npmjs.com/package/country-flag-icons)
 [![npm downloads](https://img.shields.io/npm/dm/country-flag-icons.svg?style=flat-square)](https://www.npmjs.com/package/country-flag-icons)
 
-The best vector country flag icons, in 3x2 aspect ratio.
+Vector country flag icons in 3x2 aspect ratio.
 
 * Optimized for small size on screen (little detail, minimalism).
 * Small file size.
