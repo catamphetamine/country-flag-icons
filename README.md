@@ -53,9 +53,7 @@ getUnicodeFlagIcon('ZZ') === '🇿🇿'
 
 Unicode flag icons ("Regional Indicator Symbols") were [introduced](https://esham.io/2014/06/unicode-flags) in 2010 in Unicode version 6.0.
 
-Older operating systems (having older system fonts) might not support Unicode flags, rendering "missing" (rectangle) characters instead.
-
-Windows 10 currently (01.01.2020) doesn't support Unicode country flags, and displays two-letter country codes instead of emoji flag images.
+Older operating systems might not support Unicode flags, either rendering "missing" (rectangle) characters (if their system doesn't support country flags), or displaying two-letter country codes instead of emoji flag images. For example, Windows 10 currently (01.01.2020) doesn't support Unicode country flags, and displays two-letter country codes instead of emoji flag images.
 
 ### React
 
