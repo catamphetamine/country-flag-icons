@@ -25,6 +25,7 @@ Tells whether there's a flag for a country.
 
 ```js
 import { hasFlag } from 'country-flag-icons'
+
 hasFlag('US') === true
 hasFlag('ZZ') === false
 ```
@@ -44,9 +45,10 @@ Flags can be linked directly from this library's github pages website.
 [Unicode flag icons](https://blog.emojipedia.org/emoji-flags-explained/) are available under the `/unicode` export.
 
 ```js
-import getFlagIcon from 'country-flag-icons/unicode'
-getFlagIcon('US') === '🇺🇸'
-getFlagIcon('ZZ') === '🇿🇿'
+import getUnicodeFlagIcon from 'country-flag-icons/unicode'
+
+getUnicodeFlagIcon('US') === '🇺🇸'
+getUnicodeFlagIcon('ZZ') === '🇿🇿'
 ```
 
 Unicode flag icons ("Regional Indicator Symbols") were [introduced](https://esham.io/2014/06/unicode-flags) in 2010 in Unicode version 6.0.
@@ -61,6 +63,7 @@ React components for all flags are available at `/react/3x2` export.
 
 ```js
 import Flags from 'country-flag-icons/react/3x2'
+
 <Flags.US title="United States" className="..."/>
 ```
 
