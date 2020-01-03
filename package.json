@@ -1,6 +1,6 @@
 {
   "name": "country-flag-icons",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Country flag icons (SVG, React)",
   "main": "index.commonjs.js",
   "module": "index.js",
