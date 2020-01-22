@@ -67,7 +67,9 @@ import Flags from 'country-flag-icons/react/3x2'
 
 ## Alternatives
 
-* [FlagKit](https://github.com/madebybowtie/FlagKit) — Simple and beautiful flag icons. `4x3` aspect ratio. MIT licence.
+* [FlagKit](https://github.com/madebybowtie/FlagKit) / [FlagPack](https://github.com/jackiboy/flagpack) — Simple and beautiful flag icons. `4x3` aspect ratio. MIT licence.
+
+<!-- Doesn't have [`AC` and `TA` flags](https://github.com/jackiboy/flagpack/pull/4). -->
 
 ## Licence
 
