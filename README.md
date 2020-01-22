@@ -67,14 +67,14 @@ import Flags from 'country-flag-icons/react/3x2'
 
 ## Alternatives
 
-* [FlagKit](https://github.com/madebybowtie/FlagKit) / [FlagPack](https://github.com/jackiboy/flagpack) — Simple and beautiful flag icons. `4x3` aspect ratio. MIT licence.
+* [FlagKit](https://github.com/madebybowtie/FlagKit) ([`flagpack`](https://github.com/jackiboy/flagpack) npm package) — Simple and beautiful flag icons. `4x3` aspect ratio. MIT licence.
 
 <!-- Doesn't have [`AC` and `TA` flags](https://github.com/jackiboy/flagpack/pull/4). -->
 
-## Licence
+## Credits
 
-* Most flags are from this [262 country flag icons pack](https://www.flaticon.com/packs/countrys-flags). The license quoted there requires "attribution" and doesn't allow "distributing" the icons, so this icon pack including the icons is most likely not legal, even if you have "Premium" subscription on their website, and even if the "attribution" text is included on a page.
+* Most flags are from this [262 country flag icons pack](https://www.flaticon.com/packs/countrys-flags). The license reads, in short: "Free for personal and commercial purpose with attribution" (not [MIT](https://en.wikipedia.org/wiki/MIT_License)).
 
-* Some flags ([`AC`](https://en.wikipedia.org/wiki/Flag_of_Ascension_Island#/media/File:Flag_of_Ascension_Island.svg), [`SH`](https://en.wikipedia.org/wiki/Flag_of_Saint_Helena#/media/File:Flag_of_Saint_Helena.svg), [`TA`](https://en.wikipedia.org/wiki/Flag_of_Tristan_da_Cunha#/media/File:Flag_of_Tristan_da_Cunha.svg), [`AQ`](https://commons.wikimedia.org/wiki/File:Proposed_flag_of_Antarctica_(Graham_Bartram).svg), [`GS`](https://en.wikipedia.org/wiki/File:Flag_of_South_Georgia_and_the_South_Sandwich_Islands.svg), [`KI`](https://commons.wikimedia.org/wiki/File:Flag_of_Kiribati_(3-2).svg), [`MP`](https://commons.wikimedia.org/wiki/File:Flag_of_the_Northern_Mariana_Islands_(3-2).svg), [`SZ`](https://commons.wikimedia.org/wiki/File:Flag_of_Eswatini.svg), [`NC`](https://en.wikipedia.org/wiki/File:Flags_of_New_Caledonia.svg)) were drawn by me in a vector graphics editor.
+* Some flags ([`AC`](https://en.wikipedia.org/wiki/Flag_of_Ascension_Island#/media/File:Flag_of_Ascension_Island.svg), [`AQ`](https://commons.wikimedia.org/wiki/File:Proposed_flag_of_Antarctica_(Graham_Bartram).svg), `AR`, `GF`, `GP`, [`GS`](https://en.wikipedia.org/wiki/File:Flag_of_South_Georgia_and_the_South_Sandwich_Islands.svg), `GY`, [`KI`](https://commons.wikimedia.org/wiki/File:Flag_of_Kiribati_(3-2).svg), [`MP`](https://commons.wikimedia.org/wiki/File:Flag_of_the_Northern_Mariana_Islands_(3-2).svg), `MY`, [`NC`](https://en.wikipedia.org/wiki/File:Flags_of_New_Caledonia.svg)), `OS`, [`SH`](https://en.wikipedia.org/wiki/Flag_of_Saint_Helena#/media/File:Flag_of_Saint_Helena.svg), [`SZ`](https://commons.wikimedia.org/wiki/File:Flag_of_Eswatini.svg), [`TA`](https://en.wikipedia.org/wiki/Flag_of_Tristan_da_Cunha#/media/File:Flag_of_Tristan_da_Cunha.svg), `TR`, `TV`, `US`, `WF` were drawn by me in a vector graphics editor. I'm distributing these for free under [MIT](https://en.wikipedia.org/wiki/MIT_License) licence.
 
-* Some flags ([`GY`](https://commons.wikimedia.org/wiki/File:Flag_of_Guyana_(3-2).svg), [`OS`](https://commons.wikimedia.org/wiki/File:Flag_of_South_Ossetia_(3-2).svg), [`TV`](https://commons.wikimedia.org/wiki/File:Flag_of_Tuvalu_(3-2).svg), [`WF`](https://en.wikipedia.org/wiki/File:Flag_of_Wallis_and_Futuna.svg)) were downloaded from Wikipedia (which usually licences stuff under [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/) or "Public domain").
+* Some countries use their "mother" countries' flag instead of using their own. For example, `BV` (Bouvet Island), `SJ` (Svalbard and Jan Mayen) use the flag of Norway; `GP` (Guadeloupe), `RE` (Réunion) use the flag of France.
