@@ -30,9 +30,6 @@ npm-debug.log
 /commonjs/
 /modules/
 
-# Exclude scripts from npm
-/runnable
-
 # Website
 /website
 
