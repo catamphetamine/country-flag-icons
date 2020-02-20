@@ -42,7 +42,7 @@
     "clean-for-build": "rimraf ./commonjs/**/* ./modules/**/*",
     "build-commonjs-modules": "cross-env BABEL_ENV=commonjs babel ./source --out-dir ./commonjs --source-maps --ignore *.test.js",
     "build-es6-modules": "cross-env BABEL_ENV=es6 babel ./source --out-dir ./modules --source-maps --ignore *.test.js",
-    "build": "npm-run-all clean-for-build generate-countries copy-es6-countries copy-commonjs-countries generate-react-flags build-commonjs-modules build-es6-modules copy-flags generate-flags-page",
+    "build": "npm-run-all clean-for-build generate-countries copy-es6-countries copy-commonjs-countries generate-react-flags build-commonjs-modules build-es6-modules copy-flags generate-css-file generate-flags-page",
     "test": "mocha --bail --require @babel/register --require esm --require ./test/setup.js \"source/**/*.test.js\" \"test/**/*.test.js\"",
     "prepublish": "npm-run-all build test"
   },
