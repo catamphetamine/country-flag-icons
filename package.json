@@ -60,5 +60,6 @@
   "bugs": {
     "url": "https://github.com/catamphetamine/country-flag-icons/issues"
   },
-  "homepage": "https://github.com/catamphetamine/country-flag-icons#readme"
+  "homepage": "https://github.com/catamphetamine/country-flag-icons#readme",
+  "licence": "MIT"
 }
