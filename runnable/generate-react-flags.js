@@ -18,7 +18,7 @@ export default {${COUNTRIES.map((country) => {
 }
 
 function getCountryFlagSvgMarkup(country) {
-	const flagPath = path.join(__dirname, `../3x2/${country.toLowerCase()}.svg`)
+	const flagPath = path.join(__dirname, `../3x2/${country}.svg`)
 	const svgCode = fs.readFileSync(flagPath, 'utf8')
 	let code = svgr.sync(
 		svgCode,
