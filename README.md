@@ -32,12 +32,26 @@ hasFlag('ZZ') === false
 
 ### Web
 
-Flags can be linked directly from this library's github pages website.
+Individual flags can be linked directly from this library's github pages website.
 
 ```html
 <img
   alt="United States"
   src="http://catamphetamine.github.io/country-flag-icons/3x2/US.svg"/>
+```
+
+The flags are also available as a single `flags.css` file with all images inline.
+
+```html
+<span class="flag:US"></span>
+```
+
+Cropping modifiers are available, e.g. `flag--square` for 1:1 aspect, and `flag--circle` for a rounded crop.
+
+You can add your own modifiers to control the size, which uses `em` units, so the `width` follows the `font-size`, e.g.:
+
+```css
+.flag--32px { font-size: 32px; }
 ```
 
 ### Unicode
