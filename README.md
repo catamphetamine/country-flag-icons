@@ -46,13 +46,15 @@ The flags are also available as a single `flags.css` file with all images inline
 <span class="flag:US"></span>
 ```
 
-Cropping modifiers are available, e.g. `flag--square` for 1:1 aspect, and `flag--circle` for a rounded crop.
-
-You can add your own modifiers to control the size, which uses `em` units, so the `width` follows the `font-size`, e.g.:
+You can add your own modifiers to control size, cropping, etc. - here's a few examples:
 
 ```css
-.flag--32px { font-size: 32px; }
+.flag-32 { font-size: 32px; }
+.flag-square { height: 1em; }
+.flag-circle { height: 1em; border-radius: 50%; }
 ```
+
+Note that the flag `width` follows the `font-size`, which is inherited by default.
 
 ### Unicode
 
