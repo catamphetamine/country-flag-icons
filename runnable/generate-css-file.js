@@ -10,8 +10,6 @@ fs.outputFileSync(path.join(__dirname, '../css/flags.css'), generateCSS())
 function generateCSS() {
     return [
         `[class*=' flag:'],[class^='flag:']{display:inline-block;background-size:cover;background-position:center;height:0.666667em;width:1em}`,
-        `.flag--square{height:1em}`,
-        `.flag--circle{height:1em;border-radius:50%}`
     ].concat(COUNTRIES.map((country) => getCountryFlagCSS(country))).join('\n')
 }
 
