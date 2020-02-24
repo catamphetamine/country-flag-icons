@@ -5,7 +5,7 @@ import svgToMiniDataURI from 'mini-svg-data-uri'
 
 import COUNTRIES from '../source/countries.json'
 
-fs.outputFileSync(path.join(__dirname, '../css/flags.css'), generateCSS())
+fs.outputFileSync(path.join(__dirname, '../3x2/flags.css'), generateCSS())
 
 function generateCSS() {
     return [

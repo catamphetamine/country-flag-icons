@@ -30,8 +30,8 @@ npm-debug.log
 /commonjs/
 /modules/
 
-# css build target folder
-/css/
+# generated CSS file
+/3x2/flags.css
 
 # Website
 /website
