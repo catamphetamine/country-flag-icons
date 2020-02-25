@@ -17,9 +17,9 @@ Vector country flag icons in 3x2 aspect ratio.
 npm install country-flag-icons --save
 ```
 
-## Use
+## API
 
-### `hasFlag(country: string)`
+### `hasFlag(country: string): boolean`
 
 Tells whether there's a flag for a country.
 
@@ -28,6 +28,17 @@ import { hasFlag } from 'country-flag-icons'
 
 hasFlag('US') === true
 hasFlag('ZZ') === false
+```
+
+### `countries: string[]`
+
+The list of supported countries.
+
+```js
+import { countries } from 'country-flag-icons'
+
+countries.includes('US') === true
+countries.includes('ZZ') === false
 ```
 
 ### Web
