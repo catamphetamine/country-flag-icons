@@ -51,7 +51,7 @@ Flags can be linked directly from this library's github pages website.
   src="http://catamphetamine.github.io/country-flag-icons/3x2/US.svg"/>
 ```
 
-Flags can also be used in the form of CSS classes imported from [`country-flag-icons/3x2/flags.css`](https://unpkg.com/country-flag-icons@1.0.6/3x2/flags.css) where all flag icons are inlined as `background-image` data URLs. CSS flag icon height can be set via `--CountryFlagIcon-height` [CSS variable](https://caniuse.com/#feat=css-variables).
+Flags can also be used in the form of CSS classes imported from [`country-flag-icons/3x2/flags.css`](https://unpkg.com/country-flag-icons/3x2/flags.css) where all flag icons are inlined as `background-image` data URLs. CSS flag icon height can be set via `--CountryFlagIcon-height` [CSS variable](https://caniuse.com/#feat=css-variables).
 
 <details>
 <summary>What if my project doesn't use CSS variables?</summary>
