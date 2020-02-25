@@ -30,6 +30,9 @@ npm-debug.log
 /commonjs/
 /modules/
 
+# generated CSS file
+/3x2/flags.css
+
 # Website
 /website
 
