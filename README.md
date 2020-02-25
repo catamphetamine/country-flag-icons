@@ -32,7 +32,7 @@ hasFlag('ZZ') === false
 
 ### Web
 
-Individual flags can be linked directly from this library's github pages website.
+Flags can be linked directly from this library's github pages website.
 
 ```html
 <img
@@ -40,21 +40,22 @@ Individual flags can be linked directly from this library's github pages website
   src="http://catamphetamine.github.io/country-flag-icons/3x2/US.svg"/>
 ```
 
-The flags are also available as a single `flags.css` file with all images inline.
+Flags can also be used in the form of CSS classes imported from [`country-flag-icons/3x2/flags.css`](https://unpkg.com/country-flag-icons@1.0.6/3x2/flags.css) where all flag icons are inlined as `background-image` data URLs. CSS flag icon height can be set via `--CountryFlagIcon-height` [CSS variable](https://caniuse.com/#feat=css-variables).
 
-```html
-<span class="flag:US"></span>
-```
+<details>
+<summary>What if my project doesn't use CSS variables?</summary>
 
-You can add your own modifiers to control size, cropping, etc. - here's a few examples:
+####
+
+In that case, the default flag icon height is `1em`, and to change it, just set a `font-size`:
 
 ```css
-.flag-32 { font-size: 32px; }
-.flag-square { height: 1em; }
-.flag-circle { height: 1em; border-radius: 50%; }
+/* Set flag icon height to 24px. */
+[class*=' flag:'], [class^='flag:'] {
+  font-size: 24px;
+}
 ```
-
-Note that the flag `width` follows the `font-size`, which is inherited by default.
+</details>
 
 ### Unicode
 
@@ -92,3 +93,5 @@ import Flags from 'country-flag-icons/react/3x2'
 I used Google image search for flag references, and various country flag packs (including [FlagKit](https://github.com/madebybowtie/FlagKit) / [`flagpack`](https://github.com/jackiboy/flagpack)) for design ideas. Sometimes there was no need to re-draw a flag — usually in cases when a flag is just a set of colored stripes and there already is a 3x2 SVG version of it somewhere at Wikipedia or some other free flag pack, so in those cases I simply copied those flags (because they look the same in every flag pack).
 
 Some countries officially use their "mother" country flag (those used to be colonies). For example, `BV` (Bouvet Island) and `SJ` (Svalbard and Jan Mayen) use the flag of Norway; `GP` (Guadeloupe) and `RE` (Réunion) use the flag of France.
+
+CSS flag icons feature has been [submitted](https://github.com/catamphetamine/country-flag-icons/pull/4) by [`@mindplay-dk`](https://github.com/mindplay-dk).

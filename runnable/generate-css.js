@@ -8,9 +8,20 @@ import COUNTRIES from '../source/countries.json'
 fs.outputFileSync(path.join(__dirname, '../3x2/flags.css'), generateCSS())
 
 function generateCSS() {
-    return [
-        `[class*=' flag:'],[class^='flag:']{display:inline-block;background-size:cover;background-position:center;height:0.666667em;width:1em}`,
-    ].concat(COUNTRIES.map((country) => getCountryFlagCSS(country))).join('\n')
+	return [
+		`
+			[class*=' flag:'],
+			[class^='flag:'] {
+				display: inline-block;
+				background-size: cover;
+				height: 1em;
+				width: 1.5em;
+				--CountryFlagIcon-height: 1em;
+				height: var(--CountryFlagIcon-height);
+				width: calc(var(--CountryFlagIcon-height)*3/2);
+			}
+		`.replace(/: /g, ':').replace(/[\t\n]/g, '').trim(),
+	].concat(COUNTRIES.map((country) => getCountryFlagCSS(country))).join('\n')
 }
 
 function getCountryFlagCSS(country) {
@@ -27,6 +38,6 @@ function getCountryFlagCSS(country) {
 	const svgTagStartsAt = code.indexOf('<svg')
 	if (svgTagStartsAt < 0) {
 		throw new Error(`<svg/> tag not found in ${country} flag`)
-    }
-    return `.flag\\:${country}{background-image:url("${svgToMiniDataURI(code.substr(svgTagStartsAt))}")}`
+		}
+		return `.flag\\:${country}{background-image:url("${svgToMiniDataURI(code.substr(svgTagStartsAt))}")}`
 }
