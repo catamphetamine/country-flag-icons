@@ -60,9 +60,13 @@ for (const country of COUNTRIES) {
 	html += `
 		<section class="Country">
 			<div class="CountryFlagContainer">
-				<img title="${countryNames[country]}" class="CountryFlag" src="./${country}.svg"/>
+				<a href="https://www.google.com/search?q=${encodeURIComponent(countryNames[country] + ' flag')}&tbm=isch" target="_blank" class="CountryFlagLink">
+					<img title="${countryNames[country]}" class="CountryFlag" src="./${country}.svg"/>
+				</a>
 			</div>
-			<h1>${country}</h1>
+			<h1 title="${countryNames[country]}">
+				${country}
+			</h1>
 		</section>
 	`
 }
