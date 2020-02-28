@@ -35,3 +35,6 @@ npm-debug.log
 
 # Website
 /website
+
+# Flags CSS
+/3x2/flags.css
