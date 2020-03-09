@@ -1,6 +1,9 @@
-<?xml version="1.0" encoding="utf-8"?>
-<svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 341.3">
-<rect fill="#D80027" width="512" height="341.3"/>
-<polygon fill="#FFFFFF" points="199,0 121,0 121,131.7 0,131.7 0,209.7 121,209.7 121,341.3 199,341.3 199,209.7 512,209.7 512,131.7
-	199,131.7 "/>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="512" height="341.333" xmlns="http://www.w3.org/2000/svg">
+    <path fill="none" d="M-1-1h582v402H-1z"/>
+    <g>
+        <path fill="#D80027" d="M0 .333h512V341.67H0z"/>
+        <path stroke="null" stroke-opacity="null" stroke-width="null" fill="#fff" d="M-.5 150.104h510v44H-.5z"/>
+        <path fill-opacity="null" stroke-opacity="null" stroke-width="null" stroke="null" fill="#fff" d="M161.5.104h49v341h-49z"/>
+    </g>
 </svg>
