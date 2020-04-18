@@ -5,9 +5,10 @@ import svgToMiniDataURI from 'mini-svg-data-uri'
 
 import COUNTRIES from '../source/countries.json'
 
-fs.outputFileSync(path.join(__dirname, '../3x2/flags.css'), generateCSS())
+fs.outputFileSync(path.join(__dirname, '../3x2/flags.css'), generateCSS(3, 2))
+fs.outputFileSync(path.join(__dirname, '../1x1/flags.css'), generateCSS(1, 1))
 
-function generateCSS() {
+function generateCSS(aspectRatioWidth, aspectRatioHeight) {
 	return [
 		`
 			[class*=' flag:'],
@@ -15,17 +16,17 @@ function generateCSS() {
 				display: inline-block;
 				background-size: cover;
 				height: 1em;
-				width: 1.5em;
+				width: ${round(aspectRatioWidth / aspectRatioHeight)}em;
 				--CountryFlagIcon-height: 1em;
 				height: var(--CountryFlagIcon-height);
-				width: calc(var(--CountryFlagIcon-height)*3/2);
+				width: calc(var(--CountryFlagIcon-height)*${aspectRatioWidth}/${aspectRatioHeight});
 			}
 		`.replace(/: /g, ':').replace(/[\t\n]/g, '').trim(),
-	].concat(COUNTRIES.map((country) => getCountryFlagCSS(country))).join('\n')
+	].concat(COUNTRIES.map((country) => getCountryFlagCSS(country, aspectRatioWidth, aspectRatioHeight))).join('\n')
 }
 
-function getCountryFlagCSS(country) {
-	const flagPath = path.join(__dirname, `../3x2/${country}.svg`)
+function getCountryFlagCSS(country, aspectRatioWidth, aspectRatioHeight) {
+	const flagPath = path.join(__dirname, `../${aspectRatioWidth}x${aspectRatioHeight}/${country}.svg`)
 	const svgCode = fs.readFileSync(flagPath, 'utf8')
 	const code = svgr.sync(
 		svgCode,
@@ -40,4 +41,8 @@ function getCountryFlagCSS(country) {
 		throw new Error(`<svg/> tag not found in ${country} flag`)
 		}
 		return `.flag\\:${country}{background-image:url("${svgToMiniDataURI(code.substr(svgTagStartsAt))}")}`
+}
+
+function round(number) {
+  return Math.round(number * 1000) / 1000
 }

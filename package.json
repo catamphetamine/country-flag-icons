@@ -1,6 +1,6 @@
 {
   "name": "country-flag-icons",
-  "version": "1.1.1",
+  "version": "1.2.1",
   "description": "Vector (*.svg) country flag icons in 3x2 aspect ratio.",
   "main": "index.commonjs.js",
   "module": "index.js",
@@ -33,22 +33,25 @@
   },
   "scripts": {
     "generate-countries": "babel-node runnable/generate-countries",
+    "generate-1x1-flags": "babel-node runnable/generate-1x1-flags",
     "generate-react-flags": "babel-node runnable/generate-react-flags",
-    "generate-flags-page": "babel-node runnable/generate-flags-page",
     "generate-css": "babel-node runnable/generate-css",
-    "copy-flags": "copyfiles --flat 3x2/*.svg website/3x2",
+    "website:generate-flags-page": "babel-node runnable/generate-flags-page",
+    "website:copy-flags": "npm-run-all website:copy-flags:3x2 website:copy-flags:1x1",
+    "website:copy-flags:3x2": "copyfiles --flat 3x2/*.svg website/3x2",
+    "website:copy-flags:1x1": "copyfiles --flat 1x1/*.svg website/1x1",
     "copy-es6-countries": "copyfiles --flat source/countries.json modules",
     "copy-commonjs-countries": "copyfiles --flat source/countries.json commonjs",
     "clean-for-build": "rimraf ./commonjs/**/* ./modules/**/*",
     "build-commonjs-modules": "cross-env BABEL_ENV=commonjs babel ./source --out-dir ./commonjs --source-maps --ignore *.test.js",
     "build-es6-modules": "cross-env BABEL_ENV=es6 babel ./source --out-dir ./modules --source-maps --ignore *.test.js",
-    "build": "npm-run-all clean-for-build generate-countries copy-es6-countries copy-commonjs-countries generate-react-flags build-commonjs-modules build-es6-modules copy-flags generate-css generate-flags-page",
+    "build": "npm-run-all clean-for-build generate-countries copy-es6-countries copy-commonjs-countries generate-1x1-flags generate-react-flags build-commonjs-modules build-es6-modules generate-css",
     "test": "mocha --bail --require @babel/register --require esm --require ./test/setup.js \"source/**/*.test.js\" \"test/**/*.test.js\"",
     "prepublish": "npm-run-all build test"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/catamphetamine/country-flag-icons.git"
+    "url": "git+https://gitlab.com/catamphetamine/country-flag-icons.git"
   },
   "keywords": [
     "country",
@@ -60,8 +63,8 @@
   ],
   "author": "catamphetamine <purecatamphetamine@gmail.com>",
   "bugs": {
-    "url": "https://github.com/catamphetamine/country-flag-icons/issues"
+    "url": "https://gitlab.com/catamphetamine/country-flag-icons/issues"
   },
-  "homepage": "https://github.com/catamphetamine/country-flag-icons#readme",
+  "homepage": "https://gitlab.com/catamphetamine/country-flag-icons#readme",
   "licence": "MIT"
 }

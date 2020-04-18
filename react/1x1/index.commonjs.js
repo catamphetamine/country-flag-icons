@@ -1,0 +1,1 @@
+module.exports = require('../../commonjs/react/1x1')
