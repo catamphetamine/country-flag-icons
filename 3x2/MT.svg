@@ -1,7 +1,7 @@
-<?xml version="1.0" encoding="UTF-8"?>
-
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 85.333 512 341.333">
-<rect y="85.331" fill="#FFFFFF" width="512" height="341.326"/>
-<rect x="256" y="85.331" fill="#D80027" width="256" height="341.337"/>
-<polygon fill="#ACABB1" points="208.231,138.671 208.231,117.337 186.899,117.337 186.899,138.671 165.565,138.671   165.565,160.003 186.899,160.003 186.899,181.337 208.231,181.337 208.231,160.003 229.565,160.003 229.565,138.671 "/>
+<?xml version="1.0" encoding="utf-8"?>
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 513 342">
+<rect y="0" fill="#FFFFFF" width="513" height="342"/>
+<rect x="256" y="0" fill="#C31B28" width="256.5" height="342"/>
+<polygon fill="#ACABB1" stroke="#C31B28" stroke-width="2" points="101.2,68.2 101.2,33 66,33 66,68.2 30.8,68.2 30.8,103.4 66,103.4 66,138.6 101.2,138.6 101.2,103.4
+	136.4,103.4 136.4,68.2 "/>
 </svg>

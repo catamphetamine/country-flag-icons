@@ -1,3 +1,20 @@
+1.2.8 / 22.12.2020
+==================
+
+* Fixed South Korean flag.
+
+1.2.3 / 08.08.2020
+==================
+
+* [Added "named exports"](https://gitlab.com/catamphetamine/country-flag-icons/-/issues/3) in React exports.
+
+* Added `sideEffects` property to `package.json` ("tree shaking").
+
+1.2.2 / 29.07.2020
+==================
+
+* Added [French Southern Territories (`TF`) flag](https://gitlab.com/catamphetamine/country-flag-icons/-/issues/2)
+
 1.2.0 / 15.03.2020
 ==================
 

@@ -1,12 +1,11 @@
-<?xml version="1.0" encoding="UTF-8"?>
-
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 85.333 512 341.333">
-<rect y="85.34" fill="#A2001D" width="512" height="341.326"/>
-<polygon fill="#0052B4" points="512,85.334 512,252.024 0,256.175 0,85.334 "/>
-<polygon fill="#FFFFFF" points="315.362,300.525 256,293.104 196.638,300.525 196.638,211.481 315.362,211.481 "/>
-<circle fill="#0052B4" cx="256" cy="263.427" r="29.682"/>
-<circle fill="#A2001D" cx="256" cy="263.427" r="14.84"/>
-<polygon fill="#6DA544" points="233.739,226.321 278.261,226.321 256,248.582 "/>
-<rect x="248.576" y="241.166" fill="#FFDA44" width="14.84" height="44.522"/>
-<polygon fill="#6DA544" points="279.746,281.232 232.254,281.232 196.638,300.525 315.362,300.525 "/>
+<?xml version="1.0" encoding="utf-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 513 342">
+<rect y="0" fill="#A2001D" width="513" height="172"/>
+<rect y="172" fill="#0052B4" width="513" height="172"/>
+<polygon fill="#FFFFFF" points="381.4,251.5 270.7,237.7 159.9,251.5 159.9,85.4 381.4,85.4 	"/>
+<circle fill="#0052B4" cx="270.7" cy="182.3" r="55.4"/>
+<circle fill="#A2001D" cx="270.7" cy="182.3" r="27.7"/>
+<polygon fill="#6DA544" points="229.1,113.1 312.2,113.1 270.7,154.6 	"/>
+<rect x="256.8" y="140.8" fill="#FFDA44" width="27.7" height="83"/>
+<polygon fill="#6DA544" points="314.9,215.5 226.4,215.5 159.9,251.5 381.4,251.5 	"/>
 </svg>
