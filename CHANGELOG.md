@@ -1,3 +1,13 @@
+1.4.0 / 12.07.2021
+==================
+
+* Added stringified exports of `*.svg` flags, as [suggested](https://gitlab.com/catamphetamine/country-flag-icons/-/merge_requests/3) by Neek Sandhu.
+
+1.3.0 / 09.07.2021
+==================
+
+* Added [SVGO](https://github.com/svg/svgo) optimization of the `*.svg` files, as [suggested](https://gitlab.com/catamphetamine/country-flag-icons/-/issues/12) by Neek Sandhu.
+
 1.2.8 / 22.12.2020
 ==================
 

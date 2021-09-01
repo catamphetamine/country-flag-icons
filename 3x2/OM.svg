@@ -1,13 +1,1 @@
-<?xml version="1.0" encoding="UTF-8"?>
-
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 85.333 512 341.333">
-<g>
-	<rect y="85.331" fill="#D80027" width="512" height="341.326"/>
-	<rect y="85.331" fill="#D80027" width="512" height="341.337"/>
-</g>
-<g>
-	<polygon fill="#FFFFFF" points="189.746,160.439 174.007,144.698 163.513,155.192 153.02,144.698 137.279,160.439    147.773,170.932 137.278,181.426 153.018,197.167 163.512,186.673 174.007,197.167 189.746,181.426 179.252,170.932  "/>
-	<rect x="211.478" y="85.331" fill="#FFFFFF" width="300.522" height="111.315"/>
-</g>
-<rect x="211.478" y="315.353" fill="#6DA544" width="300.522" height="111.304"/>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 513 342"><path fill="#D80027" d="M0 0h513v342H0z"/><path fill="#FFF" d="M138 0h377v114H138z"/><path fill="#4A7C3A" d="M138 230h377v114H138z"/><g fill="none" stroke="#FFF" stroke-width="10" stroke-miterlimit="2"><path d="M40.3 35.2s37.1 48 50.8 54.5c13.7 6.5 17.1 5.7 17.1 5.7"/><path d="M100 35.2S62.9 80.6 53.3 87.6c-9.6 7-18.7 7.8-18.7 7.8M51.7 65.3h37.9M70.7 35.2v30.1"/></g></svg>

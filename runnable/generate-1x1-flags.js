@@ -5,6 +5,8 @@ import fs from 'fs'
 
 import countries from '../source/countries.json'
 
+const FLAGS_PATH = path.join(__dirname, '..', 'flags')
+
 /**
  * `3:2` to `1:1` flag icons transform offsets:
  * https://codesandbox.io/s/thirsty-stallman-0pnlt
@@ -108,13 +110,13 @@ const OFFSETS = {
 }
 
 for (const country of countries) {
-  let svg = fs.readFileSync(path.join(__dirname, `../3x2/${country}.svg`), 'utf8')
+  let svg = fs.readFileSync(path.join(FLAGS_PATH, `3x2/${country}.svg`), 'utf8')
   // viewBox="x y width height" -> viewBox="x+RoundMaybeUpToTwoDecimalPoints((width-height)*percent/100) y height height".
   svg = svg.replace(/ viewBox="([^"]+)"/, (_, viewBox) => {
     const [x, y, width, height] = viewBox.split(/\s/).map(parseFloat)
     return ` viewBox="${round(x + (width - height) * getOffset(country) / 100)} ${y} ${height} ${height}"`
   })
-  fs.writeFileSync(path.join(__dirname, `../1x1/${country}.svg`), svg)
+  fs.writeFileSync(path.join(FLAGS_PATH, `1x1/${country}.svg`), svg)
 }
 
 function round(number) {

@@ -2,7 +2,7 @@ import path from 'path'
 import fs from 'fs'
 
 const countries = []
-fs.readdirSync(path.resolve(__dirname, '../3x2')).map((filename) => {
+fs.readdirSync(path.resolve(__dirname, '../flags/3x2')).map((filename) => {
 	if (filename.indexOf('.svg') !== 2) {
 		return
 	}

@@ -1,6 +1,1 @@
-<?xml version="1.0" encoding="utf-8"?>
-<svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 90 60">
-<polygon fill="#FDEB01" points="0,0 90,60 0,60 "/>
-<polygon fill="#58A846" points="90,0 90,60 0,0 "/>
-<polygon fill="#ED3D24" stroke="#A02021" stroke-miterlimit="10" points="54.1,35.3 68.8,24.6 50.6,24.6 45,7.3 39.4,24.6 21.2,24.6 35.9,35.3 30.3,52.7 45,42 59.7,52.7 "/>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 90 60"><path fill="#FDEB01" d="m0 0 90 60H0z"/><path fill="#58A846" d="M90 0v60L0 0z"/><path fill="#ED3D24" d="m50.7 33.3 9.3-6.7H48.5L45 15.7l-3.5 10.9H30l9.3 6.7-3.6 11 9.3-6.7 9.3 6.7z"/></svg>

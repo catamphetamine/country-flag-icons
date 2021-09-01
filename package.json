@@ -1,6 +1,6 @@
 {
   "name": "country-flag-icons",
-  "version": "1.2.9",
+  "version": "1.4.7",
   "description": "Vector (*.svg) country flag icons in 3x2 aspect ratio.",
   "main": "index.commonjs.js",
   "module": "index.js",
@@ -32,14 +32,18 @@
     "mocha": "^6.2.2",
     "npm-run-all": "^1.4.0",
     "react": "^16.12.0",
-    "rimraf": "^2.5.0"
+    "rimraf": "^2.5.0",
+    "svgo": "^2.3.1"
   },
   "scripts": {
     "generate-countries": "babel-node runnable/generate-countries",
     "generate-1x1-flags": "babel-node runnable/generate-1x1-flags",
-    "copy-1x1-flags": "copyfiles --flat flags/1x1/*.svg 1x1",
+    "copy-over-custom-1x1-flags": "copyfiles --flat flags/1x1-custom/*.svg flags/1x1",
     "generate-react-flags": "babel-node runnable/generate-react-flags",
+    "generate-string-flags": "babel-node runnable/generate-string-flags",
     "generate-css": "babel-node runnable/generate-css",
+    "generate-optimized-1x1-flags": "svgo --folder flags/1x1 --output 1x1",
+    "generate-optimized-flags": "svgo --folder flags/3x2 --output 3x2",
     "website:generate-flags-page": "babel-node runnable/generate-flags-page",
     "website:copy-flags": "npm-run-all website:copy-flags:3x2 website:copy-flags:1x1",
     "website:copy-flags:3x2": "copyfiles --flat 3x2/*.svg website/3x2",
@@ -49,7 +53,9 @@
     "clean-for-build": "rimraf ./commonjs/**/* ./modules/**/*",
     "build-commonjs-modules": "cross-env BABEL_ENV=commonjs babel ./source --out-dir ./commonjs --source-maps --ignore *.test.js",
     "build-es6-modules": "cross-env BABEL_ENV=es6 babel ./source --out-dir ./modules --source-maps --ignore *.test.js",
-    "build": "npm-run-all clean-for-build generate-countries copy-es6-countries copy-commonjs-countries generate-1x1-flags copy-1x1-flags generate-react-flags build-commonjs-modules build-es6-modules generate-css",
+    "build-flags": "npm-run-all generate-1x1-flags copy-over-custom-1x1-flags generate-optimized-1x1-flags generate-optimized-flags",
+    "build-countries": "npm-run-all generate-countries copy-es6-countries copy-commonjs-countries",
+    "build": "npm-run-all clean-for-build build-countries build-flags generate-string-flags generate-react-flags build-commonjs-modules build-es6-modules generate-css",
     "test": "mocha --bail --require @babel/register --require esm --require ./test/setup.js \"source/**/*.test.js\" \"test/**/*.test.js\"",
     "prepublish": "npm-run-all build test"
   },
