@@ -1,6 +1,6 @@
 {
   "name": "country-flag-icons",
-  "version": "1.4.7",
+  "version": "1.4.10",
   "description": "Vector (*.svg) country flag icons in 3x2 aspect ratio.",
   "main": "index.commonjs.js",
   "module": "index.js",
@@ -40,6 +40,10 @@
     "generate-1x1-flags": "babel-node runnable/generate-1x1-flags",
     "copy-over-custom-1x1-flags": "copyfiles --flat flags/1x1-custom/*.svg flags/1x1",
     "generate-react-flags": "babel-node runnable/generate-react-flags",
+    "copy-react-flags": "npm-run-all copy-react-flags-3x2 copy-react-flags-1x1",
+    "copy-react-flags-3x2": "copyfiles --flat modules/react/3x2/[A-Z][A-Z].js react/3x2",
+    "copy-react-flags-1x1": "copyfiles --flat modules/react/1x1/[A-Z][A-Z].js react/1x1",
+    "clean-react-flags": "rimraf ./source/react/*/[A-Z][A-Z].js",
     "generate-string-flags": "babel-node runnable/generate-string-flags",
     "generate-css": "babel-node runnable/generate-css",
     "generate-optimized-1x1-flags": "svgo --folder flags/1x1 --output 1x1",
