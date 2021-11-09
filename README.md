@@ -115,6 +115,14 @@ import US from 'country-flag-icons/string/3x2/US'
 console.log(US) // > '<svg xmlns="http://www.w3.org/2000/svg" ...'
 ```
 
+## Criteria for inclusion
+
+See [Criteria for inclusion](https://en.wikipedia.org/wiki/ISO_3166-1#Criteria_for_inclusion) section on the ISO-3166-1 standard Wikipedia page.
+
+This library includes the flags for all countries, territories, or areas of geographical interest that have an officially assigned code in the ISO-3166-1 standard.
+
+Additionally, this library includes a European Union (EU) flag because it's part of the ["exceptional reservations"](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2#Reserved_code_elements) of the ISO-3166-1 standard and there have been [requests](https://gitlab.com/catamphetamine/country-flag-icons/-/issues/4) to do so.
+
 ## GitHub
 
 On March 9th, 2020, GitHub, Inc. silently [banned](https://medium.com/@catamphetamine/how-github-blocked-me-and-all-my-libraries-c32c61f061d3) my account (erasing all my repos, issues and comments) without any notice or explanation. Because of that, all source codes had to be promptly moved to GitLab. The [GitHub repo](https://github.com/catamphetamine/country-flag-icons) is now only used as a backup (you can star the repo there too), and the primary repo is now the [GitLab one](https://gitlab.com/catamphetamine/country-flag-icons). Issues can be reported in any repo.
