@@ -233,6 +233,7 @@ export {
 	TZ,
 	UA,
 	UG,
+	UM,
 	US,
 	UY,
 	UZ,

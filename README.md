@@ -123,6 +123,13 @@ This library includes the flags for all countries, territories, or areas of geog
 
 Additionally, this library includes a European Union (EU) flag because it's part of the ["exceptional reservations"](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2#Reserved_code_elements) of the ISO-3166-1 standard and there have been [requests](https://gitlab.com/catamphetamine/country-flag-icons/-/issues/4) to do so.
 
+So, the full list is all of the [249](https://en.wikipedia.org/wiki/ISO_3166-1#Officially_assigned_code_elements) officially assigned ISO-3166-1 codes, plus:
+
+* `AC` — Ascension Island. Exceptional reservation. Has it's own phone numbering plan.
+* `TA` — Tristan da Cunha. Exceptional reservation. Has it's own phone numbering plan.
+* `EU` — European Union. Exceptional reservation. Doesn't have its own phone numbering plan.
+* `XK` — Kosovo. Disputed territory. Not an officially assigned code. Has it's own phone numbering plan.
+
 ## GitHub
 
 On March 9th, 2020, GitHub, Inc. silently [banned](https://medium.com/@catamphetamine/how-github-blocked-me-and-all-my-libraries-c32c61f061d3) my account (erasing all my repos, issues and comments) without any notice or explanation. Because of that, all source codes had to be promptly moved to GitLab. The [GitHub repo](https://github.com/catamphetamine/country-flag-icons) is now only used as a backup (you can star the repo there too), and the primary repo is now the [GitLab one](https://gitlab.com/catamphetamine/country-flag-icons). Issues can be reported in any repo.

@@ -238,6 +238,7 @@ exports.TW = flags.TW;
 exports.TZ = flags.TZ;
 exports.UA = flags.UA;
 exports.UG = flags.UG;
+exports.UM = flags.UM;
 exports.US = flags.US;
 exports.UY = flags.UY;
 exports.UZ = flags.UZ;
