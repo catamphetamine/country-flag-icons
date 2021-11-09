@@ -74,6 +74,7 @@ exports.EH = flags.EH;
 exports.ER = flags.ER;
 exports.ES = flags.ES;
 exports.ET = flags.ET;
+exports.EU = flags.EU;
 exports.FI = flags.FI;
 exports.FJ = flags.FJ;
 exports.FK = flags.FK;
