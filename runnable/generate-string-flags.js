@@ -3,30 +3,29 @@ import path from 'path'
 
 import COUNTRIES from '../source/countries.json'
 
-
-['3x2', '1x1'].forEach(size => {
-  const srcDir = path.join(__dirname, '..', size)
-  const destDir = path.join(__dirname, '..', 'string', size)
-
-  const toDefaultExportStmnt = country => (
-    `export default '${fs.readFileSync(path.join(srcDir, `${country}.svg`), 'utf8')}';\n`
-  )
-
-  const toNamedReExportStmt = country => (
-    `export { default as ${country} } from './${country}';\n`
-  )
+['3x2', '1x1'].forEach((size) => {
+  const flagsDirectory = path.join(__dirname, '..', size)
+  const outputDirectory = path.join(__dirname, '..', 'string', size)
 
   COUNTRIES.forEach(country => {
     fs.outputFileSync(
-      path.join(destDir, `${country}.js`),
-      toDefaultExportStmnt(country)
+      path.join(outputDirectory, `${country}.js`),
+      `export default '${fs.readFileSync(path.join(flagsDirectory, `${country}.svg`), 'utf8')}'`
     )
   })
 
-  const indexExport = COUNTRIES.map(toNamedReExportStmt).join('')
+  fs.outputFileSync(
+    path.join(outputDirectory, 'index.js'),
+    COUNTRIES.map(country => `export { default as ${country} } from './${country}'`).join('\n')
+  )
 
   fs.outputFileSync(
-    path.join(destDir, 'index.js'),
-    indexExport
+    path.join(outputDirectory, 'index.commonjs.js'),
+    COUNTRIES.map(country => `exports.${country} = '${fs.readFileSync(path.join(flagsDirectory, `${country}.svg`), 'utf8')}'`).join('\n')
+  )
+
+  fs.outputFileSync(
+    path.join(outputDirectory, 'index.d.ts'),
+    COUNTRIES.map(country => `export const ${country}: string`).join('\n')
   )
 })

@@ -1,3 +1,8 @@
+1.4.14 / 10.11.2021
+==================
+
+* Added [TypeScript "typings"](https://gitlab.com/catamphetamine/country-flag-icons/-/issues/6).
+
 1.4.0 / 12.07.2021
 ==================
 

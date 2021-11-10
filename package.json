@@ -1,6 +1,6 @@
 {
   "name": "country-flag-icons",
-  "version": "1.4.13",
+  "version": "1.4.14",
   "description": "Vector (*.svg) country flag icons in 3x2 aspect ratio.",
   "main": "index.commonjs.js",
   "module": "index.js",
