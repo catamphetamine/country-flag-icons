@@ -10,256 +10,256 @@ interface Props extends React.HTMLAttributes<HTMLElement> {
 
 type FlagComponent = (props: Props) => JSX.Element;
 
-export declare const AC: FlagComponent
-export declare const AD: FlagComponent
-export declare const AE: FlagComponent
-export declare const AF: FlagComponent
-export declare const AG: FlagComponent
-export declare const AI: FlagComponent
-export declare const AL: FlagComponent
-export declare const AM: FlagComponent
-export declare const AO: FlagComponent
-export declare const AQ: FlagComponent
-export declare const AR: FlagComponent
-export declare const AS: FlagComponent
-export declare const AT: FlagComponent
-export declare const AU: FlagComponent
-export declare const AW: FlagComponent
-export declare const AX: FlagComponent
-export declare const AZ: FlagComponent
-export declare const BA: FlagComponent
-export declare const BB: FlagComponent
-export declare const BD: FlagComponent
-export declare const BE: FlagComponent
-export declare const BF: FlagComponent
-export declare const BG: FlagComponent
-export declare const BH: FlagComponent
-export declare const BI: FlagComponent
-export declare const BJ: FlagComponent
-export declare const BL: FlagComponent
-export declare const BM: FlagComponent
-export declare const BN: FlagComponent
-export declare const BO: FlagComponent
-export declare const BQ: FlagComponent
-export declare const BR: FlagComponent
-export declare const BS: FlagComponent
-export declare const BT: FlagComponent
-export declare const BV: FlagComponent
-export declare const BW: FlagComponent
-export declare const BY: FlagComponent
-export declare const BZ: FlagComponent
-export declare const CA: FlagComponent
-export declare const CC: FlagComponent
-export declare const CD: FlagComponent
-export declare const CF: FlagComponent
-export declare const CG: FlagComponent
-export declare const CH: FlagComponent
-export declare const CI: FlagComponent
-export declare const CK: FlagComponent
-export declare const CL: FlagComponent
-export declare const CM: FlagComponent
-export declare const CN: FlagComponent
-export declare const CO: FlagComponent
-export declare const CR: FlagComponent
-export declare const CU: FlagComponent
-export declare const CV: FlagComponent
-export declare const CW: FlagComponent
-export declare const CX: FlagComponent
-export declare const CY: FlagComponent
-export declare const CZ: FlagComponent
-export declare const DE: FlagComponent
-export declare const DJ: FlagComponent
-export declare const DK: FlagComponent
-export declare const DM: FlagComponent
-export declare const DO: FlagComponent
-export declare const DZ: FlagComponent
-export declare const EC: FlagComponent
-export declare const EE: FlagComponent
-export declare const EG: FlagComponent
-export declare const EH: FlagComponent
-export declare const ER: FlagComponent
-export declare const ES: FlagComponent
-export declare const ET: FlagComponent
-export declare const EU: FlagComponent
-export declare const FI: FlagComponent
-export declare const FJ: FlagComponent
-export declare const FK: FlagComponent
-export declare const FM: FlagComponent
-export declare const FO: FlagComponent
-export declare const FR: FlagComponent
-export declare const GA: FlagComponent
-export declare const GB: FlagComponent
-export declare const GD: FlagComponent
-export declare const GE: FlagComponent
-export declare const GF: FlagComponent
-export declare const GG: FlagComponent
-export declare const GH: FlagComponent
-export declare const GI: FlagComponent
-export declare const GL: FlagComponent
-export declare const GM: FlagComponent
-export declare const GN: FlagComponent
-export declare const GP: FlagComponent
-export declare const GQ: FlagComponent
-export declare const GR: FlagComponent
-export declare const GS: FlagComponent
-export declare const GT: FlagComponent
-export declare const GU: FlagComponent
-export declare const GW: FlagComponent
-export declare const GY: FlagComponent
-export declare const HK: FlagComponent
-export declare const HM: FlagComponent
-export declare const HN: FlagComponent
-export declare const HR: FlagComponent
-export declare const HT: FlagComponent
-export declare const HU: FlagComponent
-export declare const ID: FlagComponent
-export declare const IE: FlagComponent
-export declare const IL: FlagComponent
-export declare const IM: FlagComponent
-export declare const IN: FlagComponent
-export declare const IO: FlagComponent
-export declare const IQ: FlagComponent
-export declare const IR: FlagComponent
-export declare const IS: FlagComponent
-export declare const IT: FlagComponent
-export declare const JE: FlagComponent
-export declare const JM: FlagComponent
-export declare const JO: FlagComponent
-export declare const JP: FlagComponent
-export declare const KE: FlagComponent
-export declare const KG: FlagComponent
-export declare const KH: FlagComponent
-export declare const KI: FlagComponent
-export declare const KM: FlagComponent
-export declare const KN: FlagComponent
-export declare const KP: FlagComponent
-export declare const KR: FlagComponent
-export declare const KW: FlagComponent
-export declare const KY: FlagComponent
-export declare const KZ: FlagComponent
-export declare const LA: FlagComponent
-export declare const LB: FlagComponent
-export declare const LC: FlagComponent
-export declare const LI: FlagComponent
-export declare const LK: FlagComponent
-export declare const LR: FlagComponent
-export declare const LS: FlagComponent
-export declare const LT: FlagComponent
-export declare const LU: FlagComponent
-export declare const LV: FlagComponent
-export declare const LY: FlagComponent
-export declare const MA: FlagComponent
-export declare const MC: FlagComponent
-export declare const MD: FlagComponent
-export declare const ME: FlagComponent
-export declare const MF: FlagComponent
-export declare const MG: FlagComponent
-export declare const MH: FlagComponent
-export declare const MK: FlagComponent
-export declare const ML: FlagComponent
-export declare const MM: FlagComponent
-export declare const MN: FlagComponent
-export declare const MO: FlagComponent
-export declare const MP: FlagComponent
-export declare const MQ: FlagComponent
-export declare const MR: FlagComponent
-export declare const MS: FlagComponent
-export declare const MT: FlagComponent
-export declare const MU: FlagComponent
-export declare const MV: FlagComponent
-export declare const MW: FlagComponent
-export declare const MX: FlagComponent
-export declare const MY: FlagComponent
-export declare const MZ: FlagComponent
-export declare const NA: FlagComponent
-export declare const NC: FlagComponent
-export declare const NE: FlagComponent
-export declare const NF: FlagComponent
-export declare const NG: FlagComponent
-export declare const NI: FlagComponent
-export declare const NL: FlagComponent
-export declare const NO: FlagComponent
-export declare const NP: FlagComponent
-export declare const NR: FlagComponent
-export declare const NU: FlagComponent
-export declare const NZ: FlagComponent
-export declare const OM: FlagComponent
-export declare const PA: FlagComponent
-export declare const PE: FlagComponent
-export declare const PF: FlagComponent
-export declare const PG: FlagComponent
-export declare const PH: FlagComponent
-export declare const PK: FlagComponent
-export declare const PL: FlagComponent
-export declare const PM: FlagComponent
-export declare const PN: FlagComponent
-export declare const PR: FlagComponent
-export declare const PS: FlagComponent
-export declare const PT: FlagComponent
-export declare const PW: FlagComponent
-export declare const PY: FlagComponent
-export declare const QA: FlagComponent
-export declare const RE: FlagComponent
-export declare const RO: FlagComponent
-export declare const RS: FlagComponent
-export declare const RU: FlagComponent
-export declare const RW: FlagComponent
-export declare const SA: FlagComponent
-export declare const SB: FlagComponent
-export declare const SC: FlagComponent
-export declare const SD: FlagComponent
-export declare const SE: FlagComponent
-export declare const SG: FlagComponent
-export declare const SH: FlagComponent
-export declare const SI: FlagComponent
-export declare const SJ: FlagComponent
-export declare const SK: FlagComponent
-export declare const SL: FlagComponent
-export declare const SM: FlagComponent
-export declare const SN: FlagComponent
-export declare const SO: FlagComponent
-export declare const SR: FlagComponent
-export declare const SS: FlagComponent
-export declare const ST: FlagComponent
-export declare const SV: FlagComponent
-export declare const SX: FlagComponent
-export declare const SY: FlagComponent
-export declare const SZ: FlagComponent
-export declare const TA: FlagComponent
-export declare const TC: FlagComponent
-export declare const TD: FlagComponent
-export declare const TF: FlagComponent
-export declare const TG: FlagComponent
-export declare const TH: FlagComponent
-export declare const TJ: FlagComponent
-export declare const TK: FlagComponent
-export declare const TL: FlagComponent
-export declare const TM: FlagComponent
-export declare const TN: FlagComponent
-export declare const TO: FlagComponent
-export declare const TR: FlagComponent
-export declare const TT: FlagComponent
-export declare const TV: FlagComponent
-export declare const TW: FlagComponent
-export declare const TZ: FlagComponent
-export declare const UA: FlagComponent
-export declare const UG: FlagComponent
-export declare const UM: FlagComponent
-export declare const US: FlagComponent
-export declare const UY: FlagComponent
-export declare const UZ: FlagComponent
-export declare const VA: FlagComponent
-export declare const VC: FlagComponent
-export declare const VE: FlagComponent
-export declare const VG: FlagComponent
-export declare const VI: FlagComponent
-export declare const VN: FlagComponent
-export declare const VU: FlagComponent
-export declare const WF: FlagComponent
-export declare const WS: FlagComponent
-export declare const XK: FlagComponent
-export declare const YE: FlagComponent
-export declare const YT: FlagComponent
-export declare const ZA: FlagComponent
-export declare const ZM: FlagComponent
-export declare const ZW: FlagComponent
+export const AC: FlagComponent
+export const AD: FlagComponent
+export const AE: FlagComponent
+export const AF: FlagComponent
+export const AG: FlagComponent
+export const AI: FlagComponent
+export const AL: FlagComponent
+export const AM: FlagComponent
+export const AO: FlagComponent
+export const AQ: FlagComponent
+export const AR: FlagComponent
+export const AS: FlagComponent
+export const AT: FlagComponent
+export const AU: FlagComponent
+export const AW: FlagComponent
+export const AX: FlagComponent
+export const AZ: FlagComponent
+export const BA: FlagComponent
+export const BB: FlagComponent
+export const BD: FlagComponent
+export const BE: FlagComponent
+export const BF: FlagComponent
+export const BG: FlagComponent
+export const BH: FlagComponent
+export const BI: FlagComponent
+export const BJ: FlagComponent
+export const BL: FlagComponent
+export const BM: FlagComponent
+export const BN: FlagComponent
+export const BO: FlagComponent
+export const BQ: FlagComponent
+export const BR: FlagComponent
+export const BS: FlagComponent
+export const BT: FlagComponent
+export const BV: FlagComponent
+export const BW: FlagComponent
+export const BY: FlagComponent
+export const BZ: FlagComponent
+export const CA: FlagComponent
+export const CC: FlagComponent
+export const CD: FlagComponent
+export const CF: FlagComponent
+export const CG: FlagComponent
+export const CH: FlagComponent
+export const CI: FlagComponent
+export const CK: FlagComponent
+export const CL: FlagComponent
+export const CM: FlagComponent
+export const CN: FlagComponent
+export const CO: FlagComponent
+export const CR: FlagComponent
+export const CU: FlagComponent
+export const CV: FlagComponent
+export const CW: FlagComponent
+export const CX: FlagComponent
+export const CY: FlagComponent
+export const CZ: FlagComponent
+export const DE: FlagComponent
+export const DJ: FlagComponent
+export const DK: FlagComponent
+export const DM: FlagComponent
+export const DO: FlagComponent
+export const DZ: FlagComponent
+export const EC: FlagComponent
+export const EE: FlagComponent
+export const EG: FlagComponent
+export const EH: FlagComponent
+export const ER: FlagComponent
+export const ES: FlagComponent
+export const ET: FlagComponent
+export const EU: FlagComponent
+export const FI: FlagComponent
+export const FJ: FlagComponent
+export const FK: FlagComponent
+export const FM: FlagComponent
+export const FO: FlagComponent
+export const FR: FlagComponent
+export const GA: FlagComponent
+export const GB: FlagComponent
+export const GD: FlagComponent
+export const GE: FlagComponent
+export const GF: FlagComponent
+export const GG: FlagComponent
+export const GH: FlagComponent
+export const GI: FlagComponent
+export const GL: FlagComponent
+export const GM: FlagComponent
+export const GN: FlagComponent
+export const GP: FlagComponent
+export const GQ: FlagComponent
+export const GR: FlagComponent
+export const GS: FlagComponent
+export const GT: FlagComponent
+export const GU: FlagComponent
+export const GW: FlagComponent
+export const GY: FlagComponent
+export const HK: FlagComponent
+export const HM: FlagComponent
+export const HN: FlagComponent
+export const HR: FlagComponent
+export const HT: FlagComponent
+export const HU: FlagComponent
+export const ID: FlagComponent
+export const IE: FlagComponent
+export const IL: FlagComponent
+export const IM: FlagComponent
+export const IN: FlagComponent
+export const IO: FlagComponent
+export const IQ: FlagComponent
+export const IR: FlagComponent
+export const IS: FlagComponent
+export const IT: FlagComponent
+export const JE: FlagComponent
+export const JM: FlagComponent
+export const JO: FlagComponent
+export const JP: FlagComponent
+export const KE: FlagComponent
+export const KG: FlagComponent
+export const KH: FlagComponent
+export const KI: FlagComponent
+export const KM: FlagComponent
+export const KN: FlagComponent
+export const KP: FlagComponent
+export const KR: FlagComponent
+export const KW: FlagComponent
+export const KY: FlagComponent
+export const KZ: FlagComponent
+export const LA: FlagComponent
+export const LB: FlagComponent
+export const LC: FlagComponent
+export const LI: FlagComponent
+export const LK: FlagComponent
+export const LR: FlagComponent
+export const LS: FlagComponent
+export const LT: FlagComponent
+export const LU: FlagComponent
+export const LV: FlagComponent
+export const LY: FlagComponent
+export const MA: FlagComponent
+export const MC: FlagComponent
+export const MD: FlagComponent
+export const ME: FlagComponent
+export const MF: FlagComponent
+export const MG: FlagComponent
+export const MH: FlagComponent
+export const MK: FlagComponent
+export const ML: FlagComponent
+export const MM: FlagComponent
+export const MN: FlagComponent
+export const MO: FlagComponent
+export const MP: FlagComponent
+export const MQ: FlagComponent
+export const MR: FlagComponent
+export const MS: FlagComponent
+export const MT: FlagComponent
+export const MU: FlagComponent
+export const MV: FlagComponent
+export const MW: FlagComponent
+export const MX: FlagComponent
+export const MY: FlagComponent
+export const MZ: FlagComponent
+export const NA: FlagComponent
+export const NC: FlagComponent
+export const NE: FlagComponent
+export const NF: FlagComponent
+export const NG: FlagComponent
+export const NI: FlagComponent
+export const NL: FlagComponent
+export const NO: FlagComponent
+export const NP: FlagComponent
+export const NR: FlagComponent
+export const NU: FlagComponent
+export const NZ: FlagComponent
+export const OM: FlagComponent
+export const PA: FlagComponent
+export const PE: FlagComponent
+export const PF: FlagComponent
+export const PG: FlagComponent
+export const PH: FlagComponent
+export const PK: FlagComponent
+export const PL: FlagComponent
+export const PM: FlagComponent
+export const PN: FlagComponent
+export const PR: FlagComponent
+export const PS: FlagComponent
+export const PT: FlagComponent
+export const PW: FlagComponent
+export const PY: FlagComponent
+export const QA: FlagComponent
+export const RE: FlagComponent
+export const RO: FlagComponent
+export const RS: FlagComponent
+export const RU: FlagComponent
+export const RW: FlagComponent
+export const SA: FlagComponent
+export const SB: FlagComponent
+export const SC: FlagComponent
+export const SD: FlagComponent
+export const SE: FlagComponent
+export const SG: FlagComponent
+export const SH: FlagComponent
+export const SI: FlagComponent
+export const SJ: FlagComponent
+export const SK: FlagComponent
+export const SL: FlagComponent
+export const SM: FlagComponent
+export const SN: FlagComponent
+export const SO: FlagComponent
+export const SR: FlagComponent
+export const SS: FlagComponent
+export const ST: FlagComponent
+export const SV: FlagComponent
+export const SX: FlagComponent
+export const SY: FlagComponent
+export const SZ: FlagComponent
+export const TA: FlagComponent
+export const TC: FlagComponent
+export const TD: FlagComponent
+export const TF: FlagComponent
+export const TG: FlagComponent
+export const TH: FlagComponent
+export const TJ: FlagComponent
+export const TK: FlagComponent
+export const TL: FlagComponent
+export const TM: FlagComponent
+export const TN: FlagComponent
+export const TO: FlagComponent
+export const TR: FlagComponent
+export const TT: FlagComponent
+export const TV: FlagComponent
+export const TW: FlagComponent
+export const TZ: FlagComponent
+export const UA: FlagComponent
+export const UG: FlagComponent
+export const UM: FlagComponent
+export const US: FlagComponent
+export const UY: FlagComponent
+export const UZ: FlagComponent
+export const VA: FlagComponent
+export const VC: FlagComponent
+export const VE: FlagComponent
+export const VG: FlagComponent
+export const VI: FlagComponent
+export const VN: FlagComponent
+export const VU: FlagComponent
+export const WF: FlagComponent
+export const WS: FlagComponent
+export const XK: FlagComponent
+export const YE: FlagComponent
+export const YT: FlagComponent
+export const ZA: FlagComponent
+export const ZM: FlagComponent
+export const ZW: FlagComponent

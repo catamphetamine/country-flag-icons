@@ -26,6 +26,6 @@ import COUNTRIES from '../source/countries.json'
 
   fs.outputFileSync(
     path.join(outputDirectory, 'index.d.ts'),
-    COUNTRIES.map(country => `export declare const ${country}: string`).join('\n')
+    COUNTRIES.map(country => `export const ${country}: string`).join('\n')
   )
 })

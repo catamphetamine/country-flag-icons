@@ -100,7 +100,7 @@ interface Props extends React.HTMLAttributes<HTMLElement> {
 
 type FlagComponent = (props: Props) => JSX.Element;
 
-${COUNTRIES.map(country => `export declare const ${country}: FlagComponent`).join('\n')}
+${COUNTRIES.map(country => `export const ${country}: FlagComponent`).join('\n')}
 
 	`.trim()
 }
