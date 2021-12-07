@@ -13,9 +13,9 @@ const getFlagPackageJson = (country, aspectRatio) => `{
 }`
 
 const getFlagTypeScriptTypings = () => `
-// import * as React from 'react';
+import * as React from 'react';
 
-interface Props {
+interface Props extends React.HTMLAttributes<HTMLElement> {
 	title?: string;
 }
 
@@ -88,9 +88,9 @@ ${COUNTRIES.map((country) => 'exports.' + country + ' = flags.' + country + ';')
 function generateTypeScriptTypings() {
 	return `
 
-// import * as React from 'react';
+import * as React from 'react';
 
-interface Props {
+interface Props extends React.HTMLAttributes<HTMLElement> {
 	title?: string;
 }
 
@@ -100,7 +100,7 @@ interface Props {
 
 type FlagComponent = (props: Props) => JSX.Element;
 
-${COUNTRIES.map(country => `export const ${country}: FlagComponent`).join('\n')}
+${COUNTRIES.map(country => `export declare const ${country}: FlagComponent`).join('\n')}
 
 	`.trim()
 }
