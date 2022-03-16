@@ -101,6 +101,7 @@ export {
 	HR,
 	HT,
 	HU,
+	IC,
 	ID,
 	IE,
 	IL,

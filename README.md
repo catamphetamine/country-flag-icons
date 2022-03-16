@@ -127,6 +127,7 @@ So, the full list is all of the [249](https://en.wikipedia.org/wiki/ISO_3166-1#O
 
 * `AC` — Ascension Island. Exceptional reservation. Has it's own phone numbering plan.
 * `TA` — Tristan da Cunha. Exceptional reservation. Has it's own phone numbering plan.
+* `IC` — Canary Islands. Exceptional reservation. Doesn't have its own phone numbering plan.
 * `EU` — European Union. Exceptional reservation. Doesn't have its own phone numbering plan.
 * `XK` — Kosovo. Disputed territory. Not an officially assigned code. Has it's own phone numbering plan.
 

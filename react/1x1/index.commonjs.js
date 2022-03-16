@@ -106,6 +106,7 @@ exports.HN = flags.HN;
 exports.HR = flags.HR;
 exports.HT = flags.HT;
 exports.HU = flags.HU;
+exports.IC = flags.IC;
 exports.ID = flags.ID;
 exports.IE = flags.IE;
 exports.IL = flags.IL;

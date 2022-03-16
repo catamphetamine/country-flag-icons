@@ -109,7 +109,7 @@ const OFFSETS = {
   ZW: 8
 }
 
-for (const country of countries) {
+for (const country of countries.concat('GE-AB', 'GE-OS')) {
   let svg = fs.readFileSync(path.join(FLAGS_PATH, `3x2/${country}.svg`), 'utf8')
   // viewBox="x y width height" -> viewBox="x+RoundMaybeUpToTwoDecimalPoints((width-height)*percent/100) y height height".
   svg = svg.replace(/ viewBox="([^"]+)"/, (_, viewBox) => {

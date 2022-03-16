@@ -112,6 +112,7 @@ export const HN: FlagComponent
 export const HR: FlagComponent
 export const HT: FlagComponent
 export const HU: FlagComponent
+export const IC: FlagComponent
 export const ID: FlagComponent
 export const IE: FlagComponent
 export const IL: FlagComponent
