@@ -15,9 +15,10 @@ const getFlagPackageJson = (country, aspectRatio) => `{
 const getFlagTypeScriptTypings = () => `
 import * as React from 'react';
 
-interface Props extends React.HTMLAttributes<HTMLElement> {
-	title?: string;
-}
+// https://stackoverflow.com/questions/63165896/what-is-the-type-of-the-svg-element-in-typescript
+type HTMLSVGElement = HTMLElement & SVGElement;
+
+interface Props extends React.HTMLAttributes<HTMLSVGElement> {}
 
 // React TypeScript Cheatsheet doesn't recommend using React.FunctionalComponent.
 // https://react-typescript-cheatsheet.netlify.app/docs/basic/getting-started/function_components
@@ -90,9 +91,16 @@ function generateTypeScriptTypings() {
 
 import * as React from 'react';
 
-interface Props extends React.HTMLAttributes<HTMLElement> {
-	title?: string;
-}
+// https://stackoverflow.com/questions/63165896/what-is-the-type-of-the-svg-element-in-typescript
+// https://microsoft.github.io/PowerBI-JavaScript/interfaces/_node_modules_typedoc_node_modules_typescript_lib_lib_dom_d_.htmlelement.html
+// https://microsoft.github.io/PowerBI-JavaScript/interfaces/_node_modules_typedoc_node_modules_typescript_lib_lib_dom_d_.svgelement.html
+type HTMLSVGElement = HTMLElement & SVGElement;
+
+// https://use-form.netlify.app/interfaces/_node_modules__types_react_index_d_.react.htmlattributes.html
+// https://use-form.netlify.app/interfaces/_node_modules__types_react_index_d_.react.svgattributes.html
+interface ElementAttributes<T> extends React.HTMLAttributes<T>, React.SVGAttributes<T> {}
+
+interface Props extends ElementAttributes<HTMLSVGElement> {}
 
 // React TypeScript Cheatsheet doesn't recommend using React.FunctionalComponent.
 // https://react-typescript-cheatsheet.netlify.app/docs/basic/getting-started/function_components
