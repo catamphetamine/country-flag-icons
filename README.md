@@ -92,9 +92,17 @@ Older operating systems might not support Unicode flags, either rendering "missi
 React components for all flags are available at `/react/3x2` export.
 
 ```js
-import Flags from 'country-flag-icons/react/3x2'
+import { US } from 'country-flag-icons/react/3x2'
 
-<Flags.US title="United States" className="..."/>
+<US title="United States" className="..."/>
+```
+
+Or directly, if your bundler doesn't support tree shaking:
+
+```js
+import US from 'country-flag-icons/react/3x2/US'
+
+<US title="United States" className="..."/>
 ```
 
 ### String

@@ -7,9 +7,17 @@ import COUNTRIES from '../source/countries.json'
 const getFlagPackageJson = (country, aspectRatio) => `{
   "private": true,
   "name": "country-flag-icons/react/${aspectRatio}/${country}",
-  "version": "1.0.0",
-  "main": "index.commonjs.js",
-  "module": "index.js"
+  "main": "index.cjs",
+  "module": "index.js",
+  "type": "module",
+  "exports": {
+    ".": {
+      "types": "./index.d.ts",
+      "import": "./index.js",
+      "require": "./index.cjs"
+    }
+  },
+  "sideEffects": false
 }`
 
 const getFlagTypeScriptTypings = () => `
@@ -34,43 +42,38 @@ export default Flag;
 // const getFlagIndex = (country) => `export { ${country} as default } from '../../../modules/react/${aspectRatio}/${country}'`
 // const getFlagIndexCommonJs = (country) => `exports = module.exports = require('../../../commonjs/react/${aspectRatio}/${country}').${country}`
 
-const getFlagIndex = (country) => `export { ${country} as default } from '../index'`
-const getFlagIndexCommonJs = (country) => `exports = module.exports = require('../index.commonjs').${country}`
+const getFlagIndex = (country) => `export { ${country} as default } from '../index.js'`
+const getFlagIndexCommonJs = (country) => `exports = module.exports = require('../index.cjs').${country}`
 
-fs.outputFileSync(path.join(__dirname, '../source/react/3x2/index.js'), generateFlags('3x2'))
+function generateFlagsForSize(size) {
+	fs.outputFileSync(path.resolve(`./source/react/${size}/index.js`), generateFlags(size))
 
-for (const country of COUNTRIES) {
-	// fs.outputFileSync(path.join(__dirname, `../source/react/3x2/${country}.js`), generateFlag(country, '3x2'))
-	fs.outputFileSync(path.join(__dirname, `../react/3x2/${country}/index.js`), getFlagIndex(country))
-	fs.outputFileSync(path.join(__dirname, `../react/3x2/${country}/index.commonjs.js`), getFlagIndexCommonJs(country))
-	fs.outputFileSync(path.join(__dirname, `../react/3x2/${country}/package.json`), getFlagPackageJson(country, '3x2'))
-	fs.outputFileSync(path.join(__dirname, `../react/3x2/${country}/index.d.ts`), getFlagTypeScriptTypings())
+	for (const country of COUNTRIES) {
+		// fs.outputFileSync(path.resolve(`./source/react/${size}/${country}.js`), generateFlag(country, size))
+		fs.outputFileSync(path.resolve(`./react/${size}/${country}/index.js`), getFlagIndex(country))
+		fs.outputFileSync(path.resolve(`./react/${size}/${country}/index.cjs`), getFlagIndexCommonJs(country))
+		fs.outputFileSync(path.resolve(`./react/${size}/${country}/index.cjs.js`), getFlagIndexCommonJs(country))
+		fs.outputFileSync(path.resolve(`./react/${size}/${country}/package.json`), getFlagPackageJson(country, size))
+		fs.outputFileSync(path.resolve(`./react/${size}/${country}/index.d.ts`), getFlagTypeScriptTypings())
+	}
+
+	fs.outputFileSync(path.resolve(`./react/${size}/index.js`), generateIndex(size))
+	fs.outputFileSync(path.resolve(`./react/${size}/index.cjs`), generateIndexCommonJS(size))
+	fs.outputFileSync(path.resolve(`./react/${size}/index.cjs.js`), generateIndexCommonJS(size))
+	fs.outputFileSync(path.resolve(`./react/${size}/index.d.ts`), generateTypeScriptTypings())
+
+	addFlagExports(COUNTRIES, size)
 }
 
-fs.outputFileSync(path.join(__dirname, '../react/3x2/index.js'), generateIndex('3x2'))
-fs.outputFileSync(path.join(__dirname, '../react/3x2/index.commonjs.js'), generateIndexCommonJS('3x2'))
-fs.outputFileSync(path.join(__dirname, '../react/3x2/index.d.ts'), generateTypeScriptTypings())
-
-fs.outputFileSync(path.join(__dirname, '../source/react/1x1/index.js'), generateFlags('1x1'))
-
-for (const country of COUNTRIES) {
-	// fs.outputFileSync(path.join(__dirname, `../source/react/1x1/${country}.js`), generateFlag(country, '1x1'))
-	fs.outputFileSync(path.join(__dirname, `../react/1x1/${country}/index.js`), getFlagIndex(country))
-	fs.outputFileSync(path.join(__dirname, `../react/1x1/${country}/index.commonjs.js`), getFlagIndexCommonJs(country))
-	fs.outputFileSync(path.join(__dirname, `../react/1x1/${country}/package.json`), getFlagPackageJson(country, '1x1'))
-	fs.outputFileSync(path.join(__dirname, `../react/1x1/${country}/index.d.ts`), getFlagTypeScriptTypings())
-}
-
-fs.outputFileSync(path.join(__dirname, '../react/1x1/index.js'), generateIndex('1x1'))
-fs.outputFileSync(path.join(__dirname, '../react/1x1/index.commonjs.js'), generateIndexCommonJS('1x1'))
-fs.outputFileSync(path.join(__dirname, '../react/1x1/index.d.ts'), generateTypeScriptTypings())
+generateFlagsForSize('3x2')
+generateFlagsForSize('1x1')
 
 function generateIndex(aspectRatio) {
 	return `
 export {
 ${COUNTRIES.map((country) => '\t' + country + ',').join('\n')}
 	default as default
-} from '../../modules/react/${aspectRatio}'
+} from '../../modules/react/${aspectRatio}/index.js'
 	`.trim()
 }
 
@@ -80,7 +83,7 @@ function generateIndexCommonJS(aspectRatio) {
 
 exports = module.exports = {}
 
-var flags = require('../../commonjs/react/${aspectRatio}')
+var flags = require('../../commonjs/react/${aspectRatio}/index.js')
 
 ${COUNTRIES.map((country) => 'exports.' + country + ' = flags.' + country + ';').join('\n')}
 	`.trim()
@@ -139,9 +142,9 @@ export default ({ title, ...rest }) => (\n${getCountryFlagSvgMarkup(country, asp
 }
 
 function getCountryFlagSvgMarkup(country, aspectRatio) {
-	const flagPath = path.join(__dirname, `../${aspectRatio}/${country}.svg`)
+	const flagPath = path.resolve(`./${aspectRatio}/${country}.svg`)
 	const svgCode = fs.readFileSync(flagPath, 'utf8')
-	let code = svgr.sync(
+	let code = svgr.transform.sync(
 		svgCode,
 		{
 			plugins: [
@@ -163,7 +166,43 @@ function getCountryFlagSvgMarkup(country, aspectRatio) {
 		throw new Error(`<title/> already present in ${country} flag`)
 	}
 	code = code.slice(0, firstTagStarts) + '{title && <title>{title}</title>}' + '\n' + code.slice(firstTagStarts)
-	return code.replace('import React from "react";\n\nconst SvgComponent = props => (\n', '')
+	code = code.replace('import * as React from "react";\n\nconst SvgComponent = (props) => (\n', '')
 		.replace(' {...props}', ' {...rest}')
 		.replace('\n);\n\nexport default SvgComponent;', '')
+	if (code.includes('export default') || code.includes('from "react"')) {
+		throw new Error('`@svgr/core` library\'s code transforms seems to have changed. Fix the `runnable/generate-react-flags.js` script.')
+	}
+}
+
+// Add `export` entries in `package.json`.
+function addFlagExports(COUNTRIES, size) {
+  // Read `package.json` file.
+  const packageJson = readJsonFromFile('./package.json')
+
+  // Remove all react flag exports.
+  for (const path of Object.keys(packageJson.exports)) {
+    if (path.startsWith(`./react/${size}/`)) {
+      delete packageJson.exports[path]
+    }
+  }
+
+  // Re-add all react flag exports.
+  packageJson.exports = {
+    ...packageJson.exports,
+    ...COUNTRIES.reduce((all, country) => {
+      all[`./react/${size}/${country}`] = {
+	      types: `./react/${size}/${country}/index.d.ts`,
+	      import: `./react/${size}/${country}/index.js`,
+	      require: `./react/${size}/${country}/index.cjs`
+      }
+      return all
+    }, {})
+  }
+
+  // Save `package.json` file.
+  fs.writeFileSync('./package.json', JSON.stringify(packageJson, null, 2) + '\n', 'utf8')
+}
+
+function readJsonFromFile(path) {
+  return JSON.parse(fs.readFileSync(path, 'utf8'))
 }

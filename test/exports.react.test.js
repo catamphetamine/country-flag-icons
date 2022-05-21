@@ -1,4 +1,6 @@
-import FLAGS, { RU } from '../react/3x2/index'
+import FLAGS, { RU } from '../react/3x2/index.js'
+
+import Library from '../react/3x2/index.cjs'
 
 describe('exports/react/3x2', () => {
 	it('should export ES6', () => {
@@ -7,7 +9,6 @@ describe('exports/react/3x2', () => {
 	})
 
 	it('should export CommonJS', () => {
-		const Library = require('../react/3x2/index.commonjs')
 		// Library.RU.should.be.a('function')
 		Library.RU.should.be.a('function')
 		expect(Library.default).to.be.undefined

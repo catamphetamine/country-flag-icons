@@ -2,7 +2,7 @@
 
 exports = module.exports = {}
 
-var flags = require('../../commonjs/react/1x1')
+var flags = require('../../commonjs/react/1x1/index.js')
 
 exports.AC = flags.AC;
 exports.AD = flags.AD;

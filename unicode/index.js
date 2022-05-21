@@ -1,1 +1,1 @@
-export { default as default } from '../modules/unicode'
+export { default as default } from '../modules/unicode.js'

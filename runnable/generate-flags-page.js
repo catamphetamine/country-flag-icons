@@ -1,5 +1,6 @@
 import path from 'path'
 import fs from 'fs-extra'
+
 import COUNTRIES from '../source/countries.json'
 import countryNames from './countryNames.json'
 
@@ -78,7 +79,7 @@ function generateHTML(aspectRatioWidth, aspectRatioHeight) {
 		</html>
 	`
 
-	fs.outputFileSync(path.join(__dirname, `../website/${aspectRatioWidth}x${aspectRatioHeight}/index.html`), html)
+	fs.outputFileSync(path.resolve(`./website/${aspectRatioWidth}x${aspectRatioHeight}/index.html`), html)
 }
 
 generateHTML(3, 2)

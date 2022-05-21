@@ -5,8 +5,8 @@ import svgToMiniDataURI from 'mini-svg-data-uri'
 
 import COUNTRIES from '../source/countries.json'
 
-fs.outputFileSync(path.join(__dirname, '../3x2/flags.css'), generateCSS(3, 2))
-fs.outputFileSync(path.join(__dirname, '../1x1/flags.css'), generateCSS(1, 1))
+fs.outputFileSync(path.resolve('./3x2/flags.css'), generateCSS(3, 2))
+fs.outputFileSync(path.resolve('./1x1/flags.css'), generateCSS(1, 1))
 
 function generateCSS(aspectRatioWidth, aspectRatioHeight) {
 	return [
@@ -26,9 +26,9 @@ function generateCSS(aspectRatioWidth, aspectRatioHeight) {
 }
 
 function getCountryFlagCSS(country, aspectRatioWidth, aspectRatioHeight) {
-	const flagPath = path.join(__dirname, `../${aspectRatioWidth}x${aspectRatioHeight}/${country}.svg`)
+	const flagPath = path.resolve(`./${aspectRatioWidth}x${aspectRatioHeight}/${country}.svg`)
 	const svgCode = fs.readFileSync(flagPath, 'utf8')
-	const code = svgr.sync(
+	const code = svgr.transform.sync(
 		svgCode,
 		{
 			plugins: [
@@ -39,8 +39,8 @@ function getCountryFlagCSS(country, aspectRatioWidth, aspectRatioHeight) {
 	const svgTagStartsAt = code.indexOf('<svg')
 	if (svgTagStartsAt < 0) {
 		throw new Error(`<svg/> tag not found in ${country} flag`)
-		}
-		return `.flag\\:${country}{background-image:url("${svgToMiniDataURI(code.substr(svgTagStartsAt))}")}`
+	}
+	return `.flag\\:${country}{background-image:url("${svgToMiniDataURI(code.substr(svgTagStartsAt))}")}`
 }
 
 function round(number) {

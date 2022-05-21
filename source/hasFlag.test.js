@@ -1,4 +1,4 @@
-import hasFlag from './hasFlag'
+import hasFlag from './hasFlag.js'
 
 describe('hasFlag', () => {
 	it('should return whether a flag icon exists', () => {

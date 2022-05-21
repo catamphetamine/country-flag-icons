@@ -254,4 +254,4 @@ export {
 	ZM,
 	ZW,
 	default as default
-} from '../../modules/react/1x1'
+} from '../../modules/react/1x1/index.js'

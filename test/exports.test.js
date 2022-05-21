@@ -1,7 +1,9 @@
 import {
 	hasFlag,
 	countries
-} from '../index'
+} from '../index.js'
+
+import Library from '../index.cjs'
 
 describe('exports/core', () => {
 	it('should export ES6', () => {
@@ -10,7 +12,6 @@ describe('exports/core', () => {
 	})
 
 	it('should export CommonJS', () => {
-		const Library = require('../index.commonjs')
 		Library.hasFlag.should.be.a('function')
 		Library.countries.includes('RU').should.equal(true)
 	})

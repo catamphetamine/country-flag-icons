@@ -1,67 +1,3148 @@
 {
   "name": "country-flag-icons",
-  "version": "1.4.26",
+  "version": "1.5.0",
   "description": "Vector (*.svg) country flag icons in 3x2 aspect ratio.",
-  "main": "index.commonjs.js",
+  "main": "index.cjs",
   "module": "index.js",
+  "type": "module",
+  "exports": {
+    ".": {
+      "types": "./index.d.ts",
+      "import": "./index.js",
+      "require": "./index.cjs"
+    },
+    "./react/1x1": {
+      "types": "./react/1x1/index.d.ts",
+      "import": "./react/1x1/index.js",
+      "require": "./react/1x1/index.cjs"
+    },
+    "./react/3x2": {
+      "types": "./react/3x2/index.d.ts",
+      "import": "./react/3x2/index.js",
+      "require": "./react/3x2/index.cjs"
+    },
+    "./string/1x1": {
+      "types": "./string/1x1/index.d.ts",
+      "import": "./string/1x1/index.js",
+      "require": "./string/1x1/index.cjs"
+    },
+    "./string/3x2": {
+      "types": "./string/3x2/index.d.ts",
+      "import": "./string/3x2/index.js",
+      "require": "./string/3x2/index.cjs"
+    },
+    "./1x1/flags.css": "./1x1/flags.css",
+    "./3x2/flags.css": "./3x2/flags.css",
+    "./package.json": "./package.json",
+    "./string/3x2/AC": "./string/3x2/AC.js",
+    "./string/3x2/AD": "./string/3x2/AD.js",
+    "./string/3x2/AE": "./string/3x2/AE.js",
+    "./string/3x2/AF": "./string/3x2/AF.js",
+    "./string/3x2/AG": "./string/3x2/AG.js",
+    "./string/3x2/AI": "./string/3x2/AI.js",
+    "./string/3x2/AL": "./string/3x2/AL.js",
+    "./string/3x2/AM": "./string/3x2/AM.js",
+    "./string/3x2/AO": "./string/3x2/AO.js",
+    "./string/3x2/AQ": "./string/3x2/AQ.js",
+    "./string/3x2/AR": "./string/3x2/AR.js",
+    "./string/3x2/AS": "./string/3x2/AS.js",
+    "./string/3x2/AT": "./string/3x2/AT.js",
+    "./string/3x2/AU": "./string/3x2/AU.js",
+    "./string/3x2/AW": "./string/3x2/AW.js",
+    "./string/3x2/AX": "./string/3x2/AX.js",
+    "./string/3x2/AZ": "./string/3x2/AZ.js",
+    "./string/3x2/BA": "./string/3x2/BA.js",
+    "./string/3x2/BB": "./string/3x2/BB.js",
+    "./string/3x2/BD": "./string/3x2/BD.js",
+    "./string/3x2/BE": "./string/3x2/BE.js",
+    "./string/3x2/BF": "./string/3x2/BF.js",
+    "./string/3x2/BG": "./string/3x2/BG.js",
+    "./string/3x2/BH": "./string/3x2/BH.js",
+    "./string/3x2/BI": "./string/3x2/BI.js",
+    "./string/3x2/BJ": "./string/3x2/BJ.js",
+    "./string/3x2/BL": "./string/3x2/BL.js",
+    "./string/3x2/BM": "./string/3x2/BM.js",
+    "./string/3x2/BN": "./string/3x2/BN.js",
+    "./string/3x2/BO": "./string/3x2/BO.js",
+    "./string/3x2/BQ": "./string/3x2/BQ.js",
+    "./string/3x2/BR": "./string/3x2/BR.js",
+    "./string/3x2/BS": "./string/3x2/BS.js",
+    "./string/3x2/BT": "./string/3x2/BT.js",
+    "./string/3x2/BV": "./string/3x2/BV.js",
+    "./string/3x2/BW": "./string/3x2/BW.js",
+    "./string/3x2/BY": "./string/3x2/BY.js",
+    "./string/3x2/BZ": "./string/3x2/BZ.js",
+    "./string/3x2/CA": "./string/3x2/CA.js",
+    "./string/3x2/CC": "./string/3x2/CC.js",
+    "./string/3x2/CD": "./string/3x2/CD.js",
+    "./string/3x2/CF": "./string/3x2/CF.js",
+    "./string/3x2/CG": "./string/3x2/CG.js",
+    "./string/3x2/CH": "./string/3x2/CH.js",
+    "./string/3x2/CI": "./string/3x2/CI.js",
+    "./string/3x2/CK": "./string/3x2/CK.js",
+    "./string/3x2/CL": "./string/3x2/CL.js",
+    "./string/3x2/CM": "./string/3x2/CM.js",
+    "./string/3x2/CN": "./string/3x2/CN.js",
+    "./string/3x2/CO": "./string/3x2/CO.js",
+    "./string/3x2/CR": "./string/3x2/CR.js",
+    "./string/3x2/CU": "./string/3x2/CU.js",
+    "./string/3x2/CV": "./string/3x2/CV.js",
+    "./string/3x2/CW": "./string/3x2/CW.js",
+    "./string/3x2/CX": "./string/3x2/CX.js",
+    "./string/3x2/CY": "./string/3x2/CY.js",
+    "./string/3x2/CZ": "./string/3x2/CZ.js",
+    "./string/3x2/DE": "./string/3x2/DE.js",
+    "./string/3x2/DJ": "./string/3x2/DJ.js",
+    "./string/3x2/DK": "./string/3x2/DK.js",
+    "./string/3x2/DM": "./string/3x2/DM.js",
+    "./string/3x2/DO": "./string/3x2/DO.js",
+    "./string/3x2/DZ": "./string/3x2/DZ.js",
+    "./string/3x2/EC": "./string/3x2/EC.js",
+    "./string/3x2/EE": "./string/3x2/EE.js",
+    "./string/3x2/EG": "./string/3x2/EG.js",
+    "./string/3x2/EH": "./string/3x2/EH.js",
+    "./string/3x2/ER": "./string/3x2/ER.js",
+    "./string/3x2/ES": "./string/3x2/ES.js",
+    "./string/3x2/ET": "./string/3x2/ET.js",
+    "./string/3x2/EU": "./string/3x2/EU.js",
+    "./string/3x2/FI": "./string/3x2/FI.js",
+    "./string/3x2/FJ": "./string/3x2/FJ.js",
+    "./string/3x2/FK": "./string/3x2/FK.js",
+    "./string/3x2/FM": "./string/3x2/FM.js",
+    "./string/3x2/FO": "./string/3x2/FO.js",
+    "./string/3x2/FR": "./string/3x2/FR.js",
+    "./string/3x2/GA": "./string/3x2/GA.js",
+    "./string/3x2/GB": "./string/3x2/GB.js",
+    "./string/3x2/GD": "./string/3x2/GD.js",
+    "./string/3x2/GE": "./string/3x2/GE.js",
+    "./string/3x2/GF": "./string/3x2/GF.js",
+    "./string/3x2/GG": "./string/3x2/GG.js",
+    "./string/3x2/GH": "./string/3x2/GH.js",
+    "./string/3x2/GI": "./string/3x2/GI.js",
+    "./string/3x2/GL": "./string/3x2/GL.js",
+    "./string/3x2/GM": "./string/3x2/GM.js",
+    "./string/3x2/GN": "./string/3x2/GN.js",
+    "./string/3x2/GP": "./string/3x2/GP.js",
+    "./string/3x2/GQ": "./string/3x2/GQ.js",
+    "./string/3x2/GR": "./string/3x2/GR.js",
+    "./string/3x2/GS": "./string/3x2/GS.js",
+    "./string/3x2/GT": "./string/3x2/GT.js",
+    "./string/3x2/GU": "./string/3x2/GU.js",
+    "./string/3x2/GW": "./string/3x2/GW.js",
+    "./string/3x2/GY": "./string/3x2/GY.js",
+    "./string/3x2/HK": "./string/3x2/HK.js",
+    "./string/3x2/HM": "./string/3x2/HM.js",
+    "./string/3x2/HN": "./string/3x2/HN.js",
+    "./string/3x2/HR": "./string/3x2/HR.js",
+    "./string/3x2/HT": "./string/3x2/HT.js",
+    "./string/3x2/HU": "./string/3x2/HU.js",
+    "./string/3x2/IC": "./string/3x2/IC.js",
+    "./string/3x2/ID": "./string/3x2/ID.js",
+    "./string/3x2/IE": "./string/3x2/IE.js",
+    "./string/3x2/IL": "./string/3x2/IL.js",
+    "./string/3x2/IM": "./string/3x2/IM.js",
+    "./string/3x2/IN": "./string/3x2/IN.js",
+    "./string/3x2/IO": "./string/3x2/IO.js",
+    "./string/3x2/IQ": "./string/3x2/IQ.js",
+    "./string/3x2/IR": "./string/3x2/IR.js",
+    "./string/3x2/IS": "./string/3x2/IS.js",
+    "./string/3x2/IT": "./string/3x2/IT.js",
+    "./string/3x2/JE": "./string/3x2/JE.js",
+    "./string/3x2/JM": "./string/3x2/JM.js",
+    "./string/3x2/JO": "./string/3x2/JO.js",
+    "./string/3x2/JP": "./string/3x2/JP.js",
+    "./string/3x2/KE": "./string/3x2/KE.js",
+    "./string/3x2/KG": "./string/3x2/KG.js",
+    "./string/3x2/KH": "./string/3x2/KH.js",
+    "./string/3x2/KI": "./string/3x2/KI.js",
+    "./string/3x2/KM": "./string/3x2/KM.js",
+    "./string/3x2/KN": "./string/3x2/KN.js",
+    "./string/3x2/KP": "./string/3x2/KP.js",
+    "./string/3x2/KR": "./string/3x2/KR.js",
+    "./string/3x2/KW": "./string/3x2/KW.js",
+    "./string/3x2/KY": "./string/3x2/KY.js",
+    "./string/3x2/KZ": "./string/3x2/KZ.js",
+    "./string/3x2/LA": "./string/3x2/LA.js",
+    "./string/3x2/LB": "./string/3x2/LB.js",
+    "./string/3x2/LC": "./string/3x2/LC.js",
+    "./string/3x2/LI": "./string/3x2/LI.js",
+    "./string/3x2/LK": "./string/3x2/LK.js",
+    "./string/3x2/LR": "./string/3x2/LR.js",
+    "./string/3x2/LS": "./string/3x2/LS.js",
+    "./string/3x2/LT": "./string/3x2/LT.js",
+    "./string/3x2/LU": "./string/3x2/LU.js",
+    "./string/3x2/LV": "./string/3x2/LV.js",
+    "./string/3x2/LY": "./string/3x2/LY.js",
+    "./string/3x2/MA": "./string/3x2/MA.js",
+    "./string/3x2/MC": "./string/3x2/MC.js",
+    "./string/3x2/MD": "./string/3x2/MD.js",
+    "./string/3x2/ME": "./string/3x2/ME.js",
+    "./string/3x2/MF": "./string/3x2/MF.js",
+    "./string/3x2/MG": "./string/3x2/MG.js",
+    "./string/3x2/MH": "./string/3x2/MH.js",
+    "./string/3x2/MK": "./string/3x2/MK.js",
+    "./string/3x2/ML": "./string/3x2/ML.js",
+    "./string/3x2/MM": "./string/3x2/MM.js",
+    "./string/3x2/MN": "./string/3x2/MN.js",
+    "./string/3x2/MO": "./string/3x2/MO.js",
+    "./string/3x2/MP": "./string/3x2/MP.js",
+    "./string/3x2/MQ": "./string/3x2/MQ.js",
+    "./string/3x2/MR": "./string/3x2/MR.js",
+    "./string/3x2/MS": "./string/3x2/MS.js",
+    "./string/3x2/MT": "./string/3x2/MT.js",
+    "./string/3x2/MU": "./string/3x2/MU.js",
+    "./string/3x2/MV": "./string/3x2/MV.js",
+    "./string/3x2/MW": "./string/3x2/MW.js",
+    "./string/3x2/MX": "./string/3x2/MX.js",
+    "./string/3x2/MY": "./string/3x2/MY.js",
+    "./string/3x2/MZ": "./string/3x2/MZ.js",
+    "./string/3x2/NA": "./string/3x2/NA.js",
+    "./string/3x2/NC": "./string/3x2/NC.js",
+    "./string/3x2/NE": "./string/3x2/NE.js",
+    "./string/3x2/NF": "./string/3x2/NF.js",
+    "./string/3x2/NG": "./string/3x2/NG.js",
+    "./string/3x2/NI": "./string/3x2/NI.js",
+    "./string/3x2/NL": "./string/3x2/NL.js",
+    "./string/3x2/NO": "./string/3x2/NO.js",
+    "./string/3x2/NP": "./string/3x2/NP.js",
+    "./string/3x2/NR": "./string/3x2/NR.js",
+    "./string/3x2/NU": "./string/3x2/NU.js",
+    "./string/3x2/NZ": "./string/3x2/NZ.js",
+    "./string/3x2/OM": "./string/3x2/OM.js",
+    "./string/3x2/PA": "./string/3x2/PA.js",
+    "./string/3x2/PE": "./string/3x2/PE.js",
+    "./string/3x2/PF": "./string/3x2/PF.js",
+    "./string/3x2/PG": "./string/3x2/PG.js",
+    "./string/3x2/PH": "./string/3x2/PH.js",
+    "./string/3x2/PK": "./string/3x2/PK.js",
+    "./string/3x2/PL": "./string/3x2/PL.js",
+    "./string/3x2/PM": "./string/3x2/PM.js",
+    "./string/3x2/PN": "./string/3x2/PN.js",
+    "./string/3x2/PR": "./string/3x2/PR.js",
+    "./string/3x2/PS": "./string/3x2/PS.js",
+    "./string/3x2/PT": "./string/3x2/PT.js",
+    "./string/3x2/PW": "./string/3x2/PW.js",
+    "./string/3x2/PY": "./string/3x2/PY.js",
+    "./string/3x2/QA": "./string/3x2/QA.js",
+    "./string/3x2/RE": "./string/3x2/RE.js",
+    "./string/3x2/RO": "./string/3x2/RO.js",
+    "./string/3x2/RS": "./string/3x2/RS.js",
+    "./string/3x2/RU": "./string/3x2/RU.js",
+    "./string/3x2/RW": "./string/3x2/RW.js",
+    "./string/3x2/SA": "./string/3x2/SA.js",
+    "./string/3x2/SB": "./string/3x2/SB.js",
+    "./string/3x2/SC": "./string/3x2/SC.js",
+    "./string/3x2/SD": "./string/3x2/SD.js",
+    "./string/3x2/SE": "./string/3x2/SE.js",
+    "./string/3x2/SG": "./string/3x2/SG.js",
+    "./string/3x2/SH": "./string/3x2/SH.js",
+    "./string/3x2/SI": "./string/3x2/SI.js",
+    "./string/3x2/SJ": "./string/3x2/SJ.js",
+    "./string/3x2/SK": "./string/3x2/SK.js",
+    "./string/3x2/SL": "./string/3x2/SL.js",
+    "./string/3x2/SM": "./string/3x2/SM.js",
+    "./string/3x2/SN": "./string/3x2/SN.js",
+    "./string/3x2/SO": "./string/3x2/SO.js",
+    "./string/3x2/SR": "./string/3x2/SR.js",
+    "./string/3x2/SS": "./string/3x2/SS.js",
+    "./string/3x2/ST": "./string/3x2/ST.js",
+    "./string/3x2/SV": "./string/3x2/SV.js",
+    "./string/3x2/SX": "./string/3x2/SX.js",
+    "./string/3x2/SY": "./string/3x2/SY.js",
+    "./string/3x2/SZ": "./string/3x2/SZ.js",
+    "./string/3x2/TA": "./string/3x2/TA.js",
+    "./string/3x2/TC": "./string/3x2/TC.js",
+    "./string/3x2/TD": "./string/3x2/TD.js",
+    "./string/3x2/TF": "./string/3x2/TF.js",
+    "./string/3x2/TG": "./string/3x2/TG.js",
+    "./string/3x2/TH": "./string/3x2/TH.js",
+    "./string/3x2/TJ": "./string/3x2/TJ.js",
+    "./string/3x2/TK": "./string/3x2/TK.js",
+    "./string/3x2/TL": "./string/3x2/TL.js",
+    "./string/3x2/TM": "./string/3x2/TM.js",
+    "./string/3x2/TN": "./string/3x2/TN.js",
+    "./string/3x2/TO": "./string/3x2/TO.js",
+    "./string/3x2/TR": "./string/3x2/TR.js",
+    "./string/3x2/TT": "./string/3x2/TT.js",
+    "./string/3x2/TV": "./string/3x2/TV.js",
+    "./string/3x2/TW": "./string/3x2/TW.js",
+    "./string/3x2/TZ": "./string/3x2/TZ.js",
+    "./string/3x2/UA": "./string/3x2/UA.js",
+    "./string/3x2/UG": "./string/3x2/UG.js",
+    "./string/3x2/UM": "./string/3x2/UM.js",
+    "./string/3x2/US": "./string/3x2/US.js",
+    "./string/3x2/UY": "./string/3x2/UY.js",
+    "./string/3x2/UZ": "./string/3x2/UZ.js",
+    "./string/3x2/VA": "./string/3x2/VA.js",
+    "./string/3x2/VC": "./string/3x2/VC.js",
+    "./string/3x2/VE": "./string/3x2/VE.js",
+    "./string/3x2/VG": "./string/3x2/VG.js",
+    "./string/3x2/VI": "./string/3x2/VI.js",
+    "./string/3x2/VN": "./string/3x2/VN.js",
+    "./string/3x2/VU": "./string/3x2/VU.js",
+    "./string/3x2/WF": "./string/3x2/WF.js",
+    "./string/3x2/WS": "./string/3x2/WS.js",
+    "./string/3x2/XK": "./string/3x2/XK.js",
+    "./string/3x2/YE": "./string/3x2/YE.js",
+    "./string/3x2/YT": "./string/3x2/YT.js",
+    "./string/3x2/ZA": "./string/3x2/ZA.js",
+    "./string/3x2/ZM": "./string/3x2/ZM.js",
+    "./string/3x2/ZW": "./string/3x2/ZW.js",
+    "./string/1x1/AC": "./string/1x1/AC.js",
+    "./string/1x1/AD": "./string/1x1/AD.js",
+    "./string/1x1/AE": "./string/1x1/AE.js",
+    "./string/1x1/AF": "./string/1x1/AF.js",
+    "./string/1x1/AG": "./string/1x1/AG.js",
+    "./string/1x1/AI": "./string/1x1/AI.js",
+    "./string/1x1/AL": "./string/1x1/AL.js",
+    "./string/1x1/AM": "./string/1x1/AM.js",
+    "./string/1x1/AO": "./string/1x1/AO.js",
+    "./string/1x1/AQ": "./string/1x1/AQ.js",
+    "./string/1x1/AR": "./string/1x1/AR.js",
+    "./string/1x1/AS": "./string/1x1/AS.js",
+    "./string/1x1/AT": "./string/1x1/AT.js",
+    "./string/1x1/AU": "./string/1x1/AU.js",
+    "./string/1x1/AW": "./string/1x1/AW.js",
+    "./string/1x1/AX": "./string/1x1/AX.js",
+    "./string/1x1/AZ": "./string/1x1/AZ.js",
+    "./string/1x1/BA": "./string/1x1/BA.js",
+    "./string/1x1/BB": "./string/1x1/BB.js",
+    "./string/1x1/BD": "./string/1x1/BD.js",
+    "./string/1x1/BE": "./string/1x1/BE.js",
+    "./string/1x1/BF": "./string/1x1/BF.js",
+    "./string/1x1/BG": "./string/1x1/BG.js",
+    "./string/1x1/BH": "./string/1x1/BH.js",
+    "./string/1x1/BI": "./string/1x1/BI.js",
+    "./string/1x1/BJ": "./string/1x1/BJ.js",
+    "./string/1x1/BL": "./string/1x1/BL.js",
+    "./string/1x1/BM": "./string/1x1/BM.js",
+    "./string/1x1/BN": "./string/1x1/BN.js",
+    "./string/1x1/BO": "./string/1x1/BO.js",
+    "./string/1x1/BQ": "./string/1x1/BQ.js",
+    "./string/1x1/BR": "./string/1x1/BR.js",
+    "./string/1x1/BS": "./string/1x1/BS.js",
+    "./string/1x1/BT": "./string/1x1/BT.js",
+    "./string/1x1/BV": "./string/1x1/BV.js",
+    "./string/1x1/BW": "./string/1x1/BW.js",
+    "./string/1x1/BY": "./string/1x1/BY.js",
+    "./string/1x1/BZ": "./string/1x1/BZ.js",
+    "./string/1x1/CA": "./string/1x1/CA.js",
+    "./string/1x1/CC": "./string/1x1/CC.js",
+    "./string/1x1/CD": "./string/1x1/CD.js",
+    "./string/1x1/CF": "./string/1x1/CF.js",
+    "./string/1x1/CG": "./string/1x1/CG.js",
+    "./string/1x1/CH": "./string/1x1/CH.js",
+    "./string/1x1/CI": "./string/1x1/CI.js",
+    "./string/1x1/CK": "./string/1x1/CK.js",
+    "./string/1x1/CL": "./string/1x1/CL.js",
+    "./string/1x1/CM": "./string/1x1/CM.js",
+    "./string/1x1/CN": "./string/1x1/CN.js",
+    "./string/1x1/CO": "./string/1x1/CO.js",
+    "./string/1x1/CR": "./string/1x1/CR.js",
+    "./string/1x1/CU": "./string/1x1/CU.js",
+    "./string/1x1/CV": "./string/1x1/CV.js",
+    "./string/1x1/CW": "./string/1x1/CW.js",
+    "./string/1x1/CX": "./string/1x1/CX.js",
+    "./string/1x1/CY": "./string/1x1/CY.js",
+    "./string/1x1/CZ": "./string/1x1/CZ.js",
+    "./string/1x1/DE": "./string/1x1/DE.js",
+    "./string/1x1/DJ": "./string/1x1/DJ.js",
+    "./string/1x1/DK": "./string/1x1/DK.js",
+    "./string/1x1/DM": "./string/1x1/DM.js",
+    "./string/1x1/DO": "./string/1x1/DO.js",
+    "./string/1x1/DZ": "./string/1x1/DZ.js",
+    "./string/1x1/EC": "./string/1x1/EC.js",
+    "./string/1x1/EE": "./string/1x1/EE.js",
+    "./string/1x1/EG": "./string/1x1/EG.js",
+    "./string/1x1/EH": "./string/1x1/EH.js",
+    "./string/1x1/ER": "./string/1x1/ER.js",
+    "./string/1x1/ES": "./string/1x1/ES.js",
+    "./string/1x1/ET": "./string/1x1/ET.js",
+    "./string/1x1/EU": "./string/1x1/EU.js",
+    "./string/1x1/FI": "./string/1x1/FI.js",
+    "./string/1x1/FJ": "./string/1x1/FJ.js",
+    "./string/1x1/FK": "./string/1x1/FK.js",
+    "./string/1x1/FM": "./string/1x1/FM.js",
+    "./string/1x1/FO": "./string/1x1/FO.js",
+    "./string/1x1/FR": "./string/1x1/FR.js",
+    "./string/1x1/GA": "./string/1x1/GA.js",
+    "./string/1x1/GB": "./string/1x1/GB.js",
+    "./string/1x1/GD": "./string/1x1/GD.js",
+    "./string/1x1/GE": "./string/1x1/GE.js",
+    "./string/1x1/GF": "./string/1x1/GF.js",
+    "./string/1x1/GG": "./string/1x1/GG.js",
+    "./string/1x1/GH": "./string/1x1/GH.js",
+    "./string/1x1/GI": "./string/1x1/GI.js",
+    "./string/1x1/GL": "./string/1x1/GL.js",
+    "./string/1x1/GM": "./string/1x1/GM.js",
+    "./string/1x1/GN": "./string/1x1/GN.js",
+    "./string/1x1/GP": "./string/1x1/GP.js",
+    "./string/1x1/GQ": "./string/1x1/GQ.js",
+    "./string/1x1/GR": "./string/1x1/GR.js",
+    "./string/1x1/GS": "./string/1x1/GS.js",
+    "./string/1x1/GT": "./string/1x1/GT.js",
+    "./string/1x1/GU": "./string/1x1/GU.js",
+    "./string/1x1/GW": "./string/1x1/GW.js",
+    "./string/1x1/GY": "./string/1x1/GY.js",
+    "./string/1x1/HK": "./string/1x1/HK.js",
+    "./string/1x1/HM": "./string/1x1/HM.js",
+    "./string/1x1/HN": "./string/1x1/HN.js",
+    "./string/1x1/HR": "./string/1x1/HR.js",
+    "./string/1x1/HT": "./string/1x1/HT.js",
+    "./string/1x1/HU": "./string/1x1/HU.js",
+    "./string/1x1/IC": "./string/1x1/IC.js",
+    "./string/1x1/ID": "./string/1x1/ID.js",
+    "./string/1x1/IE": "./string/1x1/IE.js",
+    "./string/1x1/IL": "./string/1x1/IL.js",
+    "./string/1x1/IM": "./string/1x1/IM.js",
+    "./string/1x1/IN": "./string/1x1/IN.js",
+    "./string/1x1/IO": "./string/1x1/IO.js",
+    "./string/1x1/IQ": "./string/1x1/IQ.js",
+    "./string/1x1/IR": "./string/1x1/IR.js",
+    "./string/1x1/IS": "./string/1x1/IS.js",
+    "./string/1x1/IT": "./string/1x1/IT.js",
+    "./string/1x1/JE": "./string/1x1/JE.js",
+    "./string/1x1/JM": "./string/1x1/JM.js",
+    "./string/1x1/JO": "./string/1x1/JO.js",
+    "./string/1x1/JP": "./string/1x1/JP.js",
+    "./string/1x1/KE": "./string/1x1/KE.js",
+    "./string/1x1/KG": "./string/1x1/KG.js",
+    "./string/1x1/KH": "./string/1x1/KH.js",
+    "./string/1x1/KI": "./string/1x1/KI.js",
+    "./string/1x1/KM": "./string/1x1/KM.js",
+    "./string/1x1/KN": "./string/1x1/KN.js",
+    "./string/1x1/KP": "./string/1x1/KP.js",
+    "./string/1x1/KR": "./string/1x1/KR.js",
+    "./string/1x1/KW": "./string/1x1/KW.js",
+    "./string/1x1/KY": "./string/1x1/KY.js",
+    "./string/1x1/KZ": "./string/1x1/KZ.js",
+    "./string/1x1/LA": "./string/1x1/LA.js",
+    "./string/1x1/LB": "./string/1x1/LB.js",
+    "./string/1x1/LC": "./string/1x1/LC.js",
+    "./string/1x1/LI": "./string/1x1/LI.js",
+    "./string/1x1/LK": "./string/1x1/LK.js",
+    "./string/1x1/LR": "./string/1x1/LR.js",
+    "./string/1x1/LS": "./string/1x1/LS.js",
+    "./string/1x1/LT": "./string/1x1/LT.js",
+    "./string/1x1/LU": "./string/1x1/LU.js",
+    "./string/1x1/LV": "./string/1x1/LV.js",
+    "./string/1x1/LY": "./string/1x1/LY.js",
+    "./string/1x1/MA": "./string/1x1/MA.js",
+    "./string/1x1/MC": "./string/1x1/MC.js",
+    "./string/1x1/MD": "./string/1x1/MD.js",
+    "./string/1x1/ME": "./string/1x1/ME.js",
+    "./string/1x1/MF": "./string/1x1/MF.js",
+    "./string/1x1/MG": "./string/1x1/MG.js",
+    "./string/1x1/MH": "./string/1x1/MH.js",
+    "./string/1x1/MK": "./string/1x1/MK.js",
+    "./string/1x1/ML": "./string/1x1/ML.js",
+    "./string/1x1/MM": "./string/1x1/MM.js",
+    "./string/1x1/MN": "./string/1x1/MN.js",
+    "./string/1x1/MO": "./string/1x1/MO.js",
+    "./string/1x1/MP": "./string/1x1/MP.js",
+    "./string/1x1/MQ": "./string/1x1/MQ.js",
+    "./string/1x1/MR": "./string/1x1/MR.js",
+    "./string/1x1/MS": "./string/1x1/MS.js",
+    "./string/1x1/MT": "./string/1x1/MT.js",
+    "./string/1x1/MU": "./string/1x1/MU.js",
+    "./string/1x1/MV": "./string/1x1/MV.js",
+    "./string/1x1/MW": "./string/1x1/MW.js",
+    "./string/1x1/MX": "./string/1x1/MX.js",
+    "./string/1x1/MY": "./string/1x1/MY.js",
+    "./string/1x1/MZ": "./string/1x1/MZ.js",
+    "./string/1x1/NA": "./string/1x1/NA.js",
+    "./string/1x1/NC": "./string/1x1/NC.js",
+    "./string/1x1/NE": "./string/1x1/NE.js",
+    "./string/1x1/NF": "./string/1x1/NF.js",
+    "./string/1x1/NG": "./string/1x1/NG.js",
+    "./string/1x1/NI": "./string/1x1/NI.js",
+    "./string/1x1/NL": "./string/1x1/NL.js",
+    "./string/1x1/NO": "./string/1x1/NO.js",
+    "./string/1x1/NP": "./string/1x1/NP.js",
+    "./string/1x1/NR": "./string/1x1/NR.js",
+    "./string/1x1/NU": "./string/1x1/NU.js",
+    "./string/1x1/NZ": "./string/1x1/NZ.js",
+    "./string/1x1/OM": "./string/1x1/OM.js",
+    "./string/1x1/PA": "./string/1x1/PA.js",
+    "./string/1x1/PE": "./string/1x1/PE.js",
+    "./string/1x1/PF": "./string/1x1/PF.js",
+    "./string/1x1/PG": "./string/1x1/PG.js",
+    "./string/1x1/PH": "./string/1x1/PH.js",
+    "./string/1x1/PK": "./string/1x1/PK.js",
+    "./string/1x1/PL": "./string/1x1/PL.js",
+    "./string/1x1/PM": "./string/1x1/PM.js",
+    "./string/1x1/PN": "./string/1x1/PN.js",
+    "./string/1x1/PR": "./string/1x1/PR.js",
+    "./string/1x1/PS": "./string/1x1/PS.js",
+    "./string/1x1/PT": "./string/1x1/PT.js",
+    "./string/1x1/PW": "./string/1x1/PW.js",
+    "./string/1x1/PY": "./string/1x1/PY.js",
+    "./string/1x1/QA": "./string/1x1/QA.js",
+    "./string/1x1/RE": "./string/1x1/RE.js",
+    "./string/1x1/RO": "./string/1x1/RO.js",
+    "./string/1x1/RS": "./string/1x1/RS.js",
+    "./string/1x1/RU": "./string/1x1/RU.js",
+    "./string/1x1/RW": "./string/1x1/RW.js",
+    "./string/1x1/SA": "./string/1x1/SA.js",
+    "./string/1x1/SB": "./string/1x1/SB.js",
+    "./string/1x1/SC": "./string/1x1/SC.js",
+    "./string/1x1/SD": "./string/1x1/SD.js",
+    "./string/1x1/SE": "./string/1x1/SE.js",
+    "./string/1x1/SG": "./string/1x1/SG.js",
+    "./string/1x1/SH": "./string/1x1/SH.js",
+    "./string/1x1/SI": "./string/1x1/SI.js",
+    "./string/1x1/SJ": "./string/1x1/SJ.js",
+    "./string/1x1/SK": "./string/1x1/SK.js",
+    "./string/1x1/SL": "./string/1x1/SL.js",
+    "./string/1x1/SM": "./string/1x1/SM.js",
+    "./string/1x1/SN": "./string/1x1/SN.js",
+    "./string/1x1/SO": "./string/1x1/SO.js",
+    "./string/1x1/SR": "./string/1x1/SR.js",
+    "./string/1x1/SS": "./string/1x1/SS.js",
+    "./string/1x1/ST": "./string/1x1/ST.js",
+    "./string/1x1/SV": "./string/1x1/SV.js",
+    "./string/1x1/SX": "./string/1x1/SX.js",
+    "./string/1x1/SY": "./string/1x1/SY.js",
+    "./string/1x1/SZ": "./string/1x1/SZ.js",
+    "./string/1x1/TA": "./string/1x1/TA.js",
+    "./string/1x1/TC": "./string/1x1/TC.js",
+    "./string/1x1/TD": "./string/1x1/TD.js",
+    "./string/1x1/TF": "./string/1x1/TF.js",
+    "./string/1x1/TG": "./string/1x1/TG.js",
+    "./string/1x1/TH": "./string/1x1/TH.js",
+    "./string/1x1/TJ": "./string/1x1/TJ.js",
+    "./string/1x1/TK": "./string/1x1/TK.js",
+    "./string/1x1/TL": "./string/1x1/TL.js",
+    "./string/1x1/TM": "./string/1x1/TM.js",
+    "./string/1x1/TN": "./string/1x1/TN.js",
+    "./string/1x1/TO": "./string/1x1/TO.js",
+    "./string/1x1/TR": "./string/1x1/TR.js",
+    "./string/1x1/TT": "./string/1x1/TT.js",
+    "./string/1x1/TV": "./string/1x1/TV.js",
+    "./string/1x1/TW": "./string/1x1/TW.js",
+    "./string/1x1/TZ": "./string/1x1/TZ.js",
+    "./string/1x1/UA": "./string/1x1/UA.js",
+    "./string/1x1/UG": "./string/1x1/UG.js",
+    "./string/1x1/UM": "./string/1x1/UM.js",
+    "./string/1x1/US": "./string/1x1/US.js",
+    "./string/1x1/UY": "./string/1x1/UY.js",
+    "./string/1x1/UZ": "./string/1x1/UZ.js",
+    "./string/1x1/VA": "./string/1x1/VA.js",
+    "./string/1x1/VC": "./string/1x1/VC.js",
+    "./string/1x1/VE": "./string/1x1/VE.js",
+    "./string/1x1/VG": "./string/1x1/VG.js",
+    "./string/1x1/VI": "./string/1x1/VI.js",
+    "./string/1x1/VN": "./string/1x1/VN.js",
+    "./string/1x1/VU": "./string/1x1/VU.js",
+    "./string/1x1/WF": "./string/1x1/WF.js",
+    "./string/1x1/WS": "./string/1x1/WS.js",
+    "./string/1x1/XK": "./string/1x1/XK.js",
+    "./string/1x1/YE": "./string/1x1/YE.js",
+    "./string/1x1/YT": "./string/1x1/YT.js",
+    "./string/1x1/ZA": "./string/1x1/ZA.js",
+    "./string/1x1/ZM": "./string/1x1/ZM.js",
+    "./string/1x1/ZW": "./string/1x1/ZW.js",
+    "./react/3x2/AC": {
+      "types": "./react/3x2/AC/index.d.ts",
+      "import": "./react/3x2/AC/index.js",
+      "require": "./react/3x2/AC/index.cjs"
+    },
+    "./react/3x2/AD": {
+      "types": "./react/3x2/AD/index.d.ts",
+      "import": "./react/3x2/AD/index.js",
+      "require": "./react/3x2/AD/index.cjs"
+    },
+    "./react/3x2/AE": {
+      "types": "./react/3x2/AE/index.d.ts",
+      "import": "./react/3x2/AE/index.js",
+      "require": "./react/3x2/AE/index.cjs"
+    },
+    "./react/3x2/AF": {
+      "types": "./react/3x2/AF/index.d.ts",
+      "import": "./react/3x2/AF/index.js",
+      "require": "./react/3x2/AF/index.cjs"
+    },
+    "./react/3x2/AG": {
+      "types": "./react/3x2/AG/index.d.ts",
+      "import": "./react/3x2/AG/index.js",
+      "require": "./react/3x2/AG/index.cjs"
+    },
+    "./react/3x2/AI": {
+      "types": "./react/3x2/AI/index.d.ts",
+      "import": "./react/3x2/AI/index.js",
+      "require": "./react/3x2/AI/index.cjs"
+    },
+    "./react/3x2/AL": {
+      "types": "./react/3x2/AL/index.d.ts",
+      "import": "./react/3x2/AL/index.js",
+      "require": "./react/3x2/AL/index.cjs"
+    },
+    "./react/3x2/AM": {
+      "types": "./react/3x2/AM/index.d.ts",
+      "import": "./react/3x2/AM/index.js",
+      "require": "./react/3x2/AM/index.cjs"
+    },
+    "./react/3x2/AO": {
+      "types": "./react/3x2/AO/index.d.ts",
+      "import": "./react/3x2/AO/index.js",
+      "require": "./react/3x2/AO/index.cjs"
+    },
+    "./react/3x2/AQ": {
+      "types": "./react/3x2/AQ/index.d.ts",
+      "import": "./react/3x2/AQ/index.js",
+      "require": "./react/3x2/AQ/index.cjs"
+    },
+    "./react/3x2/AR": {
+      "types": "./react/3x2/AR/index.d.ts",
+      "import": "./react/3x2/AR/index.js",
+      "require": "./react/3x2/AR/index.cjs"
+    },
+    "./react/3x2/AS": {
+      "types": "./react/3x2/AS/index.d.ts",
+      "import": "./react/3x2/AS/index.js",
+      "require": "./react/3x2/AS/index.cjs"
+    },
+    "./react/3x2/AT": {
+      "types": "./react/3x2/AT/index.d.ts",
+      "import": "./react/3x2/AT/index.js",
+      "require": "./react/3x2/AT/index.cjs"
+    },
+    "./react/3x2/AU": {
+      "types": "./react/3x2/AU/index.d.ts",
+      "import": "./react/3x2/AU/index.js",
+      "require": "./react/3x2/AU/index.cjs"
+    },
+    "./react/3x2/AW": {
+      "types": "./react/3x2/AW/index.d.ts",
+      "import": "./react/3x2/AW/index.js",
+      "require": "./react/3x2/AW/index.cjs"
+    },
+    "./react/3x2/AX": {
+      "types": "./react/3x2/AX/index.d.ts",
+      "import": "./react/3x2/AX/index.js",
+      "require": "./react/3x2/AX/index.cjs"
+    },
+    "./react/3x2/AZ": {
+      "types": "./react/3x2/AZ/index.d.ts",
+      "import": "./react/3x2/AZ/index.js",
+      "require": "./react/3x2/AZ/index.cjs"
+    },
+    "./react/3x2/BA": {
+      "types": "./react/3x2/BA/index.d.ts",
+      "import": "./react/3x2/BA/index.js",
+      "require": "./react/3x2/BA/index.cjs"
+    },
+    "./react/3x2/BB": {
+      "types": "./react/3x2/BB/index.d.ts",
+      "import": "./react/3x2/BB/index.js",
+      "require": "./react/3x2/BB/index.cjs"
+    },
+    "./react/3x2/BD": {
+      "types": "./react/3x2/BD/index.d.ts",
+      "import": "./react/3x2/BD/index.js",
+      "require": "./react/3x2/BD/index.cjs"
+    },
+    "./react/3x2/BE": {
+      "types": "./react/3x2/BE/index.d.ts",
+      "import": "./react/3x2/BE/index.js",
+      "require": "./react/3x2/BE/index.cjs"
+    },
+    "./react/3x2/BF": {
+      "types": "./react/3x2/BF/index.d.ts",
+      "import": "./react/3x2/BF/index.js",
+      "require": "./react/3x2/BF/index.cjs"
+    },
+    "./react/3x2/BG": {
+      "types": "./react/3x2/BG/index.d.ts",
+      "import": "./react/3x2/BG/index.js",
+      "require": "./react/3x2/BG/index.cjs"
+    },
+    "./react/3x2/BH": {
+      "types": "./react/3x2/BH/index.d.ts",
+      "import": "./react/3x2/BH/index.js",
+      "require": "./react/3x2/BH/index.cjs"
+    },
+    "./react/3x2/BI": {
+      "types": "./react/3x2/BI/index.d.ts",
+      "import": "./react/3x2/BI/index.js",
+      "require": "./react/3x2/BI/index.cjs"
+    },
+    "./react/3x2/BJ": {
+      "types": "./react/3x2/BJ/index.d.ts",
+      "import": "./react/3x2/BJ/index.js",
+      "require": "./react/3x2/BJ/index.cjs"
+    },
+    "./react/3x2/BL": {
+      "types": "./react/3x2/BL/index.d.ts",
+      "import": "./react/3x2/BL/index.js",
+      "require": "./react/3x2/BL/index.cjs"
+    },
+    "./react/3x2/BM": {
+      "types": "./react/3x2/BM/index.d.ts",
+      "import": "./react/3x2/BM/index.js",
+      "require": "./react/3x2/BM/index.cjs"
+    },
+    "./react/3x2/BN": {
+      "types": "./react/3x2/BN/index.d.ts",
+      "import": "./react/3x2/BN/index.js",
+      "require": "./react/3x2/BN/index.cjs"
+    },
+    "./react/3x2/BO": {
+      "types": "./react/3x2/BO/index.d.ts",
+      "import": "./react/3x2/BO/index.js",
+      "require": "./react/3x2/BO/index.cjs"
+    },
+    "./react/3x2/BQ": {
+      "types": "./react/3x2/BQ/index.d.ts",
+      "import": "./react/3x2/BQ/index.js",
+      "require": "./react/3x2/BQ/index.cjs"
+    },
+    "./react/3x2/BR": {
+      "types": "./react/3x2/BR/index.d.ts",
+      "import": "./react/3x2/BR/index.js",
+      "require": "./react/3x2/BR/index.cjs"
+    },
+    "./react/3x2/BS": {
+      "types": "./react/3x2/BS/index.d.ts",
+      "import": "./react/3x2/BS/index.js",
+      "require": "./react/3x2/BS/index.cjs"
+    },
+    "./react/3x2/BT": {
+      "types": "./react/3x2/BT/index.d.ts",
+      "import": "./react/3x2/BT/index.js",
+      "require": "./react/3x2/BT/index.cjs"
+    },
+    "./react/3x2/BV": {
+      "types": "./react/3x2/BV/index.d.ts",
+      "import": "./react/3x2/BV/index.js",
+      "require": "./react/3x2/BV/index.cjs"
+    },
+    "./react/3x2/BW": {
+      "types": "./react/3x2/BW/index.d.ts",
+      "import": "./react/3x2/BW/index.js",
+      "require": "./react/3x2/BW/index.cjs"
+    },
+    "./react/3x2/BY": {
+      "types": "./react/3x2/BY/index.d.ts",
+      "import": "./react/3x2/BY/index.js",
+      "require": "./react/3x2/BY/index.cjs"
+    },
+    "./react/3x2/BZ": {
+      "types": "./react/3x2/BZ/index.d.ts",
+      "import": "./react/3x2/BZ/index.js",
+      "require": "./react/3x2/BZ/index.cjs"
+    },
+    "./react/3x2/CA": {
+      "types": "./react/3x2/CA/index.d.ts",
+      "import": "./react/3x2/CA/index.js",
+      "require": "./react/3x2/CA/index.cjs"
+    },
+    "./react/3x2/CC": {
+      "types": "./react/3x2/CC/index.d.ts",
+      "import": "./react/3x2/CC/index.js",
+      "require": "./react/3x2/CC/index.cjs"
+    },
+    "./react/3x2/CD": {
+      "types": "./react/3x2/CD/index.d.ts",
+      "import": "./react/3x2/CD/index.js",
+      "require": "./react/3x2/CD/index.cjs"
+    },
+    "./react/3x2/CF": {
+      "types": "./react/3x2/CF/index.d.ts",
+      "import": "./react/3x2/CF/index.js",
+      "require": "./react/3x2/CF/index.cjs"
+    },
+    "./react/3x2/CG": {
+      "types": "./react/3x2/CG/index.d.ts",
+      "import": "./react/3x2/CG/index.js",
+      "require": "./react/3x2/CG/index.cjs"
+    },
+    "./react/3x2/CH": {
+      "types": "./react/3x2/CH/index.d.ts",
+      "import": "./react/3x2/CH/index.js",
+      "require": "./react/3x2/CH/index.cjs"
+    },
+    "./react/3x2/CI": {
+      "types": "./react/3x2/CI/index.d.ts",
+      "import": "./react/3x2/CI/index.js",
+      "require": "./react/3x2/CI/index.cjs"
+    },
+    "./react/3x2/CK": {
+      "types": "./react/3x2/CK/index.d.ts",
+      "import": "./react/3x2/CK/index.js",
+      "require": "./react/3x2/CK/index.cjs"
+    },
+    "./react/3x2/CL": {
+      "types": "./react/3x2/CL/index.d.ts",
+      "import": "./react/3x2/CL/index.js",
+      "require": "./react/3x2/CL/index.cjs"
+    },
+    "./react/3x2/CM": {
+      "types": "./react/3x2/CM/index.d.ts",
+      "import": "./react/3x2/CM/index.js",
+      "require": "./react/3x2/CM/index.cjs"
+    },
+    "./react/3x2/CN": {
+      "types": "./react/3x2/CN/index.d.ts",
+      "import": "./react/3x2/CN/index.js",
+      "require": "./react/3x2/CN/index.cjs"
+    },
+    "./react/3x2/CO": {
+      "types": "./react/3x2/CO/index.d.ts",
+      "import": "./react/3x2/CO/index.js",
+      "require": "./react/3x2/CO/index.cjs"
+    },
+    "./react/3x2/CR": {
+      "types": "./react/3x2/CR/index.d.ts",
+      "import": "./react/3x2/CR/index.js",
+      "require": "./react/3x2/CR/index.cjs"
+    },
+    "./react/3x2/CU": {
+      "types": "./react/3x2/CU/index.d.ts",
+      "import": "./react/3x2/CU/index.js",
+      "require": "./react/3x2/CU/index.cjs"
+    },
+    "./react/3x2/CV": {
+      "types": "./react/3x2/CV/index.d.ts",
+      "import": "./react/3x2/CV/index.js",
+      "require": "./react/3x2/CV/index.cjs"
+    },
+    "./react/3x2/CW": {
+      "types": "./react/3x2/CW/index.d.ts",
+      "import": "./react/3x2/CW/index.js",
+      "require": "./react/3x2/CW/index.cjs"
+    },
+    "./react/3x2/CX": {
+      "types": "./react/3x2/CX/index.d.ts",
+      "import": "./react/3x2/CX/index.js",
+      "require": "./react/3x2/CX/index.cjs"
+    },
+    "./react/3x2/CY": {
+      "types": "./react/3x2/CY/index.d.ts",
+      "import": "./react/3x2/CY/index.js",
+      "require": "./react/3x2/CY/index.cjs"
+    },
+    "./react/3x2/CZ": {
+      "types": "./react/3x2/CZ/index.d.ts",
+      "import": "./react/3x2/CZ/index.js",
+      "require": "./react/3x2/CZ/index.cjs"
+    },
+    "./react/3x2/DE": {
+      "types": "./react/3x2/DE/index.d.ts",
+      "import": "./react/3x2/DE/index.js",
+      "require": "./react/3x2/DE/index.cjs"
+    },
+    "./react/3x2/DJ": {
+      "types": "./react/3x2/DJ/index.d.ts",
+      "import": "./react/3x2/DJ/index.js",
+      "require": "./react/3x2/DJ/index.cjs"
+    },
+    "./react/3x2/DK": {
+      "types": "./react/3x2/DK/index.d.ts",
+      "import": "./react/3x2/DK/index.js",
+      "require": "./react/3x2/DK/index.cjs"
+    },
+    "./react/3x2/DM": {
+      "types": "./react/3x2/DM/index.d.ts",
+      "import": "./react/3x2/DM/index.js",
+      "require": "./react/3x2/DM/index.cjs"
+    },
+    "./react/3x2/DO": {
+      "types": "./react/3x2/DO/index.d.ts",
+      "import": "./react/3x2/DO/index.js",
+      "require": "./react/3x2/DO/index.cjs"
+    },
+    "./react/3x2/DZ": {
+      "types": "./react/3x2/DZ/index.d.ts",
+      "import": "./react/3x2/DZ/index.js",
+      "require": "./react/3x2/DZ/index.cjs"
+    },
+    "./react/3x2/EC": {
+      "types": "./react/3x2/EC/index.d.ts",
+      "import": "./react/3x2/EC/index.js",
+      "require": "./react/3x2/EC/index.cjs"
+    },
+    "./react/3x2/EE": {
+      "types": "./react/3x2/EE/index.d.ts",
+      "import": "./react/3x2/EE/index.js",
+      "require": "./react/3x2/EE/index.cjs"
+    },
+    "./react/3x2/EG": {
+      "types": "./react/3x2/EG/index.d.ts",
+      "import": "./react/3x2/EG/index.js",
+      "require": "./react/3x2/EG/index.cjs"
+    },
+    "./react/3x2/EH": {
+      "types": "./react/3x2/EH/index.d.ts",
+      "import": "./react/3x2/EH/index.js",
+      "require": "./react/3x2/EH/index.cjs"
+    },
+    "./react/3x2/ER": {
+      "types": "./react/3x2/ER/index.d.ts",
+      "import": "./react/3x2/ER/index.js",
+      "require": "./react/3x2/ER/index.cjs"
+    },
+    "./react/3x2/ES": {
+      "types": "./react/3x2/ES/index.d.ts",
+      "import": "./react/3x2/ES/index.js",
+      "require": "./react/3x2/ES/index.cjs"
+    },
+    "./react/3x2/ET": {
+      "types": "./react/3x2/ET/index.d.ts",
+      "import": "./react/3x2/ET/index.js",
+      "require": "./react/3x2/ET/index.cjs"
+    },
+    "./react/3x2/EU": {
+      "types": "./react/3x2/EU/index.d.ts",
+      "import": "./react/3x2/EU/index.js",
+      "require": "./react/3x2/EU/index.cjs"
+    },
+    "./react/3x2/FI": {
+      "types": "./react/3x2/FI/index.d.ts",
+      "import": "./react/3x2/FI/index.js",
+      "require": "./react/3x2/FI/index.cjs"
+    },
+    "./react/3x2/FJ": {
+      "types": "./react/3x2/FJ/index.d.ts",
+      "import": "./react/3x2/FJ/index.js",
+      "require": "./react/3x2/FJ/index.cjs"
+    },
+    "./react/3x2/FK": {
+      "types": "./react/3x2/FK/index.d.ts",
+      "import": "./react/3x2/FK/index.js",
+      "require": "./react/3x2/FK/index.cjs"
+    },
+    "./react/3x2/FM": {
+      "types": "./react/3x2/FM/index.d.ts",
+      "import": "./react/3x2/FM/index.js",
+      "require": "./react/3x2/FM/index.cjs"
+    },
+    "./react/3x2/FO": {
+      "types": "./react/3x2/FO/index.d.ts",
+      "import": "./react/3x2/FO/index.js",
+      "require": "./react/3x2/FO/index.cjs"
+    },
+    "./react/3x2/FR": {
+      "types": "./react/3x2/FR/index.d.ts",
+      "import": "./react/3x2/FR/index.js",
+      "require": "./react/3x2/FR/index.cjs"
+    },
+    "./react/3x2/GA": {
+      "types": "./react/3x2/GA/index.d.ts",
+      "import": "./react/3x2/GA/index.js",
+      "require": "./react/3x2/GA/index.cjs"
+    },
+    "./react/3x2/GB": {
+      "types": "./react/3x2/GB/index.d.ts",
+      "import": "./react/3x2/GB/index.js",
+      "require": "./react/3x2/GB/index.cjs"
+    },
+    "./react/3x2/GD": {
+      "types": "./react/3x2/GD/index.d.ts",
+      "import": "./react/3x2/GD/index.js",
+      "require": "./react/3x2/GD/index.cjs"
+    },
+    "./react/3x2/GE": {
+      "types": "./react/3x2/GE/index.d.ts",
+      "import": "./react/3x2/GE/index.js",
+      "require": "./react/3x2/GE/index.cjs"
+    },
+    "./react/3x2/GF": {
+      "types": "./react/3x2/GF/index.d.ts",
+      "import": "./react/3x2/GF/index.js",
+      "require": "./react/3x2/GF/index.cjs"
+    },
+    "./react/3x2/GG": {
+      "types": "./react/3x2/GG/index.d.ts",
+      "import": "./react/3x2/GG/index.js",
+      "require": "./react/3x2/GG/index.cjs"
+    },
+    "./react/3x2/GH": {
+      "types": "./react/3x2/GH/index.d.ts",
+      "import": "./react/3x2/GH/index.js",
+      "require": "./react/3x2/GH/index.cjs"
+    },
+    "./react/3x2/GI": {
+      "types": "./react/3x2/GI/index.d.ts",
+      "import": "./react/3x2/GI/index.js",
+      "require": "./react/3x2/GI/index.cjs"
+    },
+    "./react/3x2/GL": {
+      "types": "./react/3x2/GL/index.d.ts",
+      "import": "./react/3x2/GL/index.js",
+      "require": "./react/3x2/GL/index.cjs"
+    },
+    "./react/3x2/GM": {
+      "types": "./react/3x2/GM/index.d.ts",
+      "import": "./react/3x2/GM/index.js",
+      "require": "./react/3x2/GM/index.cjs"
+    },
+    "./react/3x2/GN": {
+      "types": "./react/3x2/GN/index.d.ts",
+      "import": "./react/3x2/GN/index.js",
+      "require": "./react/3x2/GN/index.cjs"
+    },
+    "./react/3x2/GP": {
+      "types": "./react/3x2/GP/index.d.ts",
+      "import": "./react/3x2/GP/index.js",
+      "require": "./react/3x2/GP/index.cjs"
+    },
+    "./react/3x2/GQ": {
+      "types": "./react/3x2/GQ/index.d.ts",
+      "import": "./react/3x2/GQ/index.js",
+      "require": "./react/3x2/GQ/index.cjs"
+    },
+    "./react/3x2/GR": {
+      "types": "./react/3x2/GR/index.d.ts",
+      "import": "./react/3x2/GR/index.js",
+      "require": "./react/3x2/GR/index.cjs"
+    },
+    "./react/3x2/GS": {
+      "types": "./react/3x2/GS/index.d.ts",
+      "import": "./react/3x2/GS/index.js",
+      "require": "./react/3x2/GS/index.cjs"
+    },
+    "./react/3x2/GT": {
+      "types": "./react/3x2/GT/index.d.ts",
+      "import": "./react/3x2/GT/index.js",
+      "require": "./react/3x2/GT/index.cjs"
+    },
+    "./react/3x2/GU": {
+      "types": "./react/3x2/GU/index.d.ts",
+      "import": "./react/3x2/GU/index.js",
+      "require": "./react/3x2/GU/index.cjs"
+    },
+    "./react/3x2/GW": {
+      "types": "./react/3x2/GW/index.d.ts",
+      "import": "./react/3x2/GW/index.js",
+      "require": "./react/3x2/GW/index.cjs"
+    },
+    "./react/3x2/GY": {
+      "types": "./react/3x2/GY/index.d.ts",
+      "import": "./react/3x2/GY/index.js",
+      "require": "./react/3x2/GY/index.cjs"
+    },
+    "./react/3x2/HK": {
+      "types": "./react/3x2/HK/index.d.ts",
+      "import": "./react/3x2/HK/index.js",
+      "require": "./react/3x2/HK/index.cjs"
+    },
+    "./react/3x2/HM": {
+      "types": "./react/3x2/HM/index.d.ts",
+      "import": "./react/3x2/HM/index.js",
+      "require": "./react/3x2/HM/index.cjs"
+    },
+    "./react/3x2/HN": {
+      "types": "./react/3x2/HN/index.d.ts",
+      "import": "./react/3x2/HN/index.js",
+      "require": "./react/3x2/HN/index.cjs"
+    },
+    "./react/3x2/HR": {
+      "types": "./react/3x2/HR/index.d.ts",
+      "import": "./react/3x2/HR/index.js",
+      "require": "./react/3x2/HR/index.cjs"
+    },
+    "./react/3x2/HT": {
+      "types": "./react/3x2/HT/index.d.ts",
+      "import": "./react/3x2/HT/index.js",
+      "require": "./react/3x2/HT/index.cjs"
+    },
+    "./react/3x2/HU": {
+      "types": "./react/3x2/HU/index.d.ts",
+      "import": "./react/3x2/HU/index.js",
+      "require": "./react/3x2/HU/index.cjs"
+    },
+    "./react/3x2/IC": {
+      "types": "./react/3x2/IC/index.d.ts",
+      "import": "./react/3x2/IC/index.js",
+      "require": "./react/3x2/IC/index.cjs"
+    },
+    "./react/3x2/ID": {
+      "types": "./react/3x2/ID/index.d.ts",
+      "import": "./react/3x2/ID/index.js",
+      "require": "./react/3x2/ID/index.cjs"
+    },
+    "./react/3x2/IE": {
+      "types": "./react/3x2/IE/index.d.ts",
+      "import": "./react/3x2/IE/index.js",
+      "require": "./react/3x2/IE/index.cjs"
+    },
+    "./react/3x2/IL": {
+      "types": "./react/3x2/IL/index.d.ts",
+      "import": "./react/3x2/IL/index.js",
+      "require": "./react/3x2/IL/index.cjs"
+    },
+    "./react/3x2/IM": {
+      "types": "./react/3x2/IM/index.d.ts",
+      "import": "./react/3x2/IM/index.js",
+      "require": "./react/3x2/IM/index.cjs"
+    },
+    "./react/3x2/IN": {
+      "types": "./react/3x2/IN/index.d.ts",
+      "import": "./react/3x2/IN/index.js",
+      "require": "./react/3x2/IN/index.cjs"
+    },
+    "./react/3x2/IO": {
+      "types": "./react/3x2/IO/index.d.ts",
+      "import": "./react/3x2/IO/index.js",
+      "require": "./react/3x2/IO/index.cjs"
+    },
+    "./react/3x2/IQ": {
+      "types": "./react/3x2/IQ/index.d.ts",
+      "import": "./react/3x2/IQ/index.js",
+      "require": "./react/3x2/IQ/index.cjs"
+    },
+    "./react/3x2/IR": {
+      "types": "./react/3x2/IR/index.d.ts",
+      "import": "./react/3x2/IR/index.js",
+      "require": "./react/3x2/IR/index.cjs"
+    },
+    "./react/3x2/IS": {
+      "types": "./react/3x2/IS/index.d.ts",
+      "import": "./react/3x2/IS/index.js",
+      "require": "./react/3x2/IS/index.cjs"
+    },
+    "./react/3x2/IT": {
+      "types": "./react/3x2/IT/index.d.ts",
+      "import": "./react/3x2/IT/index.js",
+      "require": "./react/3x2/IT/index.cjs"
+    },
+    "./react/3x2/JE": {
+      "types": "./react/3x2/JE/index.d.ts",
+      "import": "./react/3x2/JE/index.js",
+      "require": "./react/3x2/JE/index.cjs"
+    },
+    "./react/3x2/JM": {
+      "types": "./react/3x2/JM/index.d.ts",
+      "import": "./react/3x2/JM/index.js",
+      "require": "./react/3x2/JM/index.cjs"
+    },
+    "./react/3x2/JO": {
+      "types": "./react/3x2/JO/index.d.ts",
+      "import": "./react/3x2/JO/index.js",
+      "require": "./react/3x2/JO/index.cjs"
+    },
+    "./react/3x2/JP": {
+      "types": "./react/3x2/JP/index.d.ts",
+      "import": "./react/3x2/JP/index.js",
+      "require": "./react/3x2/JP/index.cjs"
+    },
+    "./react/3x2/KE": {
+      "types": "./react/3x2/KE/index.d.ts",
+      "import": "./react/3x2/KE/index.js",
+      "require": "./react/3x2/KE/index.cjs"
+    },
+    "./react/3x2/KG": {
+      "types": "./react/3x2/KG/index.d.ts",
+      "import": "./react/3x2/KG/index.js",
+      "require": "./react/3x2/KG/index.cjs"
+    },
+    "./react/3x2/KH": {
+      "types": "./react/3x2/KH/index.d.ts",
+      "import": "./react/3x2/KH/index.js",
+      "require": "./react/3x2/KH/index.cjs"
+    },
+    "./react/3x2/KI": {
+      "types": "./react/3x2/KI/index.d.ts",
+      "import": "./react/3x2/KI/index.js",
+      "require": "./react/3x2/KI/index.cjs"
+    },
+    "./react/3x2/KM": {
+      "types": "./react/3x2/KM/index.d.ts",
+      "import": "./react/3x2/KM/index.js",
+      "require": "./react/3x2/KM/index.cjs"
+    },
+    "./react/3x2/KN": {
+      "types": "./react/3x2/KN/index.d.ts",
+      "import": "./react/3x2/KN/index.js",
+      "require": "./react/3x2/KN/index.cjs"
+    },
+    "./react/3x2/KP": {
+      "types": "./react/3x2/KP/index.d.ts",
+      "import": "./react/3x2/KP/index.js",
+      "require": "./react/3x2/KP/index.cjs"
+    },
+    "./react/3x2/KR": {
+      "types": "./react/3x2/KR/index.d.ts",
+      "import": "./react/3x2/KR/index.js",
+      "require": "./react/3x2/KR/index.cjs"
+    },
+    "./react/3x2/KW": {
+      "types": "./react/3x2/KW/index.d.ts",
+      "import": "./react/3x2/KW/index.js",
+      "require": "./react/3x2/KW/index.cjs"
+    },
+    "./react/3x2/KY": {
+      "types": "./react/3x2/KY/index.d.ts",
+      "import": "./react/3x2/KY/index.js",
+      "require": "./react/3x2/KY/index.cjs"
+    },
+    "./react/3x2/KZ": {
+      "types": "./react/3x2/KZ/index.d.ts",
+      "import": "./react/3x2/KZ/index.js",
+      "require": "./react/3x2/KZ/index.cjs"
+    },
+    "./react/3x2/LA": {
+      "types": "./react/3x2/LA/index.d.ts",
+      "import": "./react/3x2/LA/index.js",
+      "require": "./react/3x2/LA/index.cjs"
+    },
+    "./react/3x2/LB": {
+      "types": "./react/3x2/LB/index.d.ts",
+      "import": "./react/3x2/LB/index.js",
+      "require": "./react/3x2/LB/index.cjs"
+    },
+    "./react/3x2/LC": {
+      "types": "./react/3x2/LC/index.d.ts",
+      "import": "./react/3x2/LC/index.js",
+      "require": "./react/3x2/LC/index.cjs"
+    },
+    "./react/3x2/LI": {
+      "types": "./react/3x2/LI/index.d.ts",
+      "import": "./react/3x2/LI/index.js",
+      "require": "./react/3x2/LI/index.cjs"
+    },
+    "./react/3x2/LK": {
+      "types": "./react/3x2/LK/index.d.ts",
+      "import": "./react/3x2/LK/index.js",
+      "require": "./react/3x2/LK/index.cjs"
+    },
+    "./react/3x2/LR": {
+      "types": "./react/3x2/LR/index.d.ts",
+      "import": "./react/3x2/LR/index.js",
+      "require": "./react/3x2/LR/index.cjs"
+    },
+    "./react/3x2/LS": {
+      "types": "./react/3x2/LS/index.d.ts",
+      "import": "./react/3x2/LS/index.js",
+      "require": "./react/3x2/LS/index.cjs"
+    },
+    "./react/3x2/LT": {
+      "types": "./react/3x2/LT/index.d.ts",
+      "import": "./react/3x2/LT/index.js",
+      "require": "./react/3x2/LT/index.cjs"
+    },
+    "./react/3x2/LU": {
+      "types": "./react/3x2/LU/index.d.ts",
+      "import": "./react/3x2/LU/index.js",
+      "require": "./react/3x2/LU/index.cjs"
+    },
+    "./react/3x2/LV": {
+      "types": "./react/3x2/LV/index.d.ts",
+      "import": "./react/3x2/LV/index.js",
+      "require": "./react/3x2/LV/index.cjs"
+    },
+    "./react/3x2/LY": {
+      "types": "./react/3x2/LY/index.d.ts",
+      "import": "./react/3x2/LY/index.js",
+      "require": "./react/3x2/LY/index.cjs"
+    },
+    "./react/3x2/MA": {
+      "types": "./react/3x2/MA/index.d.ts",
+      "import": "./react/3x2/MA/index.js",
+      "require": "./react/3x2/MA/index.cjs"
+    },
+    "./react/3x2/MC": {
+      "types": "./react/3x2/MC/index.d.ts",
+      "import": "./react/3x2/MC/index.js",
+      "require": "./react/3x2/MC/index.cjs"
+    },
+    "./react/3x2/MD": {
+      "types": "./react/3x2/MD/index.d.ts",
+      "import": "./react/3x2/MD/index.js",
+      "require": "./react/3x2/MD/index.cjs"
+    },
+    "./react/3x2/ME": {
+      "types": "./react/3x2/ME/index.d.ts",
+      "import": "./react/3x2/ME/index.js",
+      "require": "./react/3x2/ME/index.cjs"
+    },
+    "./react/3x2/MF": {
+      "types": "./react/3x2/MF/index.d.ts",
+      "import": "./react/3x2/MF/index.js",
+      "require": "./react/3x2/MF/index.cjs"
+    },
+    "./react/3x2/MG": {
+      "types": "./react/3x2/MG/index.d.ts",
+      "import": "./react/3x2/MG/index.js",
+      "require": "./react/3x2/MG/index.cjs"
+    },
+    "./react/3x2/MH": {
+      "types": "./react/3x2/MH/index.d.ts",
+      "import": "./react/3x2/MH/index.js",
+      "require": "./react/3x2/MH/index.cjs"
+    },
+    "./react/3x2/MK": {
+      "types": "./react/3x2/MK/index.d.ts",
+      "import": "./react/3x2/MK/index.js",
+      "require": "./react/3x2/MK/index.cjs"
+    },
+    "./react/3x2/ML": {
+      "types": "./react/3x2/ML/index.d.ts",
+      "import": "./react/3x2/ML/index.js",
+      "require": "./react/3x2/ML/index.cjs"
+    },
+    "./react/3x2/MM": {
+      "types": "./react/3x2/MM/index.d.ts",
+      "import": "./react/3x2/MM/index.js",
+      "require": "./react/3x2/MM/index.cjs"
+    },
+    "./react/3x2/MN": {
+      "types": "./react/3x2/MN/index.d.ts",
+      "import": "./react/3x2/MN/index.js",
+      "require": "./react/3x2/MN/index.cjs"
+    },
+    "./react/3x2/MO": {
+      "types": "./react/3x2/MO/index.d.ts",
+      "import": "./react/3x2/MO/index.js",
+      "require": "./react/3x2/MO/index.cjs"
+    },
+    "./react/3x2/MP": {
+      "types": "./react/3x2/MP/index.d.ts",
+      "import": "./react/3x2/MP/index.js",
+      "require": "./react/3x2/MP/index.cjs"
+    },
+    "./react/3x2/MQ": {
+      "types": "./react/3x2/MQ/index.d.ts",
+      "import": "./react/3x2/MQ/index.js",
+      "require": "./react/3x2/MQ/index.cjs"
+    },
+    "./react/3x2/MR": {
+      "types": "./react/3x2/MR/index.d.ts",
+      "import": "./react/3x2/MR/index.js",
+      "require": "./react/3x2/MR/index.cjs"
+    },
+    "./react/3x2/MS": {
+      "types": "./react/3x2/MS/index.d.ts",
+      "import": "./react/3x2/MS/index.js",
+      "require": "./react/3x2/MS/index.cjs"
+    },
+    "./react/3x2/MT": {
+      "types": "./react/3x2/MT/index.d.ts",
+      "import": "./react/3x2/MT/index.js",
+      "require": "./react/3x2/MT/index.cjs"
+    },
+    "./react/3x2/MU": {
+      "types": "./react/3x2/MU/index.d.ts",
+      "import": "./react/3x2/MU/index.js",
+      "require": "./react/3x2/MU/index.cjs"
+    },
+    "./react/3x2/MV": {
+      "types": "./react/3x2/MV/index.d.ts",
+      "import": "./react/3x2/MV/index.js",
+      "require": "./react/3x2/MV/index.cjs"
+    },
+    "./react/3x2/MW": {
+      "types": "./react/3x2/MW/index.d.ts",
+      "import": "./react/3x2/MW/index.js",
+      "require": "./react/3x2/MW/index.cjs"
+    },
+    "./react/3x2/MX": {
+      "types": "./react/3x2/MX/index.d.ts",
+      "import": "./react/3x2/MX/index.js",
+      "require": "./react/3x2/MX/index.cjs"
+    },
+    "./react/3x2/MY": {
+      "types": "./react/3x2/MY/index.d.ts",
+      "import": "./react/3x2/MY/index.js",
+      "require": "./react/3x2/MY/index.cjs"
+    },
+    "./react/3x2/MZ": {
+      "types": "./react/3x2/MZ/index.d.ts",
+      "import": "./react/3x2/MZ/index.js",
+      "require": "./react/3x2/MZ/index.cjs"
+    },
+    "./react/3x2/NA": {
+      "types": "./react/3x2/NA/index.d.ts",
+      "import": "./react/3x2/NA/index.js",
+      "require": "./react/3x2/NA/index.cjs"
+    },
+    "./react/3x2/NC": {
+      "types": "./react/3x2/NC/index.d.ts",
+      "import": "./react/3x2/NC/index.js",
+      "require": "./react/3x2/NC/index.cjs"
+    },
+    "./react/3x2/NE": {
+      "types": "./react/3x2/NE/index.d.ts",
+      "import": "./react/3x2/NE/index.js",
+      "require": "./react/3x2/NE/index.cjs"
+    },
+    "./react/3x2/NF": {
+      "types": "./react/3x2/NF/index.d.ts",
+      "import": "./react/3x2/NF/index.js",
+      "require": "./react/3x2/NF/index.cjs"
+    },
+    "./react/3x2/NG": {
+      "types": "./react/3x2/NG/index.d.ts",
+      "import": "./react/3x2/NG/index.js",
+      "require": "./react/3x2/NG/index.cjs"
+    },
+    "./react/3x2/NI": {
+      "types": "./react/3x2/NI/index.d.ts",
+      "import": "./react/3x2/NI/index.js",
+      "require": "./react/3x2/NI/index.cjs"
+    },
+    "./react/3x2/NL": {
+      "types": "./react/3x2/NL/index.d.ts",
+      "import": "./react/3x2/NL/index.js",
+      "require": "./react/3x2/NL/index.cjs"
+    },
+    "./react/3x2/NO": {
+      "types": "./react/3x2/NO/index.d.ts",
+      "import": "./react/3x2/NO/index.js",
+      "require": "./react/3x2/NO/index.cjs"
+    },
+    "./react/3x2/NP": {
+      "types": "./react/3x2/NP/index.d.ts",
+      "import": "./react/3x2/NP/index.js",
+      "require": "./react/3x2/NP/index.cjs"
+    },
+    "./react/3x2/NR": {
+      "types": "./react/3x2/NR/index.d.ts",
+      "import": "./react/3x2/NR/index.js",
+      "require": "./react/3x2/NR/index.cjs"
+    },
+    "./react/3x2/NU": {
+      "types": "./react/3x2/NU/index.d.ts",
+      "import": "./react/3x2/NU/index.js",
+      "require": "./react/3x2/NU/index.cjs"
+    },
+    "./react/3x2/NZ": {
+      "types": "./react/3x2/NZ/index.d.ts",
+      "import": "./react/3x2/NZ/index.js",
+      "require": "./react/3x2/NZ/index.cjs"
+    },
+    "./react/3x2/OM": {
+      "types": "./react/3x2/OM/index.d.ts",
+      "import": "./react/3x2/OM/index.js",
+      "require": "./react/3x2/OM/index.cjs"
+    },
+    "./react/3x2/PA": {
+      "types": "./react/3x2/PA/index.d.ts",
+      "import": "./react/3x2/PA/index.js",
+      "require": "./react/3x2/PA/index.cjs"
+    },
+    "./react/3x2/PE": {
+      "types": "./react/3x2/PE/index.d.ts",
+      "import": "./react/3x2/PE/index.js",
+      "require": "./react/3x2/PE/index.cjs"
+    },
+    "./react/3x2/PF": {
+      "types": "./react/3x2/PF/index.d.ts",
+      "import": "./react/3x2/PF/index.js",
+      "require": "./react/3x2/PF/index.cjs"
+    },
+    "./react/3x2/PG": {
+      "types": "./react/3x2/PG/index.d.ts",
+      "import": "./react/3x2/PG/index.js",
+      "require": "./react/3x2/PG/index.cjs"
+    },
+    "./react/3x2/PH": {
+      "types": "./react/3x2/PH/index.d.ts",
+      "import": "./react/3x2/PH/index.js",
+      "require": "./react/3x2/PH/index.cjs"
+    },
+    "./react/3x2/PK": {
+      "types": "./react/3x2/PK/index.d.ts",
+      "import": "./react/3x2/PK/index.js",
+      "require": "./react/3x2/PK/index.cjs"
+    },
+    "./react/3x2/PL": {
+      "types": "./react/3x2/PL/index.d.ts",
+      "import": "./react/3x2/PL/index.js",
+      "require": "./react/3x2/PL/index.cjs"
+    },
+    "./react/3x2/PM": {
+      "types": "./react/3x2/PM/index.d.ts",
+      "import": "./react/3x2/PM/index.js",
+      "require": "./react/3x2/PM/index.cjs"
+    },
+    "./react/3x2/PN": {
+      "types": "./react/3x2/PN/index.d.ts",
+      "import": "./react/3x2/PN/index.js",
+      "require": "./react/3x2/PN/index.cjs"
+    },
+    "./react/3x2/PR": {
+      "types": "./react/3x2/PR/index.d.ts",
+      "import": "./react/3x2/PR/index.js",
+      "require": "./react/3x2/PR/index.cjs"
+    },
+    "./react/3x2/PS": {
+      "types": "./react/3x2/PS/index.d.ts",
+      "import": "./react/3x2/PS/index.js",
+      "require": "./react/3x2/PS/index.cjs"
+    },
+    "./react/3x2/PT": {
+      "types": "./react/3x2/PT/index.d.ts",
+      "import": "./react/3x2/PT/index.js",
+      "require": "./react/3x2/PT/index.cjs"
+    },
+    "./react/3x2/PW": {
+      "types": "./react/3x2/PW/index.d.ts",
+      "import": "./react/3x2/PW/index.js",
+      "require": "./react/3x2/PW/index.cjs"
+    },
+    "./react/3x2/PY": {
+      "types": "./react/3x2/PY/index.d.ts",
+      "import": "./react/3x2/PY/index.js",
+      "require": "./react/3x2/PY/index.cjs"
+    },
+    "./react/3x2/QA": {
+      "types": "./react/3x2/QA/index.d.ts",
+      "import": "./react/3x2/QA/index.js",
+      "require": "./react/3x2/QA/index.cjs"
+    },
+    "./react/3x2/RE": {
+      "types": "./react/3x2/RE/index.d.ts",
+      "import": "./react/3x2/RE/index.js",
+      "require": "./react/3x2/RE/index.cjs"
+    },
+    "./react/3x2/RO": {
+      "types": "./react/3x2/RO/index.d.ts",
+      "import": "./react/3x2/RO/index.js",
+      "require": "./react/3x2/RO/index.cjs"
+    },
+    "./react/3x2/RS": {
+      "types": "./react/3x2/RS/index.d.ts",
+      "import": "./react/3x2/RS/index.js",
+      "require": "./react/3x2/RS/index.cjs"
+    },
+    "./react/3x2/RU": {
+      "types": "./react/3x2/RU/index.d.ts",
+      "import": "./react/3x2/RU/index.js",
+      "require": "./react/3x2/RU/index.cjs"
+    },
+    "./react/3x2/RW": {
+      "types": "./react/3x2/RW/index.d.ts",
+      "import": "./react/3x2/RW/index.js",
+      "require": "./react/3x2/RW/index.cjs"
+    },
+    "./react/3x2/SA": {
+      "types": "./react/3x2/SA/index.d.ts",
+      "import": "./react/3x2/SA/index.js",
+      "require": "./react/3x2/SA/index.cjs"
+    },
+    "./react/3x2/SB": {
+      "types": "./react/3x2/SB/index.d.ts",
+      "import": "./react/3x2/SB/index.js",
+      "require": "./react/3x2/SB/index.cjs"
+    },
+    "./react/3x2/SC": {
+      "types": "./react/3x2/SC/index.d.ts",
+      "import": "./react/3x2/SC/index.js",
+      "require": "./react/3x2/SC/index.cjs"
+    },
+    "./react/3x2/SD": {
+      "types": "./react/3x2/SD/index.d.ts",
+      "import": "./react/3x2/SD/index.js",
+      "require": "./react/3x2/SD/index.cjs"
+    },
+    "./react/3x2/SE": {
+      "types": "./react/3x2/SE/index.d.ts",
+      "import": "./react/3x2/SE/index.js",
+      "require": "./react/3x2/SE/index.cjs"
+    },
+    "./react/3x2/SG": {
+      "types": "./react/3x2/SG/index.d.ts",
+      "import": "./react/3x2/SG/index.js",
+      "require": "./react/3x2/SG/index.cjs"
+    },
+    "./react/3x2/SH": {
+      "types": "./react/3x2/SH/index.d.ts",
+      "import": "./react/3x2/SH/index.js",
+      "require": "./react/3x2/SH/index.cjs"
+    },
+    "./react/3x2/SI": {
+      "types": "./react/3x2/SI/index.d.ts",
+      "import": "./react/3x2/SI/index.js",
+      "require": "./react/3x2/SI/index.cjs"
+    },
+    "./react/3x2/SJ": {
+      "types": "./react/3x2/SJ/index.d.ts",
+      "import": "./react/3x2/SJ/index.js",
+      "require": "./react/3x2/SJ/index.cjs"
+    },
+    "./react/3x2/SK": {
+      "types": "./react/3x2/SK/index.d.ts",
+      "import": "./react/3x2/SK/index.js",
+      "require": "./react/3x2/SK/index.cjs"
+    },
+    "./react/3x2/SL": {
+      "types": "./react/3x2/SL/index.d.ts",
+      "import": "./react/3x2/SL/index.js",
+      "require": "./react/3x2/SL/index.cjs"
+    },
+    "./react/3x2/SM": {
+      "types": "./react/3x2/SM/index.d.ts",
+      "import": "./react/3x2/SM/index.js",
+      "require": "./react/3x2/SM/index.cjs"
+    },
+    "./react/3x2/SN": {
+      "types": "./react/3x2/SN/index.d.ts",
+      "import": "./react/3x2/SN/index.js",
+      "require": "./react/3x2/SN/index.cjs"
+    },
+    "./react/3x2/SO": {
+      "types": "./react/3x2/SO/index.d.ts",
+      "import": "./react/3x2/SO/index.js",
+      "require": "./react/3x2/SO/index.cjs"
+    },
+    "./react/3x2/SR": {
+      "types": "./react/3x2/SR/index.d.ts",
+      "import": "./react/3x2/SR/index.js",
+      "require": "./react/3x2/SR/index.cjs"
+    },
+    "./react/3x2/SS": {
+      "types": "./react/3x2/SS/index.d.ts",
+      "import": "./react/3x2/SS/index.js",
+      "require": "./react/3x2/SS/index.cjs"
+    },
+    "./react/3x2/ST": {
+      "types": "./react/3x2/ST/index.d.ts",
+      "import": "./react/3x2/ST/index.js",
+      "require": "./react/3x2/ST/index.cjs"
+    },
+    "./react/3x2/SV": {
+      "types": "./react/3x2/SV/index.d.ts",
+      "import": "./react/3x2/SV/index.js",
+      "require": "./react/3x2/SV/index.cjs"
+    },
+    "./react/3x2/SX": {
+      "types": "./react/3x2/SX/index.d.ts",
+      "import": "./react/3x2/SX/index.js",
+      "require": "./react/3x2/SX/index.cjs"
+    },
+    "./react/3x2/SY": {
+      "types": "./react/3x2/SY/index.d.ts",
+      "import": "./react/3x2/SY/index.js",
+      "require": "./react/3x2/SY/index.cjs"
+    },
+    "./react/3x2/SZ": {
+      "types": "./react/3x2/SZ/index.d.ts",
+      "import": "./react/3x2/SZ/index.js",
+      "require": "./react/3x2/SZ/index.cjs"
+    },
+    "./react/3x2/TA": {
+      "types": "./react/3x2/TA/index.d.ts",
+      "import": "./react/3x2/TA/index.js",
+      "require": "./react/3x2/TA/index.cjs"
+    },
+    "./react/3x2/TC": {
+      "types": "./react/3x2/TC/index.d.ts",
+      "import": "./react/3x2/TC/index.js",
+      "require": "./react/3x2/TC/index.cjs"
+    },
+    "./react/3x2/TD": {
+      "types": "./react/3x2/TD/index.d.ts",
+      "import": "./react/3x2/TD/index.js",
+      "require": "./react/3x2/TD/index.cjs"
+    },
+    "./react/3x2/TF": {
+      "types": "./react/3x2/TF/index.d.ts",
+      "import": "./react/3x2/TF/index.js",
+      "require": "./react/3x2/TF/index.cjs"
+    },
+    "./react/3x2/TG": {
+      "types": "./react/3x2/TG/index.d.ts",
+      "import": "./react/3x2/TG/index.js",
+      "require": "./react/3x2/TG/index.cjs"
+    },
+    "./react/3x2/TH": {
+      "types": "./react/3x2/TH/index.d.ts",
+      "import": "./react/3x2/TH/index.js",
+      "require": "./react/3x2/TH/index.cjs"
+    },
+    "./react/3x2/TJ": {
+      "types": "./react/3x2/TJ/index.d.ts",
+      "import": "./react/3x2/TJ/index.js",
+      "require": "./react/3x2/TJ/index.cjs"
+    },
+    "./react/3x2/TK": {
+      "types": "./react/3x2/TK/index.d.ts",
+      "import": "./react/3x2/TK/index.js",
+      "require": "./react/3x2/TK/index.cjs"
+    },
+    "./react/3x2/TL": {
+      "types": "./react/3x2/TL/index.d.ts",
+      "import": "./react/3x2/TL/index.js",
+      "require": "./react/3x2/TL/index.cjs"
+    },
+    "./react/3x2/TM": {
+      "types": "./react/3x2/TM/index.d.ts",
+      "import": "./react/3x2/TM/index.js",
+      "require": "./react/3x2/TM/index.cjs"
+    },
+    "./react/3x2/TN": {
+      "types": "./react/3x2/TN/index.d.ts",
+      "import": "./react/3x2/TN/index.js",
+      "require": "./react/3x2/TN/index.cjs"
+    },
+    "./react/3x2/TO": {
+      "types": "./react/3x2/TO/index.d.ts",
+      "import": "./react/3x2/TO/index.js",
+      "require": "./react/3x2/TO/index.cjs"
+    },
+    "./react/3x2/TR": {
+      "types": "./react/3x2/TR/index.d.ts",
+      "import": "./react/3x2/TR/index.js",
+      "require": "./react/3x2/TR/index.cjs"
+    },
+    "./react/3x2/TT": {
+      "types": "./react/3x2/TT/index.d.ts",
+      "import": "./react/3x2/TT/index.js",
+      "require": "./react/3x2/TT/index.cjs"
+    },
+    "./react/3x2/TV": {
+      "types": "./react/3x2/TV/index.d.ts",
+      "import": "./react/3x2/TV/index.js",
+      "require": "./react/3x2/TV/index.cjs"
+    },
+    "./react/3x2/TW": {
+      "types": "./react/3x2/TW/index.d.ts",
+      "import": "./react/3x2/TW/index.js",
+      "require": "./react/3x2/TW/index.cjs"
+    },
+    "./react/3x2/TZ": {
+      "types": "./react/3x2/TZ/index.d.ts",
+      "import": "./react/3x2/TZ/index.js",
+      "require": "./react/3x2/TZ/index.cjs"
+    },
+    "./react/3x2/UA": {
+      "types": "./react/3x2/UA/index.d.ts",
+      "import": "./react/3x2/UA/index.js",
+      "require": "./react/3x2/UA/index.cjs"
+    },
+    "./react/3x2/UG": {
+      "types": "./react/3x2/UG/index.d.ts",
+      "import": "./react/3x2/UG/index.js",
+      "require": "./react/3x2/UG/index.cjs"
+    },
+    "./react/3x2/UM": {
+      "types": "./react/3x2/UM/index.d.ts",
+      "import": "./react/3x2/UM/index.js",
+      "require": "./react/3x2/UM/index.cjs"
+    },
+    "./react/3x2/US": {
+      "types": "./react/3x2/US/index.d.ts",
+      "import": "./react/3x2/US/index.js",
+      "require": "./react/3x2/US/index.cjs"
+    },
+    "./react/3x2/UY": {
+      "types": "./react/3x2/UY/index.d.ts",
+      "import": "./react/3x2/UY/index.js",
+      "require": "./react/3x2/UY/index.cjs"
+    },
+    "./react/3x2/UZ": {
+      "types": "./react/3x2/UZ/index.d.ts",
+      "import": "./react/3x2/UZ/index.js",
+      "require": "./react/3x2/UZ/index.cjs"
+    },
+    "./react/3x2/VA": {
+      "types": "./react/3x2/VA/index.d.ts",
+      "import": "./react/3x2/VA/index.js",
+      "require": "./react/3x2/VA/index.cjs"
+    },
+    "./react/3x2/VC": {
+      "types": "./react/3x2/VC/index.d.ts",
+      "import": "./react/3x2/VC/index.js",
+      "require": "./react/3x2/VC/index.cjs"
+    },
+    "./react/3x2/VE": {
+      "types": "./react/3x2/VE/index.d.ts",
+      "import": "./react/3x2/VE/index.js",
+      "require": "./react/3x2/VE/index.cjs"
+    },
+    "./react/3x2/VG": {
+      "types": "./react/3x2/VG/index.d.ts",
+      "import": "./react/3x2/VG/index.js",
+      "require": "./react/3x2/VG/index.cjs"
+    },
+    "./react/3x2/VI": {
+      "types": "./react/3x2/VI/index.d.ts",
+      "import": "./react/3x2/VI/index.js",
+      "require": "./react/3x2/VI/index.cjs"
+    },
+    "./react/3x2/VN": {
+      "types": "./react/3x2/VN/index.d.ts",
+      "import": "./react/3x2/VN/index.js",
+      "require": "./react/3x2/VN/index.cjs"
+    },
+    "./react/3x2/VU": {
+      "types": "./react/3x2/VU/index.d.ts",
+      "import": "./react/3x2/VU/index.js",
+      "require": "./react/3x2/VU/index.cjs"
+    },
+    "./react/3x2/WF": {
+      "types": "./react/3x2/WF/index.d.ts",
+      "import": "./react/3x2/WF/index.js",
+      "require": "./react/3x2/WF/index.cjs"
+    },
+    "./react/3x2/WS": {
+      "types": "./react/3x2/WS/index.d.ts",
+      "import": "./react/3x2/WS/index.js",
+      "require": "./react/3x2/WS/index.cjs"
+    },
+    "./react/3x2/XK": {
+      "types": "./react/3x2/XK/index.d.ts",
+      "import": "./react/3x2/XK/index.js",
+      "require": "./react/3x2/XK/index.cjs"
+    },
+    "./react/3x2/YE": {
+      "types": "./react/3x2/YE/index.d.ts",
+      "import": "./react/3x2/YE/index.js",
+      "require": "./react/3x2/YE/index.cjs"
+    },
+    "./react/3x2/YT": {
+      "types": "./react/3x2/YT/index.d.ts",
+      "import": "./react/3x2/YT/index.js",
+      "require": "./react/3x2/YT/index.cjs"
+    },
+    "./react/3x2/ZA": {
+      "types": "./react/3x2/ZA/index.d.ts",
+      "import": "./react/3x2/ZA/index.js",
+      "require": "./react/3x2/ZA/index.cjs"
+    },
+    "./react/3x2/ZM": {
+      "types": "./react/3x2/ZM/index.d.ts",
+      "import": "./react/3x2/ZM/index.js",
+      "require": "./react/3x2/ZM/index.cjs"
+    },
+    "./react/3x2/ZW": {
+      "types": "./react/3x2/ZW/index.d.ts",
+      "import": "./react/3x2/ZW/index.js",
+      "require": "./react/3x2/ZW/index.cjs"
+    },
+    "./react/1x1/AC": {
+      "types": "./react/1x1/AC/index.d.ts",
+      "import": "./react/1x1/AC/index.js",
+      "require": "./react/1x1/AC/index.cjs"
+    },
+    "./react/1x1/AD": {
+      "types": "./react/1x1/AD/index.d.ts",
+      "import": "./react/1x1/AD/index.js",
+      "require": "./react/1x1/AD/index.cjs"
+    },
+    "./react/1x1/AE": {
+      "types": "./react/1x1/AE/index.d.ts",
+      "import": "./react/1x1/AE/index.js",
+      "require": "./react/1x1/AE/index.cjs"
+    },
+    "./react/1x1/AF": {
+      "types": "./react/1x1/AF/index.d.ts",
+      "import": "./react/1x1/AF/index.js",
+      "require": "./react/1x1/AF/index.cjs"
+    },
+    "./react/1x1/AG": {
+      "types": "./react/1x1/AG/index.d.ts",
+      "import": "./react/1x1/AG/index.js",
+      "require": "./react/1x1/AG/index.cjs"
+    },
+    "./react/1x1/AI": {
+      "types": "./react/1x1/AI/index.d.ts",
+      "import": "./react/1x1/AI/index.js",
+      "require": "./react/1x1/AI/index.cjs"
+    },
+    "./react/1x1/AL": {
+      "types": "./react/1x1/AL/index.d.ts",
+      "import": "./react/1x1/AL/index.js",
+      "require": "./react/1x1/AL/index.cjs"
+    },
+    "./react/1x1/AM": {
+      "types": "./react/1x1/AM/index.d.ts",
+      "import": "./react/1x1/AM/index.js",
+      "require": "./react/1x1/AM/index.cjs"
+    },
+    "./react/1x1/AO": {
+      "types": "./react/1x1/AO/index.d.ts",
+      "import": "./react/1x1/AO/index.js",
+      "require": "./react/1x1/AO/index.cjs"
+    },
+    "./react/1x1/AQ": {
+      "types": "./react/1x1/AQ/index.d.ts",
+      "import": "./react/1x1/AQ/index.js",
+      "require": "./react/1x1/AQ/index.cjs"
+    },
+    "./react/1x1/AR": {
+      "types": "./react/1x1/AR/index.d.ts",
+      "import": "./react/1x1/AR/index.js",
+      "require": "./react/1x1/AR/index.cjs"
+    },
+    "./react/1x1/AS": {
+      "types": "./react/1x1/AS/index.d.ts",
+      "import": "./react/1x1/AS/index.js",
+      "require": "./react/1x1/AS/index.cjs"
+    },
+    "./react/1x1/AT": {
+      "types": "./react/1x1/AT/index.d.ts",
+      "import": "./react/1x1/AT/index.js",
+      "require": "./react/1x1/AT/index.cjs"
+    },
+    "./react/1x1/AU": {
+      "types": "./react/1x1/AU/index.d.ts",
+      "import": "./react/1x1/AU/index.js",
+      "require": "./react/1x1/AU/index.cjs"
+    },
+    "./react/1x1/AW": {
+      "types": "./react/1x1/AW/index.d.ts",
+      "import": "./react/1x1/AW/index.js",
+      "require": "./react/1x1/AW/index.cjs"
+    },
+    "./react/1x1/AX": {
+      "types": "./react/1x1/AX/index.d.ts",
+      "import": "./react/1x1/AX/index.js",
+      "require": "./react/1x1/AX/index.cjs"
+    },
+    "./react/1x1/AZ": {
+      "types": "./react/1x1/AZ/index.d.ts",
+      "import": "./react/1x1/AZ/index.js",
+      "require": "./react/1x1/AZ/index.cjs"
+    },
+    "./react/1x1/BA": {
+      "types": "./react/1x1/BA/index.d.ts",
+      "import": "./react/1x1/BA/index.js",
+      "require": "./react/1x1/BA/index.cjs"
+    },
+    "./react/1x1/BB": {
+      "types": "./react/1x1/BB/index.d.ts",
+      "import": "./react/1x1/BB/index.js",
+      "require": "./react/1x1/BB/index.cjs"
+    },
+    "./react/1x1/BD": {
+      "types": "./react/1x1/BD/index.d.ts",
+      "import": "./react/1x1/BD/index.js",
+      "require": "./react/1x1/BD/index.cjs"
+    },
+    "./react/1x1/BE": {
+      "types": "./react/1x1/BE/index.d.ts",
+      "import": "./react/1x1/BE/index.js",
+      "require": "./react/1x1/BE/index.cjs"
+    },
+    "./react/1x1/BF": {
+      "types": "./react/1x1/BF/index.d.ts",
+      "import": "./react/1x1/BF/index.js",
+      "require": "./react/1x1/BF/index.cjs"
+    },
+    "./react/1x1/BG": {
+      "types": "./react/1x1/BG/index.d.ts",
+      "import": "./react/1x1/BG/index.js",
+      "require": "./react/1x1/BG/index.cjs"
+    },
+    "./react/1x1/BH": {
+      "types": "./react/1x1/BH/index.d.ts",
+      "import": "./react/1x1/BH/index.js",
+      "require": "./react/1x1/BH/index.cjs"
+    },
+    "./react/1x1/BI": {
+      "types": "./react/1x1/BI/index.d.ts",
+      "import": "./react/1x1/BI/index.js",
+      "require": "./react/1x1/BI/index.cjs"
+    },
+    "./react/1x1/BJ": {
+      "types": "./react/1x1/BJ/index.d.ts",
+      "import": "./react/1x1/BJ/index.js",
+      "require": "./react/1x1/BJ/index.cjs"
+    },
+    "./react/1x1/BL": {
+      "types": "./react/1x1/BL/index.d.ts",
+      "import": "./react/1x1/BL/index.js",
+      "require": "./react/1x1/BL/index.cjs"
+    },
+    "./react/1x1/BM": {
+      "types": "./react/1x1/BM/index.d.ts",
+      "import": "./react/1x1/BM/index.js",
+      "require": "./react/1x1/BM/index.cjs"
+    },
+    "./react/1x1/BN": {
+      "types": "./react/1x1/BN/index.d.ts",
+      "import": "./react/1x1/BN/index.js",
+      "require": "./react/1x1/BN/index.cjs"
+    },
+    "./react/1x1/BO": {
+      "types": "./react/1x1/BO/index.d.ts",
+      "import": "./react/1x1/BO/index.js",
+      "require": "./react/1x1/BO/index.cjs"
+    },
+    "./react/1x1/BQ": {
+      "types": "./react/1x1/BQ/index.d.ts",
+      "import": "./react/1x1/BQ/index.js",
+      "require": "./react/1x1/BQ/index.cjs"
+    },
+    "./react/1x1/BR": {
+      "types": "./react/1x1/BR/index.d.ts",
+      "import": "./react/1x1/BR/index.js",
+      "require": "./react/1x1/BR/index.cjs"
+    },
+    "./react/1x1/BS": {
+      "types": "./react/1x1/BS/index.d.ts",
+      "import": "./react/1x1/BS/index.js",
+      "require": "./react/1x1/BS/index.cjs"
+    },
+    "./react/1x1/BT": {
+      "types": "./react/1x1/BT/index.d.ts",
+      "import": "./react/1x1/BT/index.js",
+      "require": "./react/1x1/BT/index.cjs"
+    },
+    "./react/1x1/BV": {
+      "types": "./react/1x1/BV/index.d.ts",
+      "import": "./react/1x1/BV/index.js",
+      "require": "./react/1x1/BV/index.cjs"
+    },
+    "./react/1x1/BW": {
+      "types": "./react/1x1/BW/index.d.ts",
+      "import": "./react/1x1/BW/index.js",
+      "require": "./react/1x1/BW/index.cjs"
+    },
+    "./react/1x1/BY": {
+      "types": "./react/1x1/BY/index.d.ts",
+      "import": "./react/1x1/BY/index.js",
+      "require": "./react/1x1/BY/index.cjs"
+    },
+    "./react/1x1/BZ": {
+      "types": "./react/1x1/BZ/index.d.ts",
+      "import": "./react/1x1/BZ/index.js",
+      "require": "./react/1x1/BZ/index.cjs"
+    },
+    "./react/1x1/CA": {
+      "types": "./react/1x1/CA/index.d.ts",
+      "import": "./react/1x1/CA/index.js",
+      "require": "./react/1x1/CA/index.cjs"
+    },
+    "./react/1x1/CC": {
+      "types": "./react/1x1/CC/index.d.ts",
+      "import": "./react/1x1/CC/index.js",
+      "require": "./react/1x1/CC/index.cjs"
+    },
+    "./react/1x1/CD": {
+      "types": "./react/1x1/CD/index.d.ts",
+      "import": "./react/1x1/CD/index.js",
+      "require": "./react/1x1/CD/index.cjs"
+    },
+    "./react/1x1/CF": {
+      "types": "./react/1x1/CF/index.d.ts",
+      "import": "./react/1x1/CF/index.js",
+      "require": "./react/1x1/CF/index.cjs"
+    },
+    "./react/1x1/CG": {
+      "types": "./react/1x1/CG/index.d.ts",
+      "import": "./react/1x1/CG/index.js",
+      "require": "./react/1x1/CG/index.cjs"
+    },
+    "./react/1x1/CH": {
+      "types": "./react/1x1/CH/index.d.ts",
+      "import": "./react/1x1/CH/index.js",
+      "require": "./react/1x1/CH/index.cjs"
+    },
+    "./react/1x1/CI": {
+      "types": "./react/1x1/CI/index.d.ts",
+      "import": "./react/1x1/CI/index.js",
+      "require": "./react/1x1/CI/index.cjs"
+    },
+    "./react/1x1/CK": {
+      "types": "./react/1x1/CK/index.d.ts",
+      "import": "./react/1x1/CK/index.js",
+      "require": "./react/1x1/CK/index.cjs"
+    },
+    "./react/1x1/CL": {
+      "types": "./react/1x1/CL/index.d.ts",
+      "import": "./react/1x1/CL/index.js",
+      "require": "./react/1x1/CL/index.cjs"
+    },
+    "./react/1x1/CM": {
+      "types": "./react/1x1/CM/index.d.ts",
+      "import": "./react/1x1/CM/index.js",
+      "require": "./react/1x1/CM/index.cjs"
+    },
+    "./react/1x1/CN": {
+      "types": "./react/1x1/CN/index.d.ts",
+      "import": "./react/1x1/CN/index.js",
+      "require": "./react/1x1/CN/index.cjs"
+    },
+    "./react/1x1/CO": {
+      "types": "./react/1x1/CO/index.d.ts",
+      "import": "./react/1x1/CO/index.js",
+      "require": "./react/1x1/CO/index.cjs"
+    },
+    "./react/1x1/CR": {
+      "types": "./react/1x1/CR/index.d.ts",
+      "import": "./react/1x1/CR/index.js",
+      "require": "./react/1x1/CR/index.cjs"
+    },
+    "./react/1x1/CU": {
+      "types": "./react/1x1/CU/index.d.ts",
+      "import": "./react/1x1/CU/index.js",
+      "require": "./react/1x1/CU/index.cjs"
+    },
+    "./react/1x1/CV": {
+      "types": "./react/1x1/CV/index.d.ts",
+      "import": "./react/1x1/CV/index.js",
+      "require": "./react/1x1/CV/index.cjs"
+    },
+    "./react/1x1/CW": {
+      "types": "./react/1x1/CW/index.d.ts",
+      "import": "./react/1x1/CW/index.js",
+      "require": "./react/1x1/CW/index.cjs"
+    },
+    "./react/1x1/CX": {
+      "types": "./react/1x1/CX/index.d.ts",
+      "import": "./react/1x1/CX/index.js",
+      "require": "./react/1x1/CX/index.cjs"
+    },
+    "./react/1x1/CY": {
+      "types": "./react/1x1/CY/index.d.ts",
+      "import": "./react/1x1/CY/index.js",
+      "require": "./react/1x1/CY/index.cjs"
+    },
+    "./react/1x1/CZ": {
+      "types": "./react/1x1/CZ/index.d.ts",
+      "import": "./react/1x1/CZ/index.js",
+      "require": "./react/1x1/CZ/index.cjs"
+    },
+    "./react/1x1/DE": {
+      "types": "./react/1x1/DE/index.d.ts",
+      "import": "./react/1x1/DE/index.js",
+      "require": "./react/1x1/DE/index.cjs"
+    },
+    "./react/1x1/DJ": {
+      "types": "./react/1x1/DJ/index.d.ts",
+      "import": "./react/1x1/DJ/index.js",
+      "require": "./react/1x1/DJ/index.cjs"
+    },
+    "./react/1x1/DK": {
+      "types": "./react/1x1/DK/index.d.ts",
+      "import": "./react/1x1/DK/index.js",
+      "require": "./react/1x1/DK/index.cjs"
+    },
+    "./react/1x1/DM": {
+      "types": "./react/1x1/DM/index.d.ts",
+      "import": "./react/1x1/DM/index.js",
+      "require": "./react/1x1/DM/index.cjs"
+    },
+    "./react/1x1/DO": {
+      "types": "./react/1x1/DO/index.d.ts",
+      "import": "./react/1x1/DO/index.js",
+      "require": "./react/1x1/DO/index.cjs"
+    },
+    "./react/1x1/DZ": {
+      "types": "./react/1x1/DZ/index.d.ts",
+      "import": "./react/1x1/DZ/index.js",
+      "require": "./react/1x1/DZ/index.cjs"
+    },
+    "./react/1x1/EC": {
+      "types": "./react/1x1/EC/index.d.ts",
+      "import": "./react/1x1/EC/index.js",
+      "require": "./react/1x1/EC/index.cjs"
+    },
+    "./react/1x1/EE": {
+      "types": "./react/1x1/EE/index.d.ts",
+      "import": "./react/1x1/EE/index.js",
+      "require": "./react/1x1/EE/index.cjs"
+    },
+    "./react/1x1/EG": {
+      "types": "./react/1x1/EG/index.d.ts",
+      "import": "./react/1x1/EG/index.js",
+      "require": "./react/1x1/EG/index.cjs"
+    },
+    "./react/1x1/EH": {
+      "types": "./react/1x1/EH/index.d.ts",
+      "import": "./react/1x1/EH/index.js",
+      "require": "./react/1x1/EH/index.cjs"
+    },
+    "./react/1x1/ER": {
+      "types": "./react/1x1/ER/index.d.ts",
+      "import": "./react/1x1/ER/index.js",
+      "require": "./react/1x1/ER/index.cjs"
+    },
+    "./react/1x1/ES": {
+      "types": "./react/1x1/ES/index.d.ts",
+      "import": "./react/1x1/ES/index.js",
+      "require": "./react/1x1/ES/index.cjs"
+    },
+    "./react/1x1/ET": {
+      "types": "./react/1x1/ET/index.d.ts",
+      "import": "./react/1x1/ET/index.js",
+      "require": "./react/1x1/ET/index.cjs"
+    },
+    "./react/1x1/EU": {
+      "types": "./react/1x1/EU/index.d.ts",
+      "import": "./react/1x1/EU/index.js",
+      "require": "./react/1x1/EU/index.cjs"
+    },
+    "./react/1x1/FI": {
+      "types": "./react/1x1/FI/index.d.ts",
+      "import": "./react/1x1/FI/index.js",
+      "require": "./react/1x1/FI/index.cjs"
+    },
+    "./react/1x1/FJ": {
+      "types": "./react/1x1/FJ/index.d.ts",
+      "import": "./react/1x1/FJ/index.js",
+      "require": "./react/1x1/FJ/index.cjs"
+    },
+    "./react/1x1/FK": {
+      "types": "./react/1x1/FK/index.d.ts",
+      "import": "./react/1x1/FK/index.js",
+      "require": "./react/1x1/FK/index.cjs"
+    },
+    "./react/1x1/FM": {
+      "types": "./react/1x1/FM/index.d.ts",
+      "import": "./react/1x1/FM/index.js",
+      "require": "./react/1x1/FM/index.cjs"
+    },
+    "./react/1x1/FO": {
+      "types": "./react/1x1/FO/index.d.ts",
+      "import": "./react/1x1/FO/index.js",
+      "require": "./react/1x1/FO/index.cjs"
+    },
+    "./react/1x1/FR": {
+      "types": "./react/1x1/FR/index.d.ts",
+      "import": "./react/1x1/FR/index.js",
+      "require": "./react/1x1/FR/index.cjs"
+    },
+    "./react/1x1/GA": {
+      "types": "./react/1x1/GA/index.d.ts",
+      "import": "./react/1x1/GA/index.js",
+      "require": "./react/1x1/GA/index.cjs"
+    },
+    "./react/1x1/GB": {
+      "types": "./react/1x1/GB/index.d.ts",
+      "import": "./react/1x1/GB/index.js",
+      "require": "./react/1x1/GB/index.cjs"
+    },
+    "./react/1x1/GD": {
+      "types": "./react/1x1/GD/index.d.ts",
+      "import": "./react/1x1/GD/index.js",
+      "require": "./react/1x1/GD/index.cjs"
+    },
+    "./react/1x1/GE": {
+      "types": "./react/1x1/GE/index.d.ts",
+      "import": "./react/1x1/GE/index.js",
+      "require": "./react/1x1/GE/index.cjs"
+    },
+    "./react/1x1/GF": {
+      "types": "./react/1x1/GF/index.d.ts",
+      "import": "./react/1x1/GF/index.js",
+      "require": "./react/1x1/GF/index.cjs"
+    },
+    "./react/1x1/GG": {
+      "types": "./react/1x1/GG/index.d.ts",
+      "import": "./react/1x1/GG/index.js",
+      "require": "./react/1x1/GG/index.cjs"
+    },
+    "./react/1x1/GH": {
+      "types": "./react/1x1/GH/index.d.ts",
+      "import": "./react/1x1/GH/index.js",
+      "require": "./react/1x1/GH/index.cjs"
+    },
+    "./react/1x1/GI": {
+      "types": "./react/1x1/GI/index.d.ts",
+      "import": "./react/1x1/GI/index.js",
+      "require": "./react/1x1/GI/index.cjs"
+    },
+    "./react/1x1/GL": {
+      "types": "./react/1x1/GL/index.d.ts",
+      "import": "./react/1x1/GL/index.js",
+      "require": "./react/1x1/GL/index.cjs"
+    },
+    "./react/1x1/GM": {
+      "types": "./react/1x1/GM/index.d.ts",
+      "import": "./react/1x1/GM/index.js",
+      "require": "./react/1x1/GM/index.cjs"
+    },
+    "./react/1x1/GN": {
+      "types": "./react/1x1/GN/index.d.ts",
+      "import": "./react/1x1/GN/index.js",
+      "require": "./react/1x1/GN/index.cjs"
+    },
+    "./react/1x1/GP": {
+      "types": "./react/1x1/GP/index.d.ts",
+      "import": "./react/1x1/GP/index.js",
+      "require": "./react/1x1/GP/index.cjs"
+    },
+    "./react/1x1/GQ": {
+      "types": "./react/1x1/GQ/index.d.ts",
+      "import": "./react/1x1/GQ/index.js",
+      "require": "./react/1x1/GQ/index.cjs"
+    },
+    "./react/1x1/GR": {
+      "types": "./react/1x1/GR/index.d.ts",
+      "import": "./react/1x1/GR/index.js",
+      "require": "./react/1x1/GR/index.cjs"
+    },
+    "./react/1x1/GS": {
+      "types": "./react/1x1/GS/index.d.ts",
+      "import": "./react/1x1/GS/index.js",
+      "require": "./react/1x1/GS/index.cjs"
+    },
+    "./react/1x1/GT": {
+      "types": "./react/1x1/GT/index.d.ts",
+      "import": "./react/1x1/GT/index.js",
+      "require": "./react/1x1/GT/index.cjs"
+    },
+    "./react/1x1/GU": {
+      "types": "./react/1x1/GU/index.d.ts",
+      "import": "./react/1x1/GU/index.js",
+      "require": "./react/1x1/GU/index.cjs"
+    },
+    "./react/1x1/GW": {
+      "types": "./react/1x1/GW/index.d.ts",
+      "import": "./react/1x1/GW/index.js",
+      "require": "./react/1x1/GW/index.cjs"
+    },
+    "./react/1x1/GY": {
+      "types": "./react/1x1/GY/index.d.ts",
+      "import": "./react/1x1/GY/index.js",
+      "require": "./react/1x1/GY/index.cjs"
+    },
+    "./react/1x1/HK": {
+      "types": "./react/1x1/HK/index.d.ts",
+      "import": "./react/1x1/HK/index.js",
+      "require": "./react/1x1/HK/index.cjs"
+    },
+    "./react/1x1/HM": {
+      "types": "./react/1x1/HM/index.d.ts",
+      "import": "./react/1x1/HM/index.js",
+      "require": "./react/1x1/HM/index.cjs"
+    },
+    "./react/1x1/HN": {
+      "types": "./react/1x1/HN/index.d.ts",
+      "import": "./react/1x1/HN/index.js",
+      "require": "./react/1x1/HN/index.cjs"
+    },
+    "./react/1x1/HR": {
+      "types": "./react/1x1/HR/index.d.ts",
+      "import": "./react/1x1/HR/index.js",
+      "require": "./react/1x1/HR/index.cjs"
+    },
+    "./react/1x1/HT": {
+      "types": "./react/1x1/HT/index.d.ts",
+      "import": "./react/1x1/HT/index.js",
+      "require": "./react/1x1/HT/index.cjs"
+    },
+    "./react/1x1/HU": {
+      "types": "./react/1x1/HU/index.d.ts",
+      "import": "./react/1x1/HU/index.js",
+      "require": "./react/1x1/HU/index.cjs"
+    },
+    "./react/1x1/IC": {
+      "types": "./react/1x1/IC/index.d.ts",
+      "import": "./react/1x1/IC/index.js",
+      "require": "./react/1x1/IC/index.cjs"
+    },
+    "./react/1x1/ID": {
+      "types": "./react/1x1/ID/index.d.ts",
+      "import": "./react/1x1/ID/index.js",
+      "require": "./react/1x1/ID/index.cjs"
+    },
+    "./react/1x1/IE": {
+      "types": "./react/1x1/IE/index.d.ts",
+      "import": "./react/1x1/IE/index.js",
+      "require": "./react/1x1/IE/index.cjs"
+    },
+    "./react/1x1/IL": {
+      "types": "./react/1x1/IL/index.d.ts",
+      "import": "./react/1x1/IL/index.js",
+      "require": "./react/1x1/IL/index.cjs"
+    },
+    "./react/1x1/IM": {
+      "types": "./react/1x1/IM/index.d.ts",
+      "import": "./react/1x1/IM/index.js",
+      "require": "./react/1x1/IM/index.cjs"
+    },
+    "./react/1x1/IN": {
+      "types": "./react/1x1/IN/index.d.ts",
+      "import": "./react/1x1/IN/index.js",
+      "require": "./react/1x1/IN/index.cjs"
+    },
+    "./react/1x1/IO": {
+      "types": "./react/1x1/IO/index.d.ts",
+      "import": "./react/1x1/IO/index.js",
+      "require": "./react/1x1/IO/index.cjs"
+    },
+    "./react/1x1/IQ": {
+      "types": "./react/1x1/IQ/index.d.ts",
+      "import": "./react/1x1/IQ/index.js",
+      "require": "./react/1x1/IQ/index.cjs"
+    },
+    "./react/1x1/IR": {
+      "types": "./react/1x1/IR/index.d.ts",
+      "import": "./react/1x1/IR/index.js",
+      "require": "./react/1x1/IR/index.cjs"
+    },
+    "./react/1x1/IS": {
+      "types": "./react/1x1/IS/index.d.ts",
+      "import": "./react/1x1/IS/index.js",
+      "require": "./react/1x1/IS/index.cjs"
+    },
+    "./react/1x1/IT": {
+      "types": "./react/1x1/IT/index.d.ts",
+      "import": "./react/1x1/IT/index.js",
+      "require": "./react/1x1/IT/index.cjs"
+    },
+    "./react/1x1/JE": {
+      "types": "./react/1x1/JE/index.d.ts",
+      "import": "./react/1x1/JE/index.js",
+      "require": "./react/1x1/JE/index.cjs"
+    },
+    "./react/1x1/JM": {
+      "types": "./react/1x1/JM/index.d.ts",
+      "import": "./react/1x1/JM/index.js",
+      "require": "./react/1x1/JM/index.cjs"
+    },
+    "./react/1x1/JO": {
+      "types": "./react/1x1/JO/index.d.ts",
+      "import": "./react/1x1/JO/index.js",
+      "require": "./react/1x1/JO/index.cjs"
+    },
+    "./react/1x1/JP": {
+      "types": "./react/1x1/JP/index.d.ts",
+      "import": "./react/1x1/JP/index.js",
+      "require": "./react/1x1/JP/index.cjs"
+    },
+    "./react/1x1/KE": {
+      "types": "./react/1x1/KE/index.d.ts",
+      "import": "./react/1x1/KE/index.js",
+      "require": "./react/1x1/KE/index.cjs"
+    },
+    "./react/1x1/KG": {
+      "types": "./react/1x1/KG/index.d.ts",
+      "import": "./react/1x1/KG/index.js",
+      "require": "./react/1x1/KG/index.cjs"
+    },
+    "./react/1x1/KH": {
+      "types": "./react/1x1/KH/index.d.ts",
+      "import": "./react/1x1/KH/index.js",
+      "require": "./react/1x1/KH/index.cjs"
+    },
+    "./react/1x1/KI": {
+      "types": "./react/1x1/KI/index.d.ts",
+      "import": "./react/1x1/KI/index.js",
+      "require": "./react/1x1/KI/index.cjs"
+    },
+    "./react/1x1/KM": {
+      "types": "./react/1x1/KM/index.d.ts",
+      "import": "./react/1x1/KM/index.js",
+      "require": "./react/1x1/KM/index.cjs"
+    },
+    "./react/1x1/KN": {
+      "types": "./react/1x1/KN/index.d.ts",
+      "import": "./react/1x1/KN/index.js",
+      "require": "./react/1x1/KN/index.cjs"
+    },
+    "./react/1x1/KP": {
+      "types": "./react/1x1/KP/index.d.ts",
+      "import": "./react/1x1/KP/index.js",
+      "require": "./react/1x1/KP/index.cjs"
+    },
+    "./react/1x1/KR": {
+      "types": "./react/1x1/KR/index.d.ts",
+      "import": "./react/1x1/KR/index.js",
+      "require": "./react/1x1/KR/index.cjs"
+    },
+    "./react/1x1/KW": {
+      "types": "./react/1x1/KW/index.d.ts",
+      "import": "./react/1x1/KW/index.js",
+      "require": "./react/1x1/KW/index.cjs"
+    },
+    "./react/1x1/KY": {
+      "types": "./react/1x1/KY/index.d.ts",
+      "import": "./react/1x1/KY/index.js",
+      "require": "./react/1x1/KY/index.cjs"
+    },
+    "./react/1x1/KZ": {
+      "types": "./react/1x1/KZ/index.d.ts",
+      "import": "./react/1x1/KZ/index.js",
+      "require": "./react/1x1/KZ/index.cjs"
+    },
+    "./react/1x1/LA": {
+      "types": "./react/1x1/LA/index.d.ts",
+      "import": "./react/1x1/LA/index.js",
+      "require": "./react/1x1/LA/index.cjs"
+    },
+    "./react/1x1/LB": {
+      "types": "./react/1x1/LB/index.d.ts",
+      "import": "./react/1x1/LB/index.js",
+      "require": "./react/1x1/LB/index.cjs"
+    },
+    "./react/1x1/LC": {
+      "types": "./react/1x1/LC/index.d.ts",
+      "import": "./react/1x1/LC/index.js",
+      "require": "./react/1x1/LC/index.cjs"
+    },
+    "./react/1x1/LI": {
+      "types": "./react/1x1/LI/index.d.ts",
+      "import": "./react/1x1/LI/index.js",
+      "require": "./react/1x1/LI/index.cjs"
+    },
+    "./react/1x1/LK": {
+      "types": "./react/1x1/LK/index.d.ts",
+      "import": "./react/1x1/LK/index.js",
+      "require": "./react/1x1/LK/index.cjs"
+    },
+    "./react/1x1/LR": {
+      "types": "./react/1x1/LR/index.d.ts",
+      "import": "./react/1x1/LR/index.js",
+      "require": "./react/1x1/LR/index.cjs"
+    },
+    "./react/1x1/LS": {
+      "types": "./react/1x1/LS/index.d.ts",
+      "import": "./react/1x1/LS/index.js",
+      "require": "./react/1x1/LS/index.cjs"
+    },
+    "./react/1x1/LT": {
+      "types": "./react/1x1/LT/index.d.ts",
+      "import": "./react/1x1/LT/index.js",
+      "require": "./react/1x1/LT/index.cjs"
+    },
+    "./react/1x1/LU": {
+      "types": "./react/1x1/LU/index.d.ts",
+      "import": "./react/1x1/LU/index.js",
+      "require": "./react/1x1/LU/index.cjs"
+    },
+    "./react/1x1/LV": {
+      "types": "./react/1x1/LV/index.d.ts",
+      "import": "./react/1x1/LV/index.js",
+      "require": "./react/1x1/LV/index.cjs"
+    },
+    "./react/1x1/LY": {
+      "types": "./react/1x1/LY/index.d.ts",
+      "import": "./react/1x1/LY/index.js",
+      "require": "./react/1x1/LY/index.cjs"
+    },
+    "./react/1x1/MA": {
+      "types": "./react/1x1/MA/index.d.ts",
+      "import": "./react/1x1/MA/index.js",
+      "require": "./react/1x1/MA/index.cjs"
+    },
+    "./react/1x1/MC": {
+      "types": "./react/1x1/MC/index.d.ts",
+      "import": "./react/1x1/MC/index.js",
+      "require": "./react/1x1/MC/index.cjs"
+    },
+    "./react/1x1/MD": {
+      "types": "./react/1x1/MD/index.d.ts",
+      "import": "./react/1x1/MD/index.js",
+      "require": "./react/1x1/MD/index.cjs"
+    },
+    "./react/1x1/ME": {
+      "types": "./react/1x1/ME/index.d.ts",
+      "import": "./react/1x1/ME/index.js",
+      "require": "./react/1x1/ME/index.cjs"
+    },
+    "./react/1x1/MF": {
+      "types": "./react/1x1/MF/index.d.ts",
+      "import": "./react/1x1/MF/index.js",
+      "require": "./react/1x1/MF/index.cjs"
+    },
+    "./react/1x1/MG": {
+      "types": "./react/1x1/MG/index.d.ts",
+      "import": "./react/1x1/MG/index.js",
+      "require": "./react/1x1/MG/index.cjs"
+    },
+    "./react/1x1/MH": {
+      "types": "./react/1x1/MH/index.d.ts",
+      "import": "./react/1x1/MH/index.js",
+      "require": "./react/1x1/MH/index.cjs"
+    },
+    "./react/1x1/MK": {
+      "types": "./react/1x1/MK/index.d.ts",
+      "import": "./react/1x1/MK/index.js",
+      "require": "./react/1x1/MK/index.cjs"
+    },
+    "./react/1x1/ML": {
+      "types": "./react/1x1/ML/index.d.ts",
+      "import": "./react/1x1/ML/index.js",
+      "require": "./react/1x1/ML/index.cjs"
+    },
+    "./react/1x1/MM": {
+      "types": "./react/1x1/MM/index.d.ts",
+      "import": "./react/1x1/MM/index.js",
+      "require": "./react/1x1/MM/index.cjs"
+    },
+    "./react/1x1/MN": {
+      "types": "./react/1x1/MN/index.d.ts",
+      "import": "./react/1x1/MN/index.js",
+      "require": "./react/1x1/MN/index.cjs"
+    },
+    "./react/1x1/MO": {
+      "types": "./react/1x1/MO/index.d.ts",
+      "import": "./react/1x1/MO/index.js",
+      "require": "./react/1x1/MO/index.cjs"
+    },
+    "./react/1x1/MP": {
+      "types": "./react/1x1/MP/index.d.ts",
+      "import": "./react/1x1/MP/index.js",
+      "require": "./react/1x1/MP/index.cjs"
+    },
+    "./react/1x1/MQ": {
+      "types": "./react/1x1/MQ/index.d.ts",
+      "import": "./react/1x1/MQ/index.js",
+      "require": "./react/1x1/MQ/index.cjs"
+    },
+    "./react/1x1/MR": {
+      "types": "./react/1x1/MR/index.d.ts",
+      "import": "./react/1x1/MR/index.js",
+      "require": "./react/1x1/MR/index.cjs"
+    },
+    "./react/1x1/MS": {
+      "types": "./react/1x1/MS/index.d.ts",
+      "import": "./react/1x1/MS/index.js",
+      "require": "./react/1x1/MS/index.cjs"
+    },
+    "./react/1x1/MT": {
+      "types": "./react/1x1/MT/index.d.ts",
+      "import": "./react/1x1/MT/index.js",
+      "require": "./react/1x1/MT/index.cjs"
+    },
+    "./react/1x1/MU": {
+      "types": "./react/1x1/MU/index.d.ts",
+      "import": "./react/1x1/MU/index.js",
+      "require": "./react/1x1/MU/index.cjs"
+    },
+    "./react/1x1/MV": {
+      "types": "./react/1x1/MV/index.d.ts",
+      "import": "./react/1x1/MV/index.js",
+      "require": "./react/1x1/MV/index.cjs"
+    },
+    "./react/1x1/MW": {
+      "types": "./react/1x1/MW/index.d.ts",
+      "import": "./react/1x1/MW/index.js",
+      "require": "./react/1x1/MW/index.cjs"
+    },
+    "./react/1x1/MX": {
+      "types": "./react/1x1/MX/index.d.ts",
+      "import": "./react/1x1/MX/index.js",
+      "require": "./react/1x1/MX/index.cjs"
+    },
+    "./react/1x1/MY": {
+      "types": "./react/1x1/MY/index.d.ts",
+      "import": "./react/1x1/MY/index.js",
+      "require": "./react/1x1/MY/index.cjs"
+    },
+    "./react/1x1/MZ": {
+      "types": "./react/1x1/MZ/index.d.ts",
+      "import": "./react/1x1/MZ/index.js",
+      "require": "./react/1x1/MZ/index.cjs"
+    },
+    "./react/1x1/NA": {
+      "types": "./react/1x1/NA/index.d.ts",
+      "import": "./react/1x1/NA/index.js",
+      "require": "./react/1x1/NA/index.cjs"
+    },
+    "./react/1x1/NC": {
+      "types": "./react/1x1/NC/index.d.ts",
+      "import": "./react/1x1/NC/index.js",
+      "require": "./react/1x1/NC/index.cjs"
+    },
+    "./react/1x1/NE": {
+      "types": "./react/1x1/NE/index.d.ts",
+      "import": "./react/1x1/NE/index.js",
+      "require": "./react/1x1/NE/index.cjs"
+    },
+    "./react/1x1/NF": {
+      "types": "./react/1x1/NF/index.d.ts",
+      "import": "./react/1x1/NF/index.js",
+      "require": "./react/1x1/NF/index.cjs"
+    },
+    "./react/1x1/NG": {
+      "types": "./react/1x1/NG/index.d.ts",
+      "import": "./react/1x1/NG/index.js",
+      "require": "./react/1x1/NG/index.cjs"
+    },
+    "./react/1x1/NI": {
+      "types": "./react/1x1/NI/index.d.ts",
+      "import": "./react/1x1/NI/index.js",
+      "require": "./react/1x1/NI/index.cjs"
+    },
+    "./react/1x1/NL": {
+      "types": "./react/1x1/NL/index.d.ts",
+      "import": "./react/1x1/NL/index.js",
+      "require": "./react/1x1/NL/index.cjs"
+    },
+    "./react/1x1/NO": {
+      "types": "./react/1x1/NO/index.d.ts",
+      "import": "./react/1x1/NO/index.js",
+      "require": "./react/1x1/NO/index.cjs"
+    },
+    "./react/1x1/NP": {
+      "types": "./react/1x1/NP/index.d.ts",
+      "import": "./react/1x1/NP/index.js",
+      "require": "./react/1x1/NP/index.cjs"
+    },
+    "./react/1x1/NR": {
+      "types": "./react/1x1/NR/index.d.ts",
+      "import": "./react/1x1/NR/index.js",
+      "require": "./react/1x1/NR/index.cjs"
+    },
+    "./react/1x1/NU": {
+      "types": "./react/1x1/NU/index.d.ts",
+      "import": "./react/1x1/NU/index.js",
+      "require": "./react/1x1/NU/index.cjs"
+    },
+    "./react/1x1/NZ": {
+      "types": "./react/1x1/NZ/index.d.ts",
+      "import": "./react/1x1/NZ/index.js",
+      "require": "./react/1x1/NZ/index.cjs"
+    },
+    "./react/1x1/OM": {
+      "types": "./react/1x1/OM/index.d.ts",
+      "import": "./react/1x1/OM/index.js",
+      "require": "./react/1x1/OM/index.cjs"
+    },
+    "./react/1x1/PA": {
+      "types": "./react/1x1/PA/index.d.ts",
+      "import": "./react/1x1/PA/index.js",
+      "require": "./react/1x1/PA/index.cjs"
+    },
+    "./react/1x1/PE": {
+      "types": "./react/1x1/PE/index.d.ts",
+      "import": "./react/1x1/PE/index.js",
+      "require": "./react/1x1/PE/index.cjs"
+    },
+    "./react/1x1/PF": {
+      "types": "./react/1x1/PF/index.d.ts",
+      "import": "./react/1x1/PF/index.js",
+      "require": "./react/1x1/PF/index.cjs"
+    },
+    "./react/1x1/PG": {
+      "types": "./react/1x1/PG/index.d.ts",
+      "import": "./react/1x1/PG/index.js",
+      "require": "./react/1x1/PG/index.cjs"
+    },
+    "./react/1x1/PH": {
+      "types": "./react/1x1/PH/index.d.ts",
+      "import": "./react/1x1/PH/index.js",
+      "require": "./react/1x1/PH/index.cjs"
+    },
+    "./react/1x1/PK": {
+      "types": "./react/1x1/PK/index.d.ts",
+      "import": "./react/1x1/PK/index.js",
+      "require": "./react/1x1/PK/index.cjs"
+    },
+    "./react/1x1/PL": {
+      "types": "./react/1x1/PL/index.d.ts",
+      "import": "./react/1x1/PL/index.js",
+      "require": "./react/1x1/PL/index.cjs"
+    },
+    "./react/1x1/PM": {
+      "types": "./react/1x1/PM/index.d.ts",
+      "import": "./react/1x1/PM/index.js",
+      "require": "./react/1x1/PM/index.cjs"
+    },
+    "./react/1x1/PN": {
+      "types": "./react/1x1/PN/index.d.ts",
+      "import": "./react/1x1/PN/index.js",
+      "require": "./react/1x1/PN/index.cjs"
+    },
+    "./react/1x1/PR": {
+      "types": "./react/1x1/PR/index.d.ts",
+      "import": "./react/1x1/PR/index.js",
+      "require": "./react/1x1/PR/index.cjs"
+    },
+    "./react/1x1/PS": {
+      "types": "./react/1x1/PS/index.d.ts",
+      "import": "./react/1x1/PS/index.js",
+      "require": "./react/1x1/PS/index.cjs"
+    },
+    "./react/1x1/PT": {
+      "types": "./react/1x1/PT/index.d.ts",
+      "import": "./react/1x1/PT/index.js",
+      "require": "./react/1x1/PT/index.cjs"
+    },
+    "./react/1x1/PW": {
+      "types": "./react/1x1/PW/index.d.ts",
+      "import": "./react/1x1/PW/index.js",
+      "require": "./react/1x1/PW/index.cjs"
+    },
+    "./react/1x1/PY": {
+      "types": "./react/1x1/PY/index.d.ts",
+      "import": "./react/1x1/PY/index.js",
+      "require": "./react/1x1/PY/index.cjs"
+    },
+    "./react/1x1/QA": {
+      "types": "./react/1x1/QA/index.d.ts",
+      "import": "./react/1x1/QA/index.js",
+      "require": "./react/1x1/QA/index.cjs"
+    },
+    "./react/1x1/RE": {
+      "types": "./react/1x1/RE/index.d.ts",
+      "import": "./react/1x1/RE/index.js",
+      "require": "./react/1x1/RE/index.cjs"
+    },
+    "./react/1x1/RO": {
+      "types": "./react/1x1/RO/index.d.ts",
+      "import": "./react/1x1/RO/index.js",
+      "require": "./react/1x1/RO/index.cjs"
+    },
+    "./react/1x1/RS": {
+      "types": "./react/1x1/RS/index.d.ts",
+      "import": "./react/1x1/RS/index.js",
+      "require": "./react/1x1/RS/index.cjs"
+    },
+    "./react/1x1/RU": {
+      "types": "./react/1x1/RU/index.d.ts",
+      "import": "./react/1x1/RU/index.js",
+      "require": "./react/1x1/RU/index.cjs"
+    },
+    "./react/1x1/RW": {
+      "types": "./react/1x1/RW/index.d.ts",
+      "import": "./react/1x1/RW/index.js",
+      "require": "./react/1x1/RW/index.cjs"
+    },
+    "./react/1x1/SA": {
+      "types": "./react/1x1/SA/index.d.ts",
+      "import": "./react/1x1/SA/index.js",
+      "require": "./react/1x1/SA/index.cjs"
+    },
+    "./react/1x1/SB": {
+      "types": "./react/1x1/SB/index.d.ts",
+      "import": "./react/1x1/SB/index.js",
+      "require": "./react/1x1/SB/index.cjs"
+    },
+    "./react/1x1/SC": {
+      "types": "./react/1x1/SC/index.d.ts",
+      "import": "./react/1x1/SC/index.js",
+      "require": "./react/1x1/SC/index.cjs"
+    },
+    "./react/1x1/SD": {
+      "types": "./react/1x1/SD/index.d.ts",
+      "import": "./react/1x1/SD/index.js",
+      "require": "./react/1x1/SD/index.cjs"
+    },
+    "./react/1x1/SE": {
+      "types": "./react/1x1/SE/index.d.ts",
+      "import": "./react/1x1/SE/index.js",
+      "require": "./react/1x1/SE/index.cjs"
+    },
+    "./react/1x1/SG": {
+      "types": "./react/1x1/SG/index.d.ts",
+      "import": "./react/1x1/SG/index.js",
+      "require": "./react/1x1/SG/index.cjs"
+    },
+    "./react/1x1/SH": {
+      "types": "./react/1x1/SH/index.d.ts",
+      "import": "./react/1x1/SH/index.js",
+      "require": "./react/1x1/SH/index.cjs"
+    },
+    "./react/1x1/SI": {
+      "types": "./react/1x1/SI/index.d.ts",
+      "import": "./react/1x1/SI/index.js",
+      "require": "./react/1x1/SI/index.cjs"
+    },
+    "./react/1x1/SJ": {
+      "types": "./react/1x1/SJ/index.d.ts",
+      "import": "./react/1x1/SJ/index.js",
+      "require": "./react/1x1/SJ/index.cjs"
+    },
+    "./react/1x1/SK": {
+      "types": "./react/1x1/SK/index.d.ts",
+      "import": "./react/1x1/SK/index.js",
+      "require": "./react/1x1/SK/index.cjs"
+    },
+    "./react/1x1/SL": {
+      "types": "./react/1x1/SL/index.d.ts",
+      "import": "./react/1x1/SL/index.js",
+      "require": "./react/1x1/SL/index.cjs"
+    },
+    "./react/1x1/SM": {
+      "types": "./react/1x1/SM/index.d.ts",
+      "import": "./react/1x1/SM/index.js",
+      "require": "./react/1x1/SM/index.cjs"
+    },
+    "./react/1x1/SN": {
+      "types": "./react/1x1/SN/index.d.ts",
+      "import": "./react/1x1/SN/index.js",
+      "require": "./react/1x1/SN/index.cjs"
+    },
+    "./react/1x1/SO": {
+      "types": "./react/1x1/SO/index.d.ts",
+      "import": "./react/1x1/SO/index.js",
+      "require": "./react/1x1/SO/index.cjs"
+    },
+    "./react/1x1/SR": {
+      "types": "./react/1x1/SR/index.d.ts",
+      "import": "./react/1x1/SR/index.js",
+      "require": "./react/1x1/SR/index.cjs"
+    },
+    "./react/1x1/SS": {
+      "types": "./react/1x1/SS/index.d.ts",
+      "import": "./react/1x1/SS/index.js",
+      "require": "./react/1x1/SS/index.cjs"
+    },
+    "./react/1x1/ST": {
+      "types": "./react/1x1/ST/index.d.ts",
+      "import": "./react/1x1/ST/index.js",
+      "require": "./react/1x1/ST/index.cjs"
+    },
+    "./react/1x1/SV": {
+      "types": "./react/1x1/SV/index.d.ts",
+      "import": "./react/1x1/SV/index.js",
+      "require": "./react/1x1/SV/index.cjs"
+    },
+    "./react/1x1/SX": {
+      "types": "./react/1x1/SX/index.d.ts",
+      "import": "./react/1x1/SX/index.js",
+      "require": "./react/1x1/SX/index.cjs"
+    },
+    "./react/1x1/SY": {
+      "types": "./react/1x1/SY/index.d.ts",
+      "import": "./react/1x1/SY/index.js",
+      "require": "./react/1x1/SY/index.cjs"
+    },
+    "./react/1x1/SZ": {
+      "types": "./react/1x1/SZ/index.d.ts",
+      "import": "./react/1x1/SZ/index.js",
+      "require": "./react/1x1/SZ/index.cjs"
+    },
+    "./react/1x1/TA": {
+      "types": "./react/1x1/TA/index.d.ts",
+      "import": "./react/1x1/TA/index.js",
+      "require": "./react/1x1/TA/index.cjs"
+    },
+    "./react/1x1/TC": {
+      "types": "./react/1x1/TC/index.d.ts",
+      "import": "./react/1x1/TC/index.js",
+      "require": "./react/1x1/TC/index.cjs"
+    },
+    "./react/1x1/TD": {
+      "types": "./react/1x1/TD/index.d.ts",
+      "import": "./react/1x1/TD/index.js",
+      "require": "./react/1x1/TD/index.cjs"
+    },
+    "./react/1x1/TF": {
+      "types": "./react/1x1/TF/index.d.ts",
+      "import": "./react/1x1/TF/index.js",
+      "require": "./react/1x1/TF/index.cjs"
+    },
+    "./react/1x1/TG": {
+      "types": "./react/1x1/TG/index.d.ts",
+      "import": "./react/1x1/TG/index.js",
+      "require": "./react/1x1/TG/index.cjs"
+    },
+    "./react/1x1/TH": {
+      "types": "./react/1x1/TH/index.d.ts",
+      "import": "./react/1x1/TH/index.js",
+      "require": "./react/1x1/TH/index.cjs"
+    },
+    "./react/1x1/TJ": {
+      "types": "./react/1x1/TJ/index.d.ts",
+      "import": "./react/1x1/TJ/index.js",
+      "require": "./react/1x1/TJ/index.cjs"
+    },
+    "./react/1x1/TK": {
+      "types": "./react/1x1/TK/index.d.ts",
+      "import": "./react/1x1/TK/index.js",
+      "require": "./react/1x1/TK/index.cjs"
+    },
+    "./react/1x1/TL": {
+      "types": "./react/1x1/TL/index.d.ts",
+      "import": "./react/1x1/TL/index.js",
+      "require": "./react/1x1/TL/index.cjs"
+    },
+    "./react/1x1/TM": {
+      "types": "./react/1x1/TM/index.d.ts",
+      "import": "./react/1x1/TM/index.js",
+      "require": "./react/1x1/TM/index.cjs"
+    },
+    "./react/1x1/TN": {
+      "types": "./react/1x1/TN/index.d.ts",
+      "import": "./react/1x1/TN/index.js",
+      "require": "./react/1x1/TN/index.cjs"
+    },
+    "./react/1x1/TO": {
+      "types": "./react/1x1/TO/index.d.ts",
+      "import": "./react/1x1/TO/index.js",
+      "require": "./react/1x1/TO/index.cjs"
+    },
+    "./react/1x1/TR": {
+      "types": "./react/1x1/TR/index.d.ts",
+      "import": "./react/1x1/TR/index.js",
+      "require": "./react/1x1/TR/index.cjs"
+    },
+    "./react/1x1/TT": {
+      "types": "./react/1x1/TT/index.d.ts",
+      "import": "./react/1x1/TT/index.js",
+      "require": "./react/1x1/TT/index.cjs"
+    },
+    "./react/1x1/TV": {
+      "types": "./react/1x1/TV/index.d.ts",
+      "import": "./react/1x1/TV/index.js",
+      "require": "./react/1x1/TV/index.cjs"
+    },
+    "./react/1x1/TW": {
+      "types": "./react/1x1/TW/index.d.ts",
+      "import": "./react/1x1/TW/index.js",
+      "require": "./react/1x1/TW/index.cjs"
+    },
+    "./react/1x1/TZ": {
+      "types": "./react/1x1/TZ/index.d.ts",
+      "import": "./react/1x1/TZ/index.js",
+      "require": "./react/1x1/TZ/index.cjs"
+    },
+    "./react/1x1/UA": {
+      "types": "./react/1x1/UA/index.d.ts",
+      "import": "./react/1x1/UA/index.js",
+      "require": "./react/1x1/UA/index.cjs"
+    },
+    "./react/1x1/UG": {
+      "types": "./react/1x1/UG/index.d.ts",
+      "import": "./react/1x1/UG/index.js",
+      "require": "./react/1x1/UG/index.cjs"
+    },
+    "./react/1x1/UM": {
+      "types": "./react/1x1/UM/index.d.ts",
+      "import": "./react/1x1/UM/index.js",
+      "require": "./react/1x1/UM/index.cjs"
+    },
+    "./react/1x1/US": {
+      "types": "./react/1x1/US/index.d.ts",
+      "import": "./react/1x1/US/index.js",
+      "require": "./react/1x1/US/index.cjs"
+    },
+    "./react/1x1/UY": {
+      "types": "./react/1x1/UY/index.d.ts",
+      "import": "./react/1x1/UY/index.js",
+      "require": "./react/1x1/UY/index.cjs"
+    },
+    "./react/1x1/UZ": {
+      "types": "./react/1x1/UZ/index.d.ts",
+      "import": "./react/1x1/UZ/index.js",
+      "require": "./react/1x1/UZ/index.cjs"
+    },
+    "./react/1x1/VA": {
+      "types": "./react/1x1/VA/index.d.ts",
+      "import": "./react/1x1/VA/index.js",
+      "require": "./react/1x1/VA/index.cjs"
+    },
+    "./react/1x1/VC": {
+      "types": "./react/1x1/VC/index.d.ts",
+      "import": "./react/1x1/VC/index.js",
+      "require": "./react/1x1/VC/index.cjs"
+    },
+    "./react/1x1/VE": {
+      "types": "./react/1x1/VE/index.d.ts",
+      "import": "./react/1x1/VE/index.js",
+      "require": "./react/1x1/VE/index.cjs"
+    },
+    "./react/1x1/VG": {
+      "types": "./react/1x1/VG/index.d.ts",
+      "import": "./react/1x1/VG/index.js",
+      "require": "./react/1x1/VG/index.cjs"
+    },
+    "./react/1x1/VI": {
+      "types": "./react/1x1/VI/index.d.ts",
+      "import": "./react/1x1/VI/index.js",
+      "require": "./react/1x1/VI/index.cjs"
+    },
+    "./react/1x1/VN": {
+      "types": "./react/1x1/VN/index.d.ts",
+      "import": "./react/1x1/VN/index.js",
+      "require": "./react/1x1/VN/index.cjs"
+    },
+    "./react/1x1/VU": {
+      "types": "./react/1x1/VU/index.d.ts",
+      "import": "./react/1x1/VU/index.js",
+      "require": "./react/1x1/VU/index.cjs"
+    },
+    "./react/1x1/WF": {
+      "types": "./react/1x1/WF/index.d.ts",
+      "import": "./react/1x1/WF/index.js",
+      "require": "./react/1x1/WF/index.cjs"
+    },
+    "./react/1x1/WS": {
+      "types": "./react/1x1/WS/index.d.ts",
+      "import": "./react/1x1/WS/index.js",
+      "require": "./react/1x1/WS/index.cjs"
+    },
+    "./react/1x1/XK": {
+      "types": "./react/1x1/XK/index.d.ts",
+      "import": "./react/1x1/XK/index.js",
+      "require": "./react/1x1/XK/index.cjs"
+    },
+    "./react/1x1/YE": {
+      "types": "./react/1x1/YE/index.d.ts",
+      "import": "./react/1x1/YE/index.js",
+      "require": "./react/1x1/YE/index.cjs"
+    },
+    "./react/1x1/YT": {
+      "types": "./react/1x1/YT/index.d.ts",
+      "import": "./react/1x1/YT/index.js",
+      "require": "./react/1x1/YT/index.cjs"
+    },
+    "./react/1x1/ZA": {
+      "types": "./react/1x1/ZA/index.d.ts",
+      "import": "./react/1x1/ZA/index.js",
+      "require": "./react/1x1/ZA/index.cjs"
+    },
+    "./react/1x1/ZM": {
+      "types": "./react/1x1/ZM/index.d.ts",
+      "import": "./react/1x1/ZM/index.js",
+      "require": "./react/1x1/ZM/index.cjs"
+    },
+    "./react/1x1/ZW": {
+      "types": "./react/1x1/ZW/index.d.ts",
+      "import": "./react/1x1/ZW/index.js",
+      "require": "./react/1x1/ZW/index.cjs"
+    }
+  },
   "sideEffects": [
     "*.css"
   ],
   "devDependencies": {
-    "@babel/cli": "^7.7.7",
-    "@babel/core": "^7.7.7",
-    "@babel/node": "^7.7.7",
-    "@babel/plugin-proposal-class-properties": "^7.7.4",
-    "@babel/plugin-proposal-object-rest-spread": "^7.7.7",
-    "@babel/plugin-transform-destructuring": "^7.7.4",
+    "@babel/cli": "^7.17.10",
+    "@babel/core": "^7.18.0",
+    "@babel/node": "^7.17.10",
+    "@babel/plugin-proposal-class-properties": "^7.17.12",
+    "@babel/plugin-proposal-object-rest-spread": "^7.18.0",
+    "@babel/plugin-transform-destructuring": "^7.18.0",
     "@babel/polyfill": "^7.7.0",
-    "@babel/preset-env": "^7.7.7",
-    "@babel/preset-react": "^7.7.4",
-    "@babel/register": "^7.7.7",
-    "@svgr/core": "^4.3.0",
-    "@svgr/plugin-jsx": "^4.3.0",
-    "@svgr/plugin-prettier": "^4.2.0",
-    "@svgr/plugin-svgo": "^4.2.0",
-    "chai": "^4.2.0",
-    "copyfiles": "^1.2.0",
-    "cross-env": "^6.0.3",
+    "@babel/preset-env": "^7.18.0",
+    "@babel/preset-react": "^7.17.12",
+    "@babel/register": "^7.17.7",
+    "@svgr/core": "^6.2.1",
+    "@svgr/plugin-jsx": "^6.2.1",
+    "@svgr/plugin-prettier": "^6.1.2",
+    "@svgr/plugin-svgo": "^6.2.0",
+    "chai": "^4.3.6",
+    "copyfiles": "^2.4.1",
+    "cross-env": "^7.0.3",
     "esm": "^3.2.25",
-    "fs-extra": "^8.1.0",
-    "libphonenumber-js": "^1.7.30",
-    "mini-svg-data-uri": "^1.1.3",
-    "mocha": "^6.2.2",
-    "npm-run-all": "^1.4.0",
-    "react": "^16.12.0",
-    "rimraf": "^2.5.0",
-    "svgo": "^2.3.1"
+    "fs-extra": "^10.1.0",
+    "libphonenumber-js": "^1.10.4",
+    "mini-svg-data-uri": "^1.4.4",
+    "mocha": "^10.0.0",
+    "npm-run-all": "^4.1.5",
+    "react": "^18.1.0",
+    "rimraf": "^3.0.2",
+    "svgo": "^2.8.0"
   },
   "scripts": {
-    "generate-countries": "babel-node runnable/generate-countries",
-    "generate-1x1-flags": "babel-node runnable/generate-1x1-flags",
+    "generate-countries": "node --experimental-json-modules runnable/generate-countries",
+    "generate-1x1-flags": "node --experimental-json-modules runnable/generate-1x1-flags",
     "copy-over-custom-1x1-flags": "copyfiles --flat flags/1x1-custom/*.svg flags/1x1",
-    "generate-react-flags": "babel-node runnable/generate-react-flags",
+    "generate-react-flags": "node --experimental-json-modules runnable/generate-react-flags",
     "copy-react-flags": "npm-run-all copy-react-flags-3x2 copy-react-flags-1x1",
     "copy-react-flags-3x2": "copyfiles --flat modules/react/3x2/[A-Z][A-Z].js react/3x2",
     "copy-react-flags-1x1": "copyfiles --flat modules/react/1x1/[A-Z][A-Z].js react/1x1",
     "clean-react-flags": "rimraf ./source/react/*/[A-Z][A-Z].js",
-    "generate-string-flags": "babel-node runnable/generate-string-flags",
-    "generate-css": "babel-node runnable/generate-css",
+    "generate-string-flags": "node --experimental-json-modules runnable/generate-string-flags",
+    "generate-css": "node --experimental-json-modules runnable/generate-css",
     "generate-optimized-1x1-flags": "svgo --folder flags/1x1 --output 1x1",
     "generate-optimized-flags": "svgo --folder flags/3x2 --output 3x2",
-    "website:generate-flags-page": "babel-node runnable/generate-flags-page",
+    "website:generate-flags-page": "node --experimental-json-modules runnable/generate-flags-page",
     "website:copy-flags": "npm-run-all website:copy-flags:3x2 website:copy-flags:1x1",
     "website:copy-flags:3x2": "copyfiles --flat 3x2/*.svg website/3x2",
     "website:copy-flags:1x1": "copyfiles --flat 1x1/*.svg website/1x1",
     "copy-es6-countries": "copyfiles --flat source/countries.json modules",
     "copy-commonjs-countries": "copyfiles --flat source/countries.json commonjs",
     "clean-for-build": "rimraf ./commonjs/**/* ./modules/**/*",
+    "build-commonjs": "npm-run-all build-commonjs-modules build-commonjs-package.json",
+    "build-commonjs-package.json": "node runnable/create-commonjs-package-json.js",
     "build-commonjs-modules": "cross-env BABEL_ENV=commonjs babel ./source --out-dir ./commonjs --source-maps --ignore *.test.js",
     "build-es6-modules": "cross-env BABEL_ENV=es6 babel ./source --out-dir ./modules --source-maps --ignore *.test.js",
     "build-flags": "npm-run-all generate-1x1-flags copy-over-custom-1x1-flags generate-optimized-1x1-flags generate-optimized-flags",
     "build-countries": "npm-run-all generate-countries copy-es6-countries copy-commonjs-countries",
-    "build": "npm-run-all clean-for-build build-countries build-flags generate-string-flags generate-react-flags build-commonjs-modules build-es6-modules generate-css",
-    "test": "mocha --bail --require @babel/register --require esm --require ./test/setup.js \"source/**/*.test.js\" \"test/**/*.test.js\"",
-    "prepublish": "npm-run-all build test"
+    "build": "npm-run-all clean-for-build build-countries build-flags generate-string-flags generate-react-flags build-commonjs build-es6-modules generate-css",
+    "test": "node --experimental-json-modules node_modules/mocha/bin/_mocha --bail --require ./test/setup.js \"source/**/*.test.js\" \"test/**/*.test.js\"",
+    "prepublishOnly": "npm-run-all build test"
   },
   "repository": {
     "type": "git",

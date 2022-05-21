@@ -5,7 +5,7 @@ import fs from 'fs'
 
 import countries from '../source/countries.json'
 
-const FLAGS_PATH = path.join(__dirname, '..', 'flags')
+const FLAGS_PATH = path.resolve('./flags')
 
 /**
  * `3:2` to `1:1` flag icons transform offsets:
