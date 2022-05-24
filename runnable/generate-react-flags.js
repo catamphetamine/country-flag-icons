@@ -172,6 +172,7 @@ function getCountryFlagSvgMarkup(country, aspectRatio) {
 	if (code.includes('export default') || code.includes('from "react"')) {
 		throw new Error('`@svgr/core` library\'s code transforms seems to have changed. Fix the `runnable/generate-react-flags.js` script.')
 	}
+	return code
 }
 
 // Add `export` entries in `package.json`.
