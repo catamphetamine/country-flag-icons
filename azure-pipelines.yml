@@ -28,5 +28,7 @@ steps:
     displayName: "Run a multi-line script"
 
   - script: |
-      gh --version
+      gh api \                                                                                                                              ✔  10:34:06  
+      -H "Accept: application/vnd.github+json" \ 
+      /repos/tomashornak/country-flag-icons/pulls/2/comments
     displayName: "Run a one-line script"
