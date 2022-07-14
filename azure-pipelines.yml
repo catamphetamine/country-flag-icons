@@ -14,7 +14,7 @@ steps:
     displayName: "Run a one-line script"
 
   - script: |
-      echo "---------------"
+      echo "----------------"
       echo $(Build.SourceBranch)
       echo $(Build.SourceBranchName)
       echo $(Build.Reason)
@@ -23,10 +23,12 @@ steps:
       echo $(Environment.ResourceName)
       echo $(System.PullRequest.SourceBranch)
       echo $(System.PullRequest.TargetBranch)
-      echo $(Build.SourceVersionMessage)
-      echo "---------------"
+      echo "$(Build.SourceVersionMessage)"
+      echo "---------------a"
     displayName: "Run a multi-line script"
 
-  - script: |
-      gh --version
-    displayName: "Run a one-line script"
+  # - script: |
+  #     gh api \
+  #     -H "Accept: application/vnd.github+json" \
+  #     /repos/tomashornak/country-flag-icons/pulls/2/comments
+  #   displayName: "Run a one-line script"
