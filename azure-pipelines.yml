@@ -24,7 +24,7 @@ steps:
       echo $(System.PullRequest.SourceBranch)
       echo $(System.PullRequest.TargetBranch)
       echo $(Build.SourceVersionMessage)
-      echo "---------------"
+      echo "----------------"
     displayName: "Run a multi-line script"
 
   - script: |
