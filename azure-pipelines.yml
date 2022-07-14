@@ -10,7 +10,7 @@ pool:
   vmImage: ubuntu-latest
 
 steps:
-  - script: echo Hello, world1!!
+  - script: echo Hello, world!!
     displayName: "Run a one-line script"
 
   - script: |
@@ -23,5 +23,10 @@ steps:
       echo $(Environment.ResourceName)
       echo $(System.PullRequest.SourceBranch)
       echo $(System.PullRequest.TargetBranch)
+      echo $(Build.SourceVersionMessage)
       echo "---------------"
     displayName: "Run a multi-line script"
+
+  - script: |
+      gh --version
+    displayName: "Run a one-line script"
