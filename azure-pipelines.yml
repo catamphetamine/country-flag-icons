@@ -14,7 +14,7 @@ steps:
     displayName: "Run a one-line script"
 
   - script: |
-      echo "---------------"
+      echo "----------------"
       echo $(Build.SourceBranch)
       echo $(Build.SourceBranchName)
       echo $(Build.Reason)
