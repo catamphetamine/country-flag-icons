@@ -3,7 +3,7 @@
 import path from 'path'
 import fs from 'fs'
 
-import countries from '../source/countries.json'
+import countries from '../source/countries.json' assert { type: 'json' }
 
 const FLAGS_PATH = path.resolve('./flags')
 

@@ -105,6 +105,10 @@ import US from 'country-flag-icons/react/3x2/US'
 <US title="United States" className="..."/>
 ```
 
+### Vue
+
+There's an [experimental component](https://gitlab.com/catamphetamine/country-flag-icons/-/issues/26) for Vue 3.
+
 ### String
 
 All flags can also be imported as strings:

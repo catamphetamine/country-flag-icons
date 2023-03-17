@@ -1,7 +1,7 @@
 import fs from 'fs-extra'
 import path from 'path'
 
-import COUNTRIES from '../source/countries.json'
+import COUNTRIES from '../source/countries.json' assert { type: 'json' }
 
 ['3x2', '1x1'].forEach((size) => {
   const flagsDirectory = path.resolve(size)

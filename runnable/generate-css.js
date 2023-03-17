@@ -3,7 +3,7 @@ import fs from 'fs-extra'
 import svgr from '@svgr/core'
 import svgToMiniDataURI from 'mini-svg-data-uri'
 
-import COUNTRIES from '../source/countries.json'
+import COUNTRIES from '../source/countries.json' assert { type: 'json' }
 
 fs.outputFileSync(path.resolve('./3x2/flags.css'), generateCSS(3, 2))
 fs.outputFileSync(path.resolve('./1x1/flags.css'), generateCSS(1, 1))
