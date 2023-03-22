@@ -4,7 +4,8 @@
 		{
 			"follow_symlinks": true,
 			"path": ".",
-			"folder_exclude_patterns": ["node_modules", ".nyc_output", "react-phone-number-input/coverage", "commonjs", "react-phone-number-input/lib", "project.sublime-workspace", "bundle", "npm-debug.log", "modules"]
+			"file_exclude_patterns": ["flags.css", "country-flag-icons/source/react/1x1/index.js", "country-flag-icons/source/react/3x2/index.js"],
+			"folder_exclude_patterns": ["node_modules", ".nyc_output", "coverage", "commonjs", "lib", "project.sublime-workspace", "bundle", "country-flag-icons/flags/1x1", "country-flag-icons/1x1", "country-flag-icons/3x2", "country-flag-icons/string", "npm-debug.log", "modules"]
 		}
 	],
 	"settings":

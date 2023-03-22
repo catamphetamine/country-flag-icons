@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="99.006 0 341.3 341.3">
-<rect fill="#0021ad" width="512" height="341.3"/>
-<polyline fill="#1c8a42" points="0,0 512,0 512,341.3 "/>
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="99.18 0 342 342">
+<rect fill="#0021ad" width="513" height="342"/>
+<polyline fill="#1c8a42" points="0,0 513,0 513,342 "/>
 <g fill="#FFFFFF">
 	<polygon points="77.6,272 83.3,283.9 96.1,280.9 90.4,292.8 100.7,300.9 87.9,303.8 87.9,317 77.6,308.7 67.4,317
 		67.4,303.8 54.6,300.9 64.9,292.8 59.1,280.9 72,283.9 	"/>

@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 341.3">
-<rect y="0" fill="#496E2D" width="512" height="341.3"/>
-<polygon points="0,110.7 0,150.7 0,190.7 0,230.7 512,230.7 512,190.7 512,150.7 512,110.7 "/>
-<rect y="110.7" fill="#FFDA44" width="512" height="40"/>
-<rect y="190.7" fill="#FFFFFF" width="512" height="40"/>
-<rect x="196" y="0" width="120" height="341.3"/>
-<rect x="196" y="0" fill="#FFDA44" width="40" height="341.3"/>
-<rect x="274.7" y="0" fill="#FFFFFF" width="40" height="341.3"/>
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 513 342">
+<rect y="0" fill="#496E2D" width="513" height="342"/>
+<polygon points="0,110.7 0,150.7 0,190.7 0,230.7 513,230.7 513,190.7 513,150.7 513,110.7 "/>
+<rect y="110.7" fill="#FFDA44" width="513" height="40"/>
+<rect y="190.7" fill="#FFFFFF" width="513" height="40"/>
+<rect x="196" y="0" width="120" height="342"/>
+<rect x="196" y="0" fill="#FFDA44" width="40" height="342"/>
+<rect x="274.7" y="0" fill="#FFFFFF" width="40" height="342"/>
 <g>
 	<circle fill="#D80027" cx="256" cy="170.7" r="123.1"/>
 	<g fill="#496E2D">
