@@ -3086,6 +3086,14 @@
       "types": "./react/1x1/ZW/index.d.ts",
       "import": "./react/1x1/ZW/index.js",
       "require": "./react/1x1/ZW/index.cjs"
+    },
+    "./vue/3x2": {
+      "types": "./vue/3x2/index.d.ts",
+      "import": "./vue/3x2/index.js"
+    },
+    "./vue/1x1": {
+      "types": "./vue/1x1/index.d.ts",
+      "import": "./vue/1x1/index.js"
     }
   },
   "sideEffects": [
@@ -3106,11 +3114,14 @@
     "@svgr/plugin-jsx": "^6.2.1",
     "@svgr/plugin-prettier": "^6.1.2",
     "@svgr/plugin-svgo": "^6.2.0",
+    "@vitejs/plugin-vue": "^5.2.1",
+    "@vue/test-utils": "^2.4.6",
     "chai": "^4.3.6",
     "copyfiles": "^2.4.1",
     "cross-env": "^7.0.3",
     "esm": "^3.2.25",
     "fs-extra": "^10.1.0",
+    "happy-dom": "^15.11.6",
     "libphonenumber-js": "^1.10.4",
     "mini-svg-data-uri": "^1.4.4",
     "mocha": "^10.0.0",
@@ -3118,7 +3129,9 @@
     "react": "^18.1.0",
     "react-test-renderer": "^18.1.0",
     "rimraf": "^3.0.2",
-    "svgo": "^2.8.0"
+    "svgo": "^2.8.0",
+    "vitest": "^2.1.6",
+    "vue": "^3.5.13"
   },
   "scripts": {
     "generate-countries": "node --experimental-json-modules runnable/generate-countries",
@@ -3129,6 +3142,11 @@
     "copy-react-flags-3x2": "copyfiles --flat modules/react/3x2/[A-Z][A-Z].js react/3x2",
     "copy-react-flags-1x1": "copyfiles --flat modules/react/1x1/[A-Z][A-Z].js react/1x1",
     "clean-react-flags": "rimraf ./source/react/*/[A-Z][A-Z].js",
+    "generate-vue-flags": "node --experimental-json-modules runnable/generate-vue-flags",
+    "copy-vue-flags": "npm-run-all copy-vue-flags-3x2 copy-vue-flags-1x1",
+    "copy-vue-flags-3x2": "copyfiles --flat modules/vue/3x2/*.js vue/3x2",
+    "copy-vue-flags-1x1": "copyfiles --flat modules/vue/1x1/*.js vue/1x1",
+    "clean-vue-flags": "rimraf ./source/vue/*/[A-Z][A-Z].[js,vue]",
     "generate-string-flags": "node --experimental-json-modules runnable/generate-string-flags",
     "generate-css": "node --experimental-json-modules runnable/generate-css",
     "generate-optimized-1x1-flags": "svgo --folder flags/1x1 --output 1x1",
@@ -3142,12 +3160,13 @@
     "clean-for-build": "rimraf ./commonjs/**/* ./modules/**/*",
     "build-commonjs": "npm-run-all build-commonjs-modules build-commonjs-package.json",
     "build-commonjs-package.json": "node runnable/create-commonjs-package-json.js",
-    "build-commonjs-modules": "cross-env BABEL_ENV=commonjs babel ./source --out-dir ./commonjs --source-maps --ignore *.test.js",
+    "build-commonjs-modules": "cross-env BABEL_ENV=commonjs babel ./source --out-dir ./commonjs --source-maps --ignore *.test.js,source/vue",
     "build-es6-modules": "cross-env BABEL_ENV=es6 babel ./source --out-dir ./modules --source-maps --ignore *.test.js",
     "build-flags": "npm-run-all generate-1x1-flags copy-over-custom-1x1-flags generate-optimized-1x1-flags generate-optimized-flags",
     "build-countries": "npm-run-all generate-countries copy-es6-countries copy-commonjs-countries",
-    "build": "npm-run-all clean-for-build build-countries build-flags generate-string-flags generate-react-flags build-commonjs build-es6-modules generate-css",
-    "test": "node --experimental-json-modules node_modules/mocha/bin/_mocha --bail --require ./test/setup.js \"source/**/*.test.js\" \"test/**/*.test.js\"",
+    "build": "npm-run-all clean-for-build build-countries build-flags generate-string-flags generate-react-flags generate-vue-flags build-commonjs build-es6-modules generate-css",
+    "test": "node --experimental-json-modules node_modules/mocha/bin/_mocha --bail --require ./test/setup.js \"source/**/*.test.js\" \"test/**/*.test.js\" --ignore \"test/*.vue.test.js\" && npm run test:vue",
+    "test:vue": "vitest run",
     "prepublishOnly": "npm-run-all build test"
   },
   "repository": {

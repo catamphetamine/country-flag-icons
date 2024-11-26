@@ -1,0 +1,13 @@
+{
+  "private": true,
+  "name": "country-flag-icons/vue/1x1",
+  "main": "index.js",
+  "type": "module",
+  "exports": {
+    ".": {
+      "types": "./index.d.ts",
+      "import": "./index.js"
+    }
+  },
+  "sideEffects": false
+}
