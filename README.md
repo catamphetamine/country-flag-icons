@@ -107,7 +107,18 @@ import US from 'country-flag-icons/react/3x2/US'
 
 ### Vue
 
-There's an [experimental component](https://gitlab.com/catamphetamine/country-flag-icons/-/issues/26) for Vue 3.
+Vue components for all flags are available at `/vue/3x2` export.
+
+```js
+import { SV } from 'country-flag-icons/vue/3x2'
+
+<SV title="El Salvador" class="..."/>
+```
+
+There's an [experimental component](https://gitlab.com/catamphetamine/country-flag-icons/-/issues/26).
+
+> [!NOTE]
+> There is not support for CommonJS, nor Vue 2.
 
 ### String
 
