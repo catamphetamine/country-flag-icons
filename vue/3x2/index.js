@@ -253,5 +253,7 @@ export {
 	ZA,
 	ZM,
 	ZW,
-	default as default
+  CountryFlagIcon,
+  LazyCountryFlagIcon,
+	default as default,
 } from '../../modules/vue/3x2/index.js'

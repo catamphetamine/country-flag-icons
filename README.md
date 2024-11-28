@@ -109,13 +109,30 @@ import US from 'country-flag-icons/react/3x2/US'
 
 Vue components for all flags are available at `/vue/3x2` export.
 
-```js
+```vue
+<script setup>
 import { SV } from 'country-flag-icons/vue/3x2'
+</script>
 
+<template>
 <SV title="El Salvador" class="..."/>
+</template>
 ```
 
-There's an [experimental component](https://gitlab.com/catamphetamine/country-flag-icons/-/issues/26).
+There is also available two components `CountryFlagIcon` and `LazyCountryFlagIcon`
+
+```vue
+<script setup>
+import { CountryFlagIcon, LazyCountryFlagIcon } from 'country-flag-icons/vue/3x2'
+</script>
+
+<template>
+<CountryFlagIcon title="El Salvador" country="SV" class="..."/>
+<LazyCountryFlagIcon title="El Salvador" country="SV" class="..."/>
+</template>
+```
+
+The difference between this components is that `LazyCountryFlagIcon` load asynchronusly at build time only the country flag component, reducing the file chunk size.
 
 > [!NOTE]
 > There is not support for CommonJS, nor Vue 2.

@@ -14,6 +14,40 @@ defineProps({
 </template>
 `
 
+const getFlagComponentSFC = (aspectRatio, lazy = false) => {
+  return [
+    `<script setup>`,
+    lazy
+      ? "import { defineAsyncComponent } from 'vue'"
+      : `import Flags from 'country-flag-icons/vue/${aspectRatio}'`,
+    "import { hasFlag } from 'country-flag-icons'",
+    '',
+    `const props = defineProps({
+  title: String,
+  country: {
+    type: String,
+    validate: (code) => hasFlag(code.toUpperCase()),
+    default: 'SV',
+  },
+})`,
+    '',
+    lazy
+      ? `const pathFlag = 'country-flag-icons/vue/3x2/components/' + props.country.toUpperCase() + '.vue'
+
+const Flag = defineAsyncComponent(() => import(pathFlag))`
+      : 'const Flag = Flags[props.country]',
+    `</script>
+
+<template>
+  <component
+    :is="Flag"
+    :title="title"
+  />
+</template>
+`,
+  ].join('\n')
+}
+
 const getFlagPackageJson = (aspectRatio) => `{
   "private": true,
   "name": "country-flag-icons/vue/${aspectRatio}",
@@ -30,6 +64,14 @@ const getFlagPackageJson = (aspectRatio) => `{
 
 function generateFlagsForSize(size) {
   fs.outputFileSync(path.resolve(`./source/vue/${size}/index.js`), generateFlags())
+  fs.outputFileSync(
+    path.resolve(`./vue/${size}/components/CountryFlagIcon.vue`),
+    getFlagComponentSFC(size)
+  )
+  fs.outputFileSync(
+    path.resolve(`./vue/${size}/components/LazyCountryFlagIcon.vue`),
+    getFlagComponentSFC(size, true)
+  )
 
   for (const country of COUNTRIES) {
     fs.outputFileSync(
@@ -57,7 +99,9 @@ function generateIndex(aspectRatio) {
   return `
 export {
 ${COUNTRIES.map((country) => '\t' + country + ',').join('\n')}
-	default as default
+  CountryFlagIcon,
+  LazyCountryFlagIcon,
+	default as default,
 } from '../../modules/vue/${aspectRatio}/index.js'
 	`.trim()
 }
@@ -82,8 +126,14 @@ function generateTypeScriptTypings() {
 import { DefineComponent } from 'vue'
 
 export type Flag = DefineComponent<{title: string}>;
+export type FlagComponent = DefineComponent<{title: string, country: string}>
 
-${COUNTRIES.map((country) => `export const ${country}: Flag`).join('\n')}
+${COUNTRIES.map((country) => `export const ${country}: Flag`)
+  .concat([
+    'export const CountryFlagIcon: FlagComponent',
+    'export const LazyCountryFlagIcon: FlagComponent',
+  ])
+  .join('\n')}
 
 	`.trim()
 }
@@ -92,11 +142,18 @@ function generateFlags() {
   return `
 ${COUNTRIES.map((country) => {
   return `import ${country} ` + `from './components/${country}.vue';`
-}).join('\n')}
+})
+  .concat([
+    "import CountryFlagIcon from './components/CountryFlagIcon.vue'",
+    "import LazyCountryFlagIcon from './components/LazyCountryFlagIcon.vue'",
+  ])
+  .join('\n')}
 
-export { ${COUNTRIES.join(', ')} }
+export { ${COUNTRIES.concat(['CountryFlagIcon', 'LazyCountryFlagIcon']).join(', ')} }
 
-export default { ${COUNTRIES.join(', ')} }
+export default { ${COUNTRIES.concat(['CountryFlagIcon', 'LazyCountryFlagIcon']).join(
+    ', '
+  )} }
 	`.trim()
 }
 

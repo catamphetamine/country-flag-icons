@@ -1,6 +1,7 @@
 import { DefineComponent } from 'vue'
 
 export type Flag = DefineComponent<{title: string}>;
+export type FlagComponent = DefineComponent<{title: string, country: string}>
 
 export const AC: Flag
 export const AD: Flag
@@ -256,3 +257,5 @@ export const YT: Flag
 export const ZA: Flag
 export const ZM: Flag
 export const ZW: Flag
+export const CountryFlagIcon: FlagComponent
+export const LazyCountryFlagIcon: FlagComponent
