@@ -3163,9 +3163,11 @@
     "build-es6-modules": "cross-env BABEL_ENV=es6 babel ./source --out-dir ./modules --source-maps --ignore *.test.js",
     "build-flags": "npm-run-all generate-1x1-flags copy-over-custom-1x1-flags generate-optimized-1x1-flags generate-optimized-flags",
     "build-countries": "npm-run-all generate-countries copy-es6-countries copy-commonjs-countries",
+    "build-vue-flags": "npm-run-all generate-vue-flags build-es6-modules copy-vue-flags-components",
     "build": "npm-run-all clean-for-build build-countries build-flags generate-string-flags generate-react-flags generate-vue-flags build-commonjs build-es6-modules generate-css",
     "test": "node --experimental-json-modules node_modules/mocha/bin/_mocha --bail --require ./test/setup.js \"source/**/*.test.js\" \"test/**/*.test.js\" --ignore \"test/*.vue.test.js\" && npm run test:vue",
     "test:vue": "vitest run",
+    "test:vue:dev": "vitest",
     "prepublishOnly": "npm-run-all build test"
   },
   "repository": {
