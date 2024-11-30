@@ -8,9 +8,10 @@ describe('exports/vue/3x2', () => {
   const svViewBox = '0 85.333 512 341.333'
   const krViewBox = '0 0 900 600'
   const defaultProps = { title: undefined, country: 'SV' }
+  const props = { title: '한국어', country: 'KR' }
   let sv, svDefault, vFlag, lazyVFlag, vFlagStub, Wrapper
 
-  beforeAll(async () => {
+  beforeAll(() => {
     svDefault = shallowMount(FLAGS.SV, {
       props: { title },
     })
@@ -29,8 +30,8 @@ describe('exports/vue/3x2', () => {
   })
 
   it('should export ES6', () => {
-    expect(svDefault.text()).to.include(title)
-    expect(sv.text()).to.include(title)
+    expect(svDefault.text()).toContain(title)
+    expect(sv.text()).toContain(title)
   })
   it('should render an svg element', () => {
     const svg = sv.find('svg')
@@ -85,8 +86,6 @@ describe('exports/vue/3x2', () => {
     expect(titleEl.text()).toBe(title)
   })
   it('should render CountryFlagIcon country flag', () => {
-    const props = { title: '한국어', country: 'KR' }
-
     vFlagStub = mount(Wrapper, { props })
     vFlag = vFlagStub.getComponent(CountryFlagIcon)
 
@@ -98,8 +97,6 @@ describe('exports/vue/3x2', () => {
     expect(titleEl.text()).toBe(props.title)
   })
   it('should render LazyCountryFlagIcon country flag', async () => {
-    const props = { title: '한국어', country: 'KR' }
-
     vFlagStub = mount(Wrapper, { props })
     lazyVFlag = vFlagStub.getComponent(LazyCountryFlagIcon)
 
