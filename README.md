@@ -115,7 +115,7 @@ import { SV } from 'country-flag-icons/vue/3x2'
 </script>
 
 <template>
-<SV title="El Salvador" class="..."/>
+  <SV title="El Salvador" class="..."/>
 </template>
 ```
 
@@ -127,15 +127,15 @@ import { CountryFlagIcon, LazyCountryFlagIcon } from 'country-flag-icons/vue/3x2
 </script>
 
 <template>
-<CountryFlagIcon title="El Salvador" country="SV" class="..."/>
-<LazyCountryFlagIcon title="El Salvador" country="SV" class="..."/>
+  <CountryFlagIcon title="El Salvador" country="SV" class="..."/>
+  <LazyCountryFlagIcon title="El Salvador" country="SV" class="..."/>
 </template>
 ```
 
 The difference between this components is that `LazyCountryFlagIcon` load asynchronusly at build time only the country flag component, reducing the file chunk size.
 
 > [!NOTE]
-> There is not support for CommonJS, nor Vue 2.
+> CommonJS and Vue 2 will not be supported.
 
 ### String
 
