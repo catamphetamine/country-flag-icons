@@ -2,7 +2,7 @@ import path from 'path'
 import fs from 'fs-extra'
 import svgr from '@svgr/core'
 
-import COUNTRIES from '../source/countries.json' assert { type: 'json' }
+import COUNTRIES from '../source/countries.json' with { type: 'json' }
 
 const getFlagPackageJson = (country, aspectRatio) => `{
   "private": true,

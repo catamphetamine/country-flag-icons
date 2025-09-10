@@ -1,8 +1,8 @@
 import path from 'path'
 import fs from 'fs-extra'
 
-import COUNTRIES from '../source/countries.json' assert { type: 'json' }
-import countryNames from './countryNames.json' assert { type: 'json' }
+import COUNTRIES from '../source/countries.json' with { type: 'json' }
+import countryNames from './countryNames.json' with { type: 'json' }
 
 function generateHTML(aspectRatioWidth, aspectRatioHeight) {
 	let html = `

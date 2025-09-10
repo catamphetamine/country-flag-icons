@@ -149,7 +149,11 @@ On March 9th, 2020, GitHub, Inc. silently [banned](https://medium.com/@catamphet
 
 ## Alternatives
 
-* [FlagKit](https://github.com/madebybowtie/FlagKit) ([`flagpack`](https://github.com/jackiboy/flagpack) npm package) — [`4x3`](https://github.com/jackiboy/flagpack/tree/master/flags/4x3) and [`1x1`](https://github.com/jackiboy/flagpack/tree/master/flags/1x1) SVG flag icons. MIT licence.
+* [FlagKit](https://github.com/madebybowtie/FlagKit) — MIT licence
+  - [`1.4x1`](https://github.com/madebybowtie/FlagKit/tree/master/Assets/SVG)
+* [`flagpack`](https://github.com/jackiboy/flagpack) — MIT licence
+  - [`4x3`](https://github.com/jackiboy/flagpack/tree/master/flags/4x3)
+  - [`1x1`](https://github.com/jackiboy/flagpack/tree/master/flags/1x1)
 
 ## Credits
 
