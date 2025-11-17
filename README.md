@@ -127,15 +127,15 @@ import US from 'country-flag-icons/string/3x2/US'
 console.log(US) // > '<svg xmlns="http://www.w3.org/2000/svg" ...'
 ```
 
-## Criteria for inclusion
+## Country Codes
 
-See [Criteria for inclusion](https://en.wikipedia.org/wiki/ISO_3166-1#Criteria_for_inclusion) section on the ISO-3166-1 standard Wikipedia page.
+This library includes the flags for all countries, territories, or areas of geographical interest that have an officially assigned code in the ISO-3166-1 standard. See [Criteria for inclusion](https://en.wikipedia.org/wiki/ISO_3166-1#Criteria_for_inclusion) section on the ISO-3166-1 standard Wikipedia page.
 
-This library includes the flags for all countries, territories, or areas of geographical interest that have an officially assigned code in the ISO-3166-1 standard.
+Additionally, this library includes a European Union (`EU`) flag because it's part of the ["exceptional reservations"](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2#Reserved_code_elements) of the ISO-3166-1 standard and there have been [requests](https://gitlab.com/catamphetamine/country-flag-icons/-/issues/4) to include it. Same goes for Canary Islands which are also an "exceptional reservation".
 
-Additionally, this library includes a European Union (EU) flag because it's part of the ["exceptional reservations"](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2#Reserved_code_elements) of the ISO-3166-1 standard and there have been [requests](https://gitlab.com/catamphetamine/country-flag-icons/-/issues/4) to do so.
+Additionally, this library includes unofficial two-letter codes to denote several territories that don't have their own official ISO-3166-1 code but still use a telephone numbering plan that is different from their ISO-3166-1 parent territory. In [accordance](https://www.npmjs.com/package/libphonenumber-js#country-code) with Google's `libphonenumber`, those are: `AC` (Ascension Island), `TA` (Tristan da Cunha), `XK` (Kosovo).
 
-So, the full list is all of the [249](https://en.wikipedia.org/wiki/ISO_3166-1#Officially_assigned_code_elements) officially assigned ISO-3166-1 codes, plus:
+So the full list of supported two-letter codes includes all of the [249](https://en.wikipedia.org/wiki/ISO_3166-1#Officially_assigned_code_elements) officially assigned ISO-3166-1 codes, plus a few additional ones:
 
 * `AC` — Ascension Island. Exceptional reservation. Has it's own phone numbering plan.
 * `TA` — Tristan da Cunha. Exceptional reservation. Has it's own phone numbering plan.
