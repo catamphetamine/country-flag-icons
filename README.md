@@ -23,9 +23,9 @@ npm install country-flag-icons --save
 
 ## API
 
-### `hasFlag(country: string): boolean`
+### `hasFlag(countryCode: string): boolean`
 
-Tells whether there's a flag for a country.
+Tells whether there's a flag for a given [country code](#country-code).
 
 ```js
 import { hasFlag } from 'country-flag-icons'
@@ -36,7 +36,7 @@ hasFlag('ZZ') === false
 
 ### `countries: string[]`
 
-The list of supported countries.
+The list of supported [country codes](#country-code).
 
 ```js
 import { countries } from 'country-flag-icons'
@@ -52,7 +52,7 @@ Flags can be linked directly from this library's [gitlab pages website](https://
 ```html
 <img
   alt="United States"
-  src="http://purecatamphetamine.github.io/country-flag-icons/3x2/US.svg"/>
+  src="https://purecatamphetamine.github.io/country-flag-icons/3x2/US.svg"/>
 ```
 
 Flags can also be used in the form of CSS classes imported from [`country-flag-icons/3x2/flags.css`](https://unpkg.com/country-flag-icons/3x2/flags.css) where all flag icons are inlined as `background-image` data URLs. CSS flag icon height can be set via `--CountryFlagIcon-height` [CSS variable](https://caniuse.com/#feat=css-variables).
@@ -127,21 +127,38 @@ import US from 'country-flag-icons/string/3x2/US'
 console.log(US) // > '<svg xmlns="http://www.w3.org/2000/svg" ...'
 ```
 
-## Country Codes
+## Country Code
 
-This library includes the flags for all countries, territories, or areas of geographical interest that have an officially assigned code in the ISO-3166-1 standard. See [Criteria for inclusion](https://en.wikipedia.org/wiki/ISO_3166-1#Criteria_for_inclusion) section on the ISO-3166-1 standard Wikipedia page.
+This library includes the flags for all [ISO-3166-1](https://en.wikipedia.org/wiki/ISO_3166-1) country codes such as `US`, `CA`, etc.
 
-Additionally, this library includes a European Union (`EU`) flag because it's part of the ["exceptional reservations"](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2#Reserved_code_elements) of the ISO-3166-1 standard and there have been [requests](https://gitlab.com/catamphetamine/country-flag-icons/-/issues/4) to include it. Same goes for Canary Islands which are also an "exceptional reservation".
+Additionally, this library includes the flags for the following ["exceptional reservations"](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2#Reserved_code_elements) of the ISO-3166-1 standard, which are not official ISO-3166-1 country codes, but still there have been [requests](https://gitlab.com/catamphetamine/country-flag-icons/-/issues/4) to include them:
+* `EU` — European Union
+* `IC` — Canary Islands
 
-Additionally, this library includes unofficial two-letter codes to denote several territories that don't have their own official ISO-3166-1 code but still use a telephone numbering plan that is different from their ISO-3166-1 parent territory. In [accordance](https://www.npmjs.com/package/libphonenumber-js#country-code) with Google's `libphonenumber`, those are: `AC` (Ascension Island), `TA` (Tristan da Cunha), `XK` (Kosovo).
+Additionally, this library includes two-letter codes to denote several territories that don't have their own official ISO-3166-1 code but still use a telephone numbering plan that is different from their ISO-3166-1 parent territory. In [accordance](https://www.npmjs.com/package/libphonenumber-js#country-code) with Google's `libphonenumber`, those are:
+* `AC` — Ascension Island
+  * `AC` is an ["exceptional reservation"](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2#Reserved_code_elements) of the ISO-3166-1 standard.
+* `TA` — Tristan da Cunha
+  * `TA` is an ["exceptional reservation"](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2#Reserved_code_elements) of the ISO-3166-1 standard.
+* `XK` — Kosovo
+  * `XK` is not an ["exceptional reservation"](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2#Reserved_code_elements) of the ISO-3166-1 standard, but it's being used by the European Commission, the IMF, the SWIFT, the CLDR, and other organizations as a temporary "country code" for Kosovo.
 
-So the full list of supported two-letter codes includes all of the [249](https://en.wikipedia.org/wiki/ISO_3166-1#Officially_assigned_code_elements) officially assigned ISO-3166-1 codes, plus a few additional ones:
+Additionally, this library includes the flags for certain [ISO-3166-2 "subdivision codes"](https://en.wikipedia.org/wiki/ISO_3166-2) because there have been requests to include them:
 
-* `AC` — Ascension Island. Exceptional reservation. Has it's own phone numbering plan.
-* `TA` — Tristan da Cunha. Exceptional reservation. Has it's own phone numbering plan.
-* `IC` — Canary Islands. Exceptional reservation. Doesn't have its own phone numbering plan.
-* `EU` — European Union. Exceptional reservation. Doesn't have its own phone numbering plan.
-* `XK` — Kosovo. Disputed territory. Not an officially assigned code. Has it's own phone numbering plan.
+* [`BQ`](https://gitlab.com/catamphetamine/country-flag-icons/-/issues/48) — Caribbean Netherlands
+  * `BQ-BO` — Bonaire
+  * `BQ-SA` — Saba
+  * `BQ-SE` — Sint Eustatius
+* [`GB`](https://gitlab.com/catamphetamine/country-flag-icons/-/issues/47) — United Kingdom
+  * `GB-ENG` — England
+  * `GB-NIR` — Northern Ireland
+  * `GB-SCT` — Scotland
+  * `GB-WLS` — Wales
+* `GE` — Georgia
+  * `GE-AB` — Abkhazia
+  * `GE-OS` — South Ossetia
+* `ES` — Spain
+  * [`ES-CT`](https://gitlab.com/catamphetamine/country-flag-icons/-/issues/46) — Catalonia
 
 ## GitHub
 
