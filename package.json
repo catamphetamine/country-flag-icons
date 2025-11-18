@@ -1,6 +1,6 @@
 {
   "name": "country-flag-icons",
-  "version": "1.5.21",
+  "version": "1.6.0",
   "description": "Vector (*.svg) country flag icons in 3x2 aspect ratio.",
   "main": "index.cjs",
   "module": "index.js",
@@ -69,6 +69,9 @@
     "./string/3x2/BM": "./string/3x2/BM.js",
     "./string/3x2/BN": "./string/3x2/BN.js",
     "./string/3x2/BO": "./string/3x2/BO.js",
+    "./string/3x2/BQ-BO": "./string/3x2/BQ-BO.js",
+    "./string/3x2/BQ-SA": "./string/3x2/BQ-SA.js",
+    "./string/3x2/BQ-SE": "./string/3x2/BQ-SE.js",
     "./string/3x2/BQ": "./string/3x2/BQ.js",
     "./string/3x2/BR": "./string/3x2/BR.js",
     "./string/3x2/BS": "./string/3x2/BS.js",
@@ -107,6 +110,7 @@
     "./string/3x2/EG": "./string/3x2/EG.js",
     "./string/3x2/EH": "./string/3x2/EH.js",
     "./string/3x2/ER": "./string/3x2/ER.js",
+    "./string/3x2/ES-CT": "./string/3x2/ES-CT.js",
     "./string/3x2/ES": "./string/3x2/ES.js",
     "./string/3x2/ET": "./string/3x2/ET.js",
     "./string/3x2/EU": "./string/3x2/EU.js",
@@ -117,8 +121,14 @@
     "./string/3x2/FO": "./string/3x2/FO.js",
     "./string/3x2/FR": "./string/3x2/FR.js",
     "./string/3x2/GA": "./string/3x2/GA.js",
+    "./string/3x2/GB-ENG": "./string/3x2/GB-ENG.js",
+    "./string/3x2/GB-NIR": "./string/3x2/GB-NIR.js",
+    "./string/3x2/GB-SCT": "./string/3x2/GB-SCT.js",
+    "./string/3x2/GB-WLS": "./string/3x2/GB-WLS.js",
     "./string/3x2/GB": "./string/3x2/GB.js",
     "./string/3x2/GD": "./string/3x2/GD.js",
+    "./string/3x2/GE-AB": "./string/3x2/GE-AB.js",
+    "./string/3x2/GE-OS": "./string/3x2/GE-OS.js",
     "./string/3x2/GE": "./string/3x2/GE.js",
     "./string/3x2/GF": "./string/3x2/GF.js",
     "./string/3x2/GG": "./string/3x2/GG.js",
@@ -323,6 +333,9 @@
     "./string/1x1/BM": "./string/1x1/BM.js",
     "./string/1x1/BN": "./string/1x1/BN.js",
     "./string/1x1/BO": "./string/1x1/BO.js",
+    "./string/1x1/BQ-BO": "./string/1x1/BQ-BO.js",
+    "./string/1x1/BQ-SA": "./string/1x1/BQ-SA.js",
+    "./string/1x1/BQ-SE": "./string/1x1/BQ-SE.js",
     "./string/1x1/BQ": "./string/1x1/BQ.js",
     "./string/1x1/BR": "./string/1x1/BR.js",
     "./string/1x1/BS": "./string/1x1/BS.js",
@@ -361,6 +374,7 @@
     "./string/1x1/EG": "./string/1x1/EG.js",
     "./string/1x1/EH": "./string/1x1/EH.js",
     "./string/1x1/ER": "./string/1x1/ER.js",
+    "./string/1x1/ES-CT": "./string/1x1/ES-CT.js",
     "./string/1x1/ES": "./string/1x1/ES.js",
     "./string/1x1/ET": "./string/1x1/ET.js",
     "./string/1x1/EU": "./string/1x1/EU.js",
@@ -371,8 +385,14 @@
     "./string/1x1/FO": "./string/1x1/FO.js",
     "./string/1x1/FR": "./string/1x1/FR.js",
     "./string/1x1/GA": "./string/1x1/GA.js",
+    "./string/1x1/GB-ENG": "./string/1x1/GB-ENG.js",
+    "./string/1x1/GB-NIR": "./string/1x1/GB-NIR.js",
+    "./string/1x1/GB-SCT": "./string/1x1/GB-SCT.js",
+    "./string/1x1/GB-WLS": "./string/1x1/GB-WLS.js",
     "./string/1x1/GB": "./string/1x1/GB.js",
     "./string/1x1/GD": "./string/1x1/GD.js",
+    "./string/1x1/GE-AB": "./string/1x1/GE-AB.js",
+    "./string/1x1/GE-OS": "./string/1x1/GE-OS.js",
     "./string/1x1/GE": "./string/1x1/GE.js",
     "./string/1x1/GF": "./string/1x1/GF.js",
     "./string/1x1/GG": "./string/1x1/GG.js",
@@ -697,6 +717,21 @@
       "import": "./react/3x2/BO/index.js",
       "require": "./react/3x2/BO/index.cjs"
     },
+    "./react/3x2/BQ-BO": {
+      "types": "./react/3x2/BQ-BO/index.d.ts",
+      "import": "./react/3x2/BQ-BO/index.js",
+      "require": "./react/3x2/BQ-BO/index.cjs"
+    },
+    "./react/3x2/BQ-SA": {
+      "types": "./react/3x2/BQ-SA/index.d.ts",
+      "import": "./react/3x2/BQ-SA/index.js",
+      "require": "./react/3x2/BQ-SA/index.cjs"
+    },
+    "./react/3x2/BQ-SE": {
+      "types": "./react/3x2/BQ-SE/index.d.ts",
+      "import": "./react/3x2/BQ-SE/index.js",
+      "require": "./react/3x2/BQ-SE/index.cjs"
+    },
     "./react/3x2/BQ": {
       "types": "./react/3x2/BQ/index.d.ts",
       "import": "./react/3x2/BQ/index.js",
@@ -887,6 +922,11 @@
       "import": "./react/3x2/ER/index.js",
       "require": "./react/3x2/ER/index.cjs"
     },
+    "./react/3x2/ES-CT": {
+      "types": "./react/3x2/ES-CT/index.d.ts",
+      "import": "./react/3x2/ES-CT/index.js",
+      "require": "./react/3x2/ES-CT/index.cjs"
+    },
     "./react/3x2/ES": {
       "types": "./react/3x2/ES/index.d.ts",
       "import": "./react/3x2/ES/index.js",
@@ -937,6 +977,26 @@
       "import": "./react/3x2/GA/index.js",
       "require": "./react/3x2/GA/index.cjs"
     },
+    "./react/3x2/GB-ENG": {
+      "types": "./react/3x2/GB-ENG/index.d.ts",
+      "import": "./react/3x2/GB-ENG/index.js",
+      "require": "./react/3x2/GB-ENG/index.cjs"
+    },
+    "./react/3x2/GB-NIR": {
+      "types": "./react/3x2/GB-NIR/index.d.ts",
+      "import": "./react/3x2/GB-NIR/index.js",
+      "require": "./react/3x2/GB-NIR/index.cjs"
+    },
+    "./react/3x2/GB-SCT": {
+      "types": "./react/3x2/GB-SCT/index.d.ts",
+      "import": "./react/3x2/GB-SCT/index.js",
+      "require": "./react/3x2/GB-SCT/index.cjs"
+    },
+    "./react/3x2/GB-WLS": {
+      "types": "./react/3x2/GB-WLS/index.d.ts",
+      "import": "./react/3x2/GB-WLS/index.js",
+      "require": "./react/3x2/GB-WLS/index.cjs"
+    },
     "./react/3x2/GB": {
       "types": "./react/3x2/GB/index.d.ts",
       "import": "./react/3x2/GB/index.js",
@@ -946,6 +1006,16 @@
       "types": "./react/3x2/GD/index.d.ts",
       "import": "./react/3x2/GD/index.js",
       "require": "./react/3x2/GD/index.cjs"
+    },
+    "./react/3x2/GE-AB": {
+      "types": "./react/3x2/GE-AB/index.d.ts",
+      "import": "./react/3x2/GE-AB/index.js",
+      "require": "./react/3x2/GE-AB/index.cjs"
+    },
+    "./react/3x2/GE-OS": {
+      "types": "./react/3x2/GE-OS/index.d.ts",
+      "import": "./react/3x2/GE-OS/index.js",
+      "require": "./react/3x2/GE-OS/index.cjs"
     },
     "./react/3x2/GE": {
       "types": "./react/3x2/GE/index.d.ts",
@@ -1967,6 +2037,21 @@
       "import": "./react/1x1/BO/index.js",
       "require": "./react/1x1/BO/index.cjs"
     },
+    "./react/1x1/BQ-BO": {
+      "types": "./react/1x1/BQ-BO/index.d.ts",
+      "import": "./react/1x1/BQ-BO/index.js",
+      "require": "./react/1x1/BQ-BO/index.cjs"
+    },
+    "./react/1x1/BQ-SA": {
+      "types": "./react/1x1/BQ-SA/index.d.ts",
+      "import": "./react/1x1/BQ-SA/index.js",
+      "require": "./react/1x1/BQ-SA/index.cjs"
+    },
+    "./react/1x1/BQ-SE": {
+      "types": "./react/1x1/BQ-SE/index.d.ts",
+      "import": "./react/1x1/BQ-SE/index.js",
+      "require": "./react/1x1/BQ-SE/index.cjs"
+    },
     "./react/1x1/BQ": {
       "types": "./react/1x1/BQ/index.d.ts",
       "import": "./react/1x1/BQ/index.js",
@@ -2157,6 +2242,11 @@
       "import": "./react/1x1/ER/index.js",
       "require": "./react/1x1/ER/index.cjs"
     },
+    "./react/1x1/ES-CT": {
+      "types": "./react/1x1/ES-CT/index.d.ts",
+      "import": "./react/1x1/ES-CT/index.js",
+      "require": "./react/1x1/ES-CT/index.cjs"
+    },
     "./react/1x1/ES": {
       "types": "./react/1x1/ES/index.d.ts",
       "import": "./react/1x1/ES/index.js",
@@ -2207,6 +2297,26 @@
       "import": "./react/1x1/GA/index.js",
       "require": "./react/1x1/GA/index.cjs"
     },
+    "./react/1x1/GB-ENG": {
+      "types": "./react/1x1/GB-ENG/index.d.ts",
+      "import": "./react/1x1/GB-ENG/index.js",
+      "require": "./react/1x1/GB-ENG/index.cjs"
+    },
+    "./react/1x1/GB-NIR": {
+      "types": "./react/1x1/GB-NIR/index.d.ts",
+      "import": "./react/1x1/GB-NIR/index.js",
+      "require": "./react/1x1/GB-NIR/index.cjs"
+    },
+    "./react/1x1/GB-SCT": {
+      "types": "./react/1x1/GB-SCT/index.d.ts",
+      "import": "./react/1x1/GB-SCT/index.js",
+      "require": "./react/1x1/GB-SCT/index.cjs"
+    },
+    "./react/1x1/GB-WLS": {
+      "types": "./react/1x1/GB-WLS/index.d.ts",
+      "import": "./react/1x1/GB-WLS/index.js",
+      "require": "./react/1x1/GB-WLS/index.cjs"
+    },
     "./react/1x1/GB": {
       "types": "./react/1x1/GB/index.d.ts",
       "import": "./react/1x1/GB/index.js",
@@ -2216,6 +2326,16 @@
       "types": "./react/1x1/GD/index.d.ts",
       "import": "./react/1x1/GD/index.js",
       "require": "./react/1x1/GD/index.cjs"
+    },
+    "./react/1x1/GE-AB": {
+      "types": "./react/1x1/GE-AB/index.d.ts",
+      "import": "./react/1x1/GE-AB/index.js",
+      "require": "./react/1x1/GE-AB/index.cjs"
+    },
+    "./react/1x1/GE-OS": {
+      "types": "./react/1x1/GE-OS/index.d.ts",
+      "import": "./react/1x1/GE-OS/index.js",
+      "require": "./react/1x1/GE-OS/index.cjs"
     },
     "./react/1x1/GE": {
       "types": "./react/1x1/GE/index.d.ts",
@@ -3121,19 +3241,23 @@
     "svgo": "^2.8.0"
   },
   "scripts": {
-    "generate-countries": "node --experimental-json-modules runnable/generate-countries",
-    "generate-1x1-flags": "node --experimental-json-modules runnable/generate-1x1-flags",
+    "generate-countries": "node --experimental-json-modules scripts/generate-countries",
+    "generate-1x1-flags": "node --experimental-json-modules scripts/generate-1x1-flags",
     "copy-over-custom-1x1-flags": "copyfiles --flat flags/1x1-custom/*.svg flags/1x1",
-    "generate-react-flags": "node --experimental-json-modules runnable/generate-react-flags",
+    "generate-react-flags": "node --experimental-json-modules scripts/generate-react-flags",
     "copy-react-flags": "npm-run-all copy-react-flags-3x2 copy-react-flags-1x1",
     "copy-react-flags-3x2": "copyfiles --flat modules/react/3x2/[A-Z][A-Z].js react/3x2",
     "copy-react-flags-1x1": "copyfiles --flat modules/react/1x1/[A-Z][A-Z].js react/1x1",
     "clean-react-flags": "rimraf ./source/react/*/[A-Z][A-Z].js",
-    "generate-string-flags": "node --experimental-json-modules runnable/generate-string-flags",
-    "generate-css": "node --experimental-json-modules runnable/generate-css",
+    "generate-string-flags": "node --experimental-json-modules scripts/generate-string-flags",
+    "generate-css": "node --experimental-json-modules scripts/generate-css",
     "generate-optimized-1x1-flags": "svgo --folder flags/1x1 --output 1x1",
     "generate-optimized-flags": "svgo --folder flags/3x2 --output 3x2",
-    "website:generate-flags-page": "node --experimental-json-modules runnable/generate-flags-page",
+    "website": "npm-run-all website:copy-flags website:generate-flags-page website:copy-flags-page",
+    "website:generate-flags-page": "node --experimental-json-modules scripts/generate-flags-page",
+    "website:copy-flags-page": "npm-run-all website:copy-flags-page:3x2 website:copy-flags-page:1x1",
+    "website:copy-flags-page:3x2": "copyfiles --flat website/3x2/index.html 3x2",
+    "website:copy-flags-page:1x1": "copyfiles --flat website/3x2/index.html 1x1",
     "website:copy-flags": "npm-run-all website:copy-flags:3x2 website:copy-flags:1x1",
     "website:copy-flags:3x2": "copyfiles --flat 3x2/*.svg website/3x2",
     "website:copy-flags:1x1": "copyfiles --flat 1x1/*.svg website/1x1",
@@ -3141,12 +3265,12 @@
     "copy-commonjs-countries": "copyfiles --flat source/countries.json commonjs",
     "clean-for-build": "rimraf ./commonjs/**/* ./modules/**/*",
     "build-commonjs": "npm-run-all build-commonjs-modules build-commonjs-package.json",
-    "build-commonjs-package.json": "node runnable/create-commonjs-package-json.js",
+    "build-commonjs-package.json": "node scripts/create-commonjs-package-json.js",
     "build-commonjs-modules": "cross-env BABEL_ENV=commonjs babel ./source --out-dir ./commonjs --source-maps --ignore *.test.js",
     "build-es6-modules": "cross-env BABEL_ENV=es6 babel ./source --out-dir ./modules --source-maps --ignore *.test.js",
     "build-flags": "npm-run-all generate-1x1-flags copy-over-custom-1x1-flags generate-optimized-1x1-flags generate-optimized-flags",
     "build-countries": "npm-run-all generate-countries copy-es6-countries copy-commonjs-countries",
-    "build": "npm-run-all clean-for-build build-countries build-flags generate-string-flags generate-react-flags build-commonjs build-es6-modules generate-css",
+    "build": "npm-run-all clean-for-build build-countries build-flags generate-string-flags generate-react-flags build-commonjs build-es6-modules generate-css website",
     "test": "node --experimental-json-modules node_modules/mocha/bin/_mocha --bail --require ./test/setup.js \"source/**/*.test.js\" \"test/**/*.test.js\"",
     "prepublishOnly": "npm-run-all build test"
   },

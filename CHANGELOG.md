@@ -1,3 +1,8 @@
+1.6.0 / 18.11.2025
+==================
+
+* Included [ISO-3166-2 "subdivision codes"](https://en.wikipedia.org/wiki/ISO_3166-2) in the exported variables, functions and components.
+
 1.5.0 / 21.05.2022
 ==================
 

@@ -47,6 +47,9 @@ export const BL: FlagComponent
 export const BM: FlagComponent
 export const BN: FlagComponent
 export const BO: FlagComponent
+export const BQ_BO: FlagComponent
+export const BQ_SA: FlagComponent
+export const BQ_SE: FlagComponent
 export const BQ: FlagComponent
 export const BR: FlagComponent
 export const BS: FlagComponent
@@ -85,6 +88,7 @@ export const EE: FlagComponent
 export const EG: FlagComponent
 export const EH: FlagComponent
 export const ER: FlagComponent
+export const ES_CT: FlagComponent
 export const ES: FlagComponent
 export const ET: FlagComponent
 export const EU: FlagComponent
@@ -95,8 +99,14 @@ export const FM: FlagComponent
 export const FO: FlagComponent
 export const FR: FlagComponent
 export const GA: FlagComponent
+export const GB_ENG: FlagComponent
+export const GB_NIR: FlagComponent
+export const GB_SCT: FlagComponent
+export const GB_WLS: FlagComponent
 export const GB: FlagComponent
 export const GD: FlagComponent
+export const GE_AB: FlagComponent
+export const GE_OS: FlagComponent
 export const GE: FlagComponent
 export const GF: FlagComponent
 export const GG: FlagComponent

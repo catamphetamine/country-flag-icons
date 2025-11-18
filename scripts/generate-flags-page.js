@@ -1,7 +1,7 @@
 import path from 'path'
 import fs from 'fs-extra'
 
-import COUNTRIES from '../source/countries.json' with { type: 'json' }
+import COUNTRY_CODES from '../source/countries.json' with { type: 'json' }
 import countryNames from './countryNames.json' with { type: 'json' }
 
 function generateHTML(aspectRatioWidth, aspectRatioHeight) {
@@ -55,19 +55,19 @@ function generateHTML(aspectRatioWidth, aspectRatioHeight) {
 
 	html += '<div class="Countries">'
 
-	for (const country of COUNTRIES) {
-		if (!countryNames[country]) {
-			throw new Error(`${country} name not found`)
+	for (const countryCode of COUNTRY_CODES) {
+		if (!countryNames[countryCode]) {
+			throw new Error(`${countryCode} name not found`)
 		}
 		html += `
 			<section class="Country">
 				<div class="CountryFlagContainer">
-					<a href="https://www.google.com/search?q=${encodeURIComponent(countryNames[country] + ' flag')}&tbm=isch" target="_blank" class="CountryFlagLink">
-						<img title="${countryNames[country]}" class="CountryFlag" src="./${country}.svg"/>
+					<a href="https://www.google.com/search?q=${encodeURIComponent(countryNames[countryCode] + ' flag')}&tbm=isch" target="_blank" class="CountryFlagLink">
+						<img title="${countryNames[countryCode]}" class="CountryFlag" src="./${countryCode}.svg"/>
 					</a>
 				</div>
-				<h1 title="${countryNames[country]}">
-					${country}
+				<h1 title="${countryNames[countryCode]}">
+					${countryCode}
 				</h1>
 			</section>
 		`

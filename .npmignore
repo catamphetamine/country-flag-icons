@@ -5,11 +5,18 @@
 # Babel
 .babelrc
 
+# Non-built flags
+/flags/
+
+# Built flags `index.html` page
+/3x2/index.html
+/1x1/index.html
+
 # Sources aren't needed for npm
-/source
+/source/
 
 # Exclude scripts from npm
-/runnable
+/scripts
 
 # testing package
 /react-phone-number-input-*.tgz
@@ -23,9 +30,6 @@
 
 # npm errors
 npm-debug.log
-
-# github pages
-/gh-pages/
 
 # for OS X users
 .DS_Store
@@ -46,4 +50,4 @@ npm-debug.log
 /test/
 
 # Website
-/website
+/website/

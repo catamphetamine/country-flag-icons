@@ -3,10 +3,10 @@ import fs from 'fs'
 
 const countries = []
 fs.readdirSync(path.resolve('./flags/3x2')).map((filename) => {
-	if (filename.indexOf('.svg') !== 2) {
+	if (filename.indexOf('.svg') < 0) {
 		return
 	}
-	countries.push(filename.slice(0, 2))
+	countries.push(filename.slice(0, filename.indexOf('.svg')))
 })
 
 fs.writeFileSync(path.join('./source/countries.json'), JSON.stringify(countries))
