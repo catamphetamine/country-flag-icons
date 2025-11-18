@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 85.333 512 341.333">
-<rect y="85.333" fill="#FFDA44" width="512" height="341.337"/>
-<g>
-	<polygon fill="#D80027" points="383.875,426.662 256,252.286 282.827,426.662  "/>
-	<polygon fill="#D80027" points="133.565,85.33 256,252.286 230.314,85.33  "/>
-	<polygon fill="#D80027" points="229.171,426.662 256,252.286 128.124,426.662  "/>
-	<polygon fill="#D80027" points="0,85.33 0,212.9 256,252.286 28.333,85.33  "/>
-	<polygon fill="#D80027" points="0,426.662 18.212,426.662 256,252.286 0,291.67  "/>
-	<polygon fill="#D80027" points="256,252.286 512,212.9 512,85.33 483.669,85.33  "/>
-	<polygon fill="#D80027" points="281.686,85.33 256,252.286 378.434,85.33  "/>
-	<polygon fill="#D80027" points="512,426.662 512,291.671 256,252.286 493.787,426.662  "/>
-	<circle fill="#D80027" cx="256" cy="252.29" r="59.359"/>
-</g>
-<circle fill="#FFDA44" cx="256" cy="252.29" r="44.522"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 513 342">
+	<rect fill="#FFDA44" width="513" height="342"/>
+	<g fill="#D80027">
+		<polygon points="384.6,342 256.5,167.3 283.4,342 	"/>
+		<polygon points="133.8,0 256.5,167.3 230.8,0 	"/>
+		<polygon points="229.6,342 256.5,167.3 128.4,342 	"/>
+		<polygon points="0,0 0,127.8 256.5,167.3 28.4,0 	"/>
+		<polygon points="0,342 18.2,342 256.5,167.3 0,206.7 	"/>
+		<polygon points="256.5,167.3 513,127.8 513,0 484.6,0 	"/>
+		<polygon points="282.2,0 256.5,167.3 379.2,0 	"/>
+		<polygon points="513,342 513,206.7 256.5,167.3 494.8,342 	"/>
+		<circle cx="256.5" cy="171" r="59.5"/>
+	</g>
+	<circle fill="#FFDA44" cx="256.5" cy="171" r="44.5"/>
 </svg>
