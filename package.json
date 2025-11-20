@@ -1,6 +1,6 @@
 {
   "name": "country-flag-icons",
-  "version": "1.6.1",
+  "version": "1.6.2",
   "description": "Vector (*.svg) country flag icons in 3x2 aspect ratio.",
   "main": "index.cjs",
   "module": "index.js",
@@ -127,8 +127,6 @@
     "./string/3x2/GB-WLS": "./string/3x2/GB-WLS.js",
     "./string/3x2/GB": "./string/3x2/GB.js",
     "./string/3x2/GD": "./string/3x2/GD.js",
-    "./string/3x2/GE-AB": "./string/3x2/GE-AB.js",
-    "./string/3x2/GE-OS": "./string/3x2/GE-OS.js",
     "./string/3x2/GE": "./string/3x2/GE.js",
     "./string/3x2/GF": "./string/3x2/GF.js",
     "./string/3x2/GG": "./string/3x2/GG.js",
@@ -297,7 +295,9 @@
     "./string/3x2/VU": "./string/3x2/VU.js",
     "./string/3x2/WF": "./string/3x2/WF.js",
     "./string/3x2/WS": "./string/3x2/WS.js",
+    "./string/3x2/XA": "./string/3x2/XA.js",
     "./string/3x2/XK": "./string/3x2/XK.js",
+    "./string/3x2/XO": "./string/3x2/XO.js",
     "./string/3x2/YE": "./string/3x2/YE.js",
     "./string/3x2/YT": "./string/3x2/YT.js",
     "./string/3x2/ZA": "./string/3x2/ZA.js",
@@ -391,8 +391,6 @@
     "./string/1x1/GB-WLS": "./string/1x1/GB-WLS.js",
     "./string/1x1/GB": "./string/1x1/GB.js",
     "./string/1x1/GD": "./string/1x1/GD.js",
-    "./string/1x1/GE-AB": "./string/1x1/GE-AB.js",
-    "./string/1x1/GE-OS": "./string/1x1/GE-OS.js",
     "./string/1x1/GE": "./string/1x1/GE.js",
     "./string/1x1/GF": "./string/1x1/GF.js",
     "./string/1x1/GG": "./string/1x1/GG.js",
@@ -561,7 +559,9 @@
     "./string/1x1/VU": "./string/1x1/VU.js",
     "./string/1x1/WF": "./string/1x1/WF.js",
     "./string/1x1/WS": "./string/1x1/WS.js",
+    "./string/1x1/XA": "./string/1x1/XA.js",
     "./string/1x1/XK": "./string/1x1/XK.js",
+    "./string/1x1/XO": "./string/1x1/XO.js",
     "./string/1x1/YE": "./string/1x1/YE.js",
     "./string/1x1/YT": "./string/1x1/YT.js",
     "./string/1x1/ZA": "./string/1x1/ZA.js",
@@ -1006,16 +1006,6 @@
       "types": "./react/3x2/GD/index.d.ts",
       "import": "./react/3x2/GD/index.js",
       "require": "./react/3x2/GD/index.cjs"
-    },
-    "./react/3x2/GE-AB": {
-      "types": "./react/3x2/GE-AB/index.d.ts",
-      "import": "./react/3x2/GE-AB/index.js",
-      "require": "./react/3x2/GE-AB/index.cjs"
-    },
-    "./react/3x2/GE-OS": {
-      "types": "./react/3x2/GE-OS/index.d.ts",
-      "import": "./react/3x2/GE-OS/index.js",
-      "require": "./react/3x2/GE-OS/index.cjs"
     },
     "./react/3x2/GE": {
       "types": "./react/3x2/GE/index.d.ts",
@@ -1857,10 +1847,20 @@
       "import": "./react/3x2/WS/index.js",
       "require": "./react/3x2/WS/index.cjs"
     },
+    "./react/3x2/XA": {
+      "types": "./react/3x2/XA/index.d.ts",
+      "import": "./react/3x2/XA/index.js",
+      "require": "./react/3x2/XA/index.cjs"
+    },
     "./react/3x2/XK": {
       "types": "./react/3x2/XK/index.d.ts",
       "import": "./react/3x2/XK/index.js",
       "require": "./react/3x2/XK/index.cjs"
+    },
+    "./react/3x2/XO": {
+      "types": "./react/3x2/XO/index.d.ts",
+      "import": "./react/3x2/XO/index.js",
+      "require": "./react/3x2/XO/index.cjs"
     },
     "./react/3x2/YE": {
       "types": "./react/3x2/YE/index.d.ts",
@@ -2326,16 +2326,6 @@
       "types": "./react/1x1/GD/index.d.ts",
       "import": "./react/1x1/GD/index.js",
       "require": "./react/1x1/GD/index.cjs"
-    },
-    "./react/1x1/GE-AB": {
-      "types": "./react/1x1/GE-AB/index.d.ts",
-      "import": "./react/1x1/GE-AB/index.js",
-      "require": "./react/1x1/GE-AB/index.cjs"
-    },
-    "./react/1x1/GE-OS": {
-      "types": "./react/1x1/GE-OS/index.d.ts",
-      "import": "./react/1x1/GE-OS/index.js",
-      "require": "./react/1x1/GE-OS/index.cjs"
     },
     "./react/1x1/GE": {
       "types": "./react/1x1/GE/index.d.ts",
@@ -3177,10 +3167,20 @@
       "import": "./react/1x1/WS/index.js",
       "require": "./react/1x1/WS/index.cjs"
     },
+    "./react/1x1/XA": {
+      "types": "./react/1x1/XA/index.d.ts",
+      "import": "./react/1x1/XA/index.js",
+      "require": "./react/1x1/XA/index.cjs"
+    },
     "./react/1x1/XK": {
       "types": "./react/1x1/XK/index.d.ts",
       "import": "./react/1x1/XK/index.js",
       "require": "./react/1x1/XK/index.cjs"
+    },
+    "./react/1x1/XO": {
+      "types": "./react/1x1/XO/index.d.ts",
+      "import": "./react/1x1/XO/index.js",
+      "require": "./react/1x1/XO/index.cjs"
     },
     "./react/1x1/YE": {
       "types": "./react/1x1/YE/index.d.ts",

@@ -138,12 +138,21 @@ Additionally, this library includes the flags for the following ["exceptional re
 Additionally, this library includes two-letter codes to denote several territories that don't have their own official ISO-3166-1 code but still use a telephone numbering plan that is different from their ISO-3166-1 parent territory. In [accordance](https://www.npmjs.com/package/libphonenumber-js#country-code) with Google's `libphonenumber`, those are:
 * `AC` — Ascension Island
   * `AC` is an ["exceptional reservation"](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2#Reserved_code_elements) of the ISO-3166-1 standard.
+  * The last official ISO-3166-2 ["subdivision code"](https://en.wikipedia.org/wiki/ISO_3166-2) assigned to Ascension Island territory is `SH-AC`.
 * `TA` — Tristan da Cunha
   * `TA` is an ["exceptional reservation"](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2#Reserved_code_elements) of the ISO-3166-1 standard.
+  * The last official ISO-3166-2 ["subdivision code"](https://en.wikipedia.org/wiki/ISO_3166-2) assigned to Tristan da Cunha territory is `SH-TA`.
 * `XK` — Kosovo
-  * `XK` is not an ["exceptional reservation"](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2#Reserved_code_elements) of the ISO-3166-1 standard, but it's being used by the European Commission, the IMF, the SWIFT, the CLDR, and other organizations as a temporary "country code" for Kosovo.
+  * `XK` is not an ["exceptional reservation"](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2#Reserved_code_elements) of the ISO-3166-1 standard, but it's being used by various organizations as a temporary "country code" for Kosovo.
+  * The last official ISO-3166-2 ["subdivision code"](https://en.wikipedia.org/wiki/ISO_3166-2) assigned to Kosovo territory [is](https://en.wikipedia.org/wiki/Autonomous_Province_of_Kosovo_and_Metohija) `RS-KM`.
+* `XA` — Abkhazia
+  * `XA` is not an ["exceptional reservation"](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2#Reserved_code_elements) of the ISO-3166-1 standard, but it's being used some organizations as a temporary "country code" for Abkhazia.
+  * The last official ISO-3166-2 ["subdivision code"](https://en.wikipedia.org/wiki/ISO_3166-2) assigned to Abkhazia territory is `GE-AB`.
+* `XO` — South Ossetia
+  * `XO` is not an ["exceptional reservation"](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2#Reserved_code_elements) of the ISO-3166-1 standard, but it's being used some organizations as a temporary "country code" for South Ossetia.
+  * The last official ISO-3166-2 ["subdivision code"](https://en.wikipedia.org/wiki/ISO_3166-2) assigned to South Ossetia territory is `GE-OS`.
 
-Additionally, this library includes the flags for certain [ISO-3166-2 "subdivision codes"](https://en.wikipedia.org/wiki/ISO_3166-2) because there have been requests to include them:
+Additionally, this library includes the flags for certain official [ISO-3166-2 "subdivision codes"](https://en.wikipedia.org/wiki/ISO_3166-2) because there have been requests to include them:
 
 * [`BQ`](https://gitlab.com/catamphetamine/country-flag-icons/-/issues/48) — Caribbean Netherlands
   * `BQ-BO` — Bonaire
@@ -154,9 +163,6 @@ Additionally, this library includes the flags for certain [ISO-3166-2 "subdivisi
   * `GB-NIR` — Northern Ireland
   * `GB-SCT` — Scotland
   * `GB-WLS` — Wales
-* `GE` — Georgia
-  * `GE-AB` — Abkhazia
-  * `GE-OS` — South Ossetia
 * `ES` — Spain
   * [`ES-CT`](https://gitlab.com/catamphetamine/country-flag-icons/-/issues/46) — Catalonia
 

@@ -105,8 +105,6 @@ export const GB_SCT: FlagComponent
 export const GB_WLS: FlagComponent
 export const GB: FlagComponent
 export const GD: FlagComponent
-export const GE_AB: FlagComponent
-export const GE_OS: FlagComponent
 export const GE: FlagComponent
 export const GF: FlagComponent
 export const GG: FlagComponent
@@ -275,7 +273,9 @@ export const VN: FlagComponent
 export const VU: FlagComponent
 export const WF: FlagComponent
 export const WS: FlagComponent
+export const XA: FlagComponent
 export const XK: FlagComponent
+export const XO: FlagComponent
 export const YE: FlagComponent
 export const YT: FlagComponent
 export const ZA: FlagComponent
