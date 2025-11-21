@@ -274,6 +274,7 @@ export const VU: FlagComponent
 export const WF: FlagComponent
 export const WS: FlagComponent
 export const XA: FlagComponent
+export const XC: FlagComponent
 export const XK: FlagComponent
 export const XO: FlagComponent
 export const YE: FlagComponent

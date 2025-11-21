@@ -261,6 +261,7 @@ exports.VU = flags.VU;
 exports.WF = flags.WF;
 exports.WS = flags.WS;
 exports.XA = flags.XA;
+exports.XC = flags.XC;
 exports.XK = flags.XK;
 exports.XO = flags.XO;
 exports.YE = flags.YE;

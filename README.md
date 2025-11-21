@@ -8,10 +8,10 @@ Vector country flag icons in `3:2` aspect ratio.
 <!-- Also provides `1:1` crops of the `3:2` flags (not custom `1:1` flags). -->
 
 * Optimized for small size on screen (little detail, minimalism).
-* Small file size.
-* Comes with React components for all flags (exported from `/react` subpackage).
+* Small file size (generally `1 KB` per flag).
+* Exports a React component for each flag (from `/react` subpackage).
 
-[See `3:2` flags](http://catamphetamine.gitlab.io/country-flag-icons/3x2)
+[See the flags](http://catamphetamine.gitlab.io/country-flag-icons/3x2)
 
 <!-- [See `1:1` flags](http://catamphetamine.gitlab.io/country-flag-icons/1x1) (just `1:1` crops of the `3:2` flags, not custom `1:1` flags) -->
 
@@ -135,24 +135,31 @@ Additionally, this library includes the flags for the following ["exceptional re
 * `EU` — European Union
 * `IC` — Canary Islands
 
-Additionally, this library includes two-letter codes to denote several territories that don't have their own official ISO-3166-1 code but still use a telephone numbering plan that is different from their ISO-3166-1 parent territory. In [accordance](https://www.npmjs.com/package/libphonenumber-js#country-code) with Google's `libphonenumber`, those are:
+Additionally, this library includes the flags for the "unofficial" two-letter codes used by [`libphonenumber-js`](https://www.npmjs.com/package/libphonenumber-js#country-code):
 * `AC` — Ascension Island
   * `AC` is an ["exceptional reservation"](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2#Reserved_code_elements) of the ISO-3166-1 standard.
-  * The last official ISO-3166-2 ["subdivision code"](https://en.wikipedia.org/wiki/ISO_3166-2) assigned to Ascension Island territory is `SH-AC`.
+  * The last official ISO-3166-2 ["subdivision code"](https://en.wikipedia.org/wiki/ISO_3166-2) assigned to Ascension Island region [is](https://en.wikipedia.org/wiki/ISO_3166-2:SH) `SH-AC`.
 * `TA` — Tristan da Cunha
   * `TA` is an ["exceptional reservation"](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2#Reserved_code_elements) of the ISO-3166-1 standard.
-  * The last official ISO-3166-2 ["subdivision code"](https://en.wikipedia.org/wiki/ISO_3166-2) assigned to Tristan da Cunha territory is `SH-TA`.
+  * The last official ISO-3166-2 ["subdivision code"](https://en.wikipedia.org/wiki/ISO_3166-2) assigned to Tristan da Cunha region [is](https://en.wikipedia.org/wiki/ISO_3166-2:SH) `SH-TA`.
 * `XK` — Kosovo
-  * `XK` is not an ["exceptional reservation"](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2#Reserved_code_elements) of the ISO-3166-1 standard, but it's being used by various organizations as a temporary "country code" for Kosovo.
-  * The last official ISO-3166-2 ["subdivision code"](https://en.wikipedia.org/wiki/ISO_3166-2) assigned to Kosovo territory [is](https://en.wikipedia.org/wiki/Autonomous_Province_of_Kosovo_and_Metohija) `RS-KM`.
+  * `XK` is a ["user-assigned"](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2#User-assigned_code_elements) code in the ISO-3166-1 standard meaning that it can be freely assigned to any region by any application or organization for its own purposes.
+  * This "user-assigned" code may potentially be changed or removed at any time.
+  * The last official ISO-3166-2 ["subdivision code"](https://en.wikipedia.org/wiki/ISO_3166-2) assigned to Kosovo region [is](https://en.wikipedia.org/wiki/Autonomous_Province_of_Kosovo_and_Metohija) `RS-KM`.
 * `XA` — Abkhazia
-  * `XA` is not an ["exceptional reservation"](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2#Reserved_code_elements) of the ISO-3166-1 standard, but it's being used some organizations as a temporary "country code" for Abkhazia.
-  * The last official ISO-3166-2 ["subdivision code"](https://en.wikipedia.org/wiki/ISO_3166-2) assigned to Abkhazia territory is `GE-AB`.
+  * `XA` is a ["user-assigned"](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2#User-assigned_code_elements) code in the ISO-3166-1 standard meaning that it can be freely assigned to any region by any application or organization for its own purposes.
+  * This "user-assigned" code may potentially be changed or removed at any time.
+  * The last official ISO-3166-2 ["subdivision code"](https://en.wikipedia.org/wiki/ISO_3166-2) assigned to Abkhazia region [is](https://en.wikipedia.org/wiki/ISO_3166-2:GE) `GE-AB`.
 * `XO` — South Ossetia
-  * `XO` is not an ["exceptional reservation"](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2#Reserved_code_elements) of the ISO-3166-1 standard, but it's being used some organizations as a temporary "country code" for South Ossetia.
-  * The last official ISO-3166-2 ["subdivision code"](https://en.wikipedia.org/wiki/ISO_3166-2) assigned to South Ossetia territory is `GE-OS`.
+  * `XO` is a ["user-assigned"](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2#User-assigned_code_elements) code in the ISO-3166-1 standard meaning that it can be freely assigned to any region by any application or organization for its own purposes.
+  * This "user-assigned" code may potentially be changed or removed at any time.
+  * South Ossetia region has [not](https://en.wikipedia.org/wiki/ISO_3166-2:GE) ever been assigned any official ISO-3166-2 ["subdivision code"](https://en.wikipedia.org/wiki/ISO_3166-2).
+* `XC` — [Northern Cyprus](https://github.com/catamphetamine/country-flag-icons/issues/22)
+  * `XC` is a ["user-assigned"](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2#User-assigned_code_elements) code in the ISO-3166-1 standard meaning that it can be freely assigned to any region by any application or organization for its own purposes.
+  * This "user-assigned" code may potentially be changed or removed at any time.
+  * Northern Cyprus region has [not](https://en.wikipedia.org/wiki/ISO_3166-2:CY) ever been assigned any official ISO-3166-2 ["subdivision code"](https://en.wikipedia.org/wiki/ISO_3166-2).
 
-Additionally, this library includes the flags for certain official [ISO-3166-2 "subdivision codes"](https://en.wikipedia.org/wiki/ISO_3166-2) because there have been requests to include them:
+Additionally, this library includes the flags for certain official ISO-3166-2 [ "subdivision codes"](https://en.wikipedia.org/wiki/ISO_3166-2) because there have been requests to include them:
 
 * [`BQ`](https://gitlab.com/catamphetamine/country-flag-icons/-/issues/48) — Caribbean Netherlands
   * `BQ-BO` — Bonaire

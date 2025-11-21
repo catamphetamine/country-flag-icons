@@ -1,3 +1,8 @@
+1.6.4 / 22.11.2025
+==================
+
+* Added a flag of [Northern Cyprus](https://en.wikipedia.org/wiki/Northern_Cyprus) under `XC` code, as [requested](https://github.com/catamphetamine/country-flag-icons/issues/22).
+
 1.6.0 / 18.11.2025
 ==================
 

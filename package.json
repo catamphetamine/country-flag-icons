@@ -1,6 +1,6 @@
 {
   "name": "country-flag-icons",
-  "version": "1.6.3",
+  "version": "1.6.4",
   "description": "Vector (*.svg) country flag icons in 3x2 aspect ratio.",
   "main": "index.cjs",
   "module": "index.js",
@@ -296,6 +296,7 @@
     "./string/3x2/WF": "./string/3x2/WF.js",
     "./string/3x2/WS": "./string/3x2/WS.js",
     "./string/3x2/XA": "./string/3x2/XA.js",
+    "./string/3x2/XC": "./string/3x2/XC.js",
     "./string/3x2/XK": "./string/3x2/XK.js",
     "./string/3x2/XO": "./string/3x2/XO.js",
     "./string/3x2/YE": "./string/3x2/YE.js",
@@ -560,6 +561,7 @@
     "./string/1x1/WF": "./string/1x1/WF.js",
     "./string/1x1/WS": "./string/1x1/WS.js",
     "./string/1x1/XA": "./string/1x1/XA.js",
+    "./string/1x1/XC": "./string/1x1/XC.js",
     "./string/1x1/XK": "./string/1x1/XK.js",
     "./string/1x1/XO": "./string/1x1/XO.js",
     "./string/1x1/YE": "./string/1x1/YE.js",
@@ -1851,6 +1853,11 @@
       "types": "./react/3x2/XA/index.d.ts",
       "import": "./react/3x2/XA/index.js",
       "require": "./react/3x2/XA/index.cjs"
+    },
+    "./react/3x2/XC": {
+      "types": "./react/3x2/XC/index.d.ts",
+      "import": "./react/3x2/XC/index.js",
+      "require": "./react/3x2/XC/index.cjs"
     },
     "./react/3x2/XK": {
       "types": "./react/3x2/XK/index.d.ts",
@@ -3171,6 +3178,11 @@
       "types": "./react/1x1/XA/index.d.ts",
       "import": "./react/1x1/XA/index.js",
       "require": "./react/1x1/XA/index.cjs"
+    },
+    "./react/1x1/XC": {
+      "types": "./react/1x1/XC/index.d.ts",
+      "import": "./react/1x1/XC/index.js",
+      "require": "./react/1x1/XC/index.cjs"
     },
     "./react/1x1/XK": {
       "types": "./react/1x1/XK/index.d.ts",
