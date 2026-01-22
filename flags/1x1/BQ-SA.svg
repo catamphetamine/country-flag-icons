@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-	 viewBox="85.5 0 342 342">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="85.5 0 342 342">
 <path fill="#DC171D" d="M512,342H0V0.7h512V342z"/>
 <path fill="#012A87" d="M512,342H0V171.3h512V342z"/>
 <path fill="#FFFFFF" d="M256,342L0,171.3L256,0.7l256,170.7L256,342z"/>
