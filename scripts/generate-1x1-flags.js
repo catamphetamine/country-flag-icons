@@ -116,7 +116,11 @@ for (const country of countries) {
     const [x, y, width, height] = viewBox.split(/\s/).map(parseFloat)
     return ` viewBox="${round(x + (width - height) * getOffset(country) / 100)} ${y} ${height} ${height}"`
   })
-  fs.writeFileSync(path.join(FLAGS_PATH, `1x1/${country}.svg`), svg)
+  const flagsPath1x1 = path.join(FLAGS_PATH, '1x1')
+  if (!fs.existsSync(flagsPath1x1)) {
+    fs.mkdirSync(flagsPath1x1)
+  }
+  fs.writeFileSync(path.join(flagsPath1x1, `${country}.svg`), svg)
 }
 
 function round(number) {
