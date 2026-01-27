@@ -20,6 +20,9 @@ npm-debug.log
 /1x1/
 /3x2/
 
+# generated flags
+/flags/1x1/
+
 # for OS X users
 .DS_Store
 
