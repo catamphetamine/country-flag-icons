@@ -23,6 +23,9 @@ npm-debug.log
 # generated flags
 /flags/1x1/
 
+# incorrectly-placed file
+/flags/3x2/flags.css
+
 # for OS X users
 .DS_Store
 
