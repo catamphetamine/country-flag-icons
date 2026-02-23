@@ -32,7 +32,7 @@ interface Props extends React.HTMLAttributes<HTMLSVGElement> {}
 // https://react-typescript-cheatsheet.netlify.app/docs/basic/getting-started/function_components
 // declare const ReactTimeAgo: React.FC<Props>;
 
-type FlagComponent = (props: Props) => JSX.Element;
+type FlagComponent = (props: Props) => React.JSX.Element;
 
 declare const Flag: FlagComponent;
 
@@ -109,7 +109,7 @@ interface Props extends ElementAttributes<HTMLSVGElement> {}
 // https://react-typescript-cheatsheet.netlify.app/docs/basic/getting-started/function_components
 // declare const ReactTimeAgo: React.FC<Props>;
 
-type FlagComponent = (props: Props) => JSX.Element;
+type FlagComponent = (props: Props) => React.JSX.Element;
 
 ${COUNTRY_CODES.map(countryCode => `export const ${getVariableNameForCountryCode(countryCode)}: FlagComponent`).join('\n')}
 
