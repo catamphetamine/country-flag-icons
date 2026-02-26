@@ -15,11 +15,22 @@ Vector country flag icons in `3:2` aspect ratio.
 
 <!-- [See `1:1` flags](http://catamphetamine.gitlab.io/country-flag-icons/1x1) (just `1:1` crops of the `3:2` flags, not custom `1:1` flags) -->
 
-## Install
+## Use
+
+The `.svg` files could be found in `/3x2/` subfolder of the `npm` package.
+
+If you're a javascript developer:
 
 ```
 npm install country-flag-icons --save
+cd ./node_modules/country-flag-icons/3x2
 ```
+
+If you are not a javascript developer, you could [download](https://unpkg.com/country-flag-icons/3x2/flags.zip) a `.zip` archive with all flags, or [browse](https://unpkg.com/country-flag-icons/3x2/) the `/3x2/` subfolder online for individual `.svg` files.
+
+Those're the only valid options to get the `.svg` files. Don't download the `.svg` files from any other source. For example, don't download them from the [github repository](https://github.com/catamphetamine/country-flag-icons/) or the [gitlab repository](https://gitlab.com/catamphetamine/country-flag-icons/) because the `.svg` files are not "minified" there.
+
+After obtaining the `.svg` files, you could include them in your apps or in your design mock-ups, etc. For web usage, if you'd prefer to not go through the hassle of hosting the `.svg` files yourself, consider using the [github mirror](https://purecatamphetamine.github.io/country-flag-icons/3x2/) or the [gitlab mirror](https://catamphetamine.gitlab.io/country-flag-icons/3x2/).
 
 ## API
 
@@ -47,7 +58,7 @@ countries.includes('ZZ') === false
 
 ### Web
 
-Flags can be linked directly from this library's [gitlab pages website](https://catamphetamine.gitlab.io/country-flag-icons), or from a [github pages mirror](https://purecatamphetamine.github.io/country-flag-icons), which seems a tiny bit faster.
+One could either manually host the `.svg` files or use the existing [github mirror](https://purecatamphetamine.github.io/country-flag-icons/3x2/) or [gitlab mirror](https://catamphetamine.gitlab.io/country-flag-icons/3x2/).
 
 ```html
 <img
@@ -55,7 +66,7 @@ Flags can be linked directly from this library's [gitlab pages website](https://
   src="https://purecatamphetamine.github.io/country-flag-icons/3x2/US.svg"/>
 ```
 
-Flags can also be used in the form of CSS classes imported from [`country-flag-icons/3x2/flags.css`](https://unpkg.com/country-flag-icons/3x2/flags.css) where all flag icons are inlined as `background-image` data URLs. CSS flag icon height can be set via `--CountryFlagIcon-height` [CSS variable](https://caniuse.com/#feat=css-variables).
+Flags could also be used in the form of CSS classes imported from [`country-flag-icons/3x2/flags.css`](https://unpkg.com/country-flag-icons/3x2/flags.css) where all flag icons are inlined as `background-image` "data URLs" and the flag icon height could be set via `--CountryFlagIcon-height` [CSS variable](https://caniuse.com/#feat=css-variables).
 
 <details>
 <summary>What if my project doesn't use CSS variables?</summary>
@@ -72,24 +83,9 @@ In that case, the default flag icon height is `1em`, and to change it, just set 
 ```
 </details>
 
-### Unicode
-
-[Unicode flag icons](https://blog.emojipedia.org/emoji-flags-explained/) are available under the `/unicode` export.
-
-```js
-import getUnicodeFlagIcon from 'country-flag-icons/unicode'
-
-getUnicodeFlagIcon('US') === '🇺🇸'
-getUnicodeFlagIcon('ZZ') === '🇿🇿'
-```
-
-Unicode flag icons ("Regional Indicator Symbols") were [introduced](https://esham.io/2014/06/unicode-flags) in 2010 in Unicode version 6.0.
-
-Older operating systems might not support Unicode flags, either rendering "missing" (rectangle) characters (if their system doesn't support country flags), or displaying two-letter country codes instead of emoji flag images. For example, Windows 10 currently (01.01.2020) doesn't support Unicode country flags, and displays two-letter country codes instead of emoji flag images.
-
 ### React
 
-React components for all flags are available at `/react/3x2` export.
+React components for all flags are available in the `/react/3x2` subpackage.
 
 ```js
 import { US } from 'country-flag-icons/react/3x2'
@@ -97,7 +93,7 @@ import { US } from 'country-flag-icons/react/3x2'
 <US title="United States" className="..."/>
 ```
 
-Or directly, if your bundler doesn't support tree shaking:
+Or they could be imported individually, if your bundler doesn't support "tree shaking":
 
 ```js
 import US from 'country-flag-icons/react/3x2/US'
@@ -111,7 +107,7 @@ There's an [experimental component](https://gitlab.com/catamphetamine/country-fl
 
 ### String
 
-All flags can also be imported as strings:
+The SVG code of all flags is available in the `/string/3x2` subpackage:
 
 ```js
 import { US } from 'country-flag-icons/string/3x2'
@@ -119,13 +115,28 @@ import { US } from 'country-flag-icons/string/3x2'
 console.log(US) // > '<svg xmlns="http://www.w3.org/2000/svg" ...</svg>'
 ```
 
-Or directly, if your bundler doesn't support tree shaking:
+Or each flag could be imported individually, if your bundler doesn't support "tree shaking":
 
 ```js
 import US from 'country-flag-icons/string/3x2/US'
 
 console.log(US) // > '<svg xmlns="http://www.w3.org/2000/svg" ...'
 ```
+
+### Unicode
+
+[Unicode flag icons](https://blog.emojipedia.org/emoji-flags-explained/) are available in the `/unicode` subpackage.
+
+```js
+import getUnicodeFlagIcon from 'country-flag-icons/unicode'
+
+getUnicodeFlagIcon('US') === '🇺🇸'
+getUnicodeFlagIcon('ZZ') === '🇿🇿'
+```
+
+Unicode flag icons ("Regional Indicator Symbols") were [introduced](https://esham.io/2014/06/unicode-flags) in 2010 in Unicode version 6.0.
+
+Older operating systems might not support Unicode flags, either rendering "missing" (rectangle) characters (if their system doesn't support country flags), or displaying two-letter country codes instead of emoji flag images. For example, Windows 10 currently (01.01.2020) doesn't support Unicode country flags, and displays two-letter country codes instead of emoji flag images.
 
 ## Country Code
 
