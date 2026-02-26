@@ -1,8 +1,11 @@
+import { describe, it } from 'mocha'
+import { expect } from 'chai'
+
 import hasFlag from './hasFlag.js'
 
 describe('hasFlag', () => {
 	it('should return whether a flag icon exists', () => {
-		hasFlag('RU').should.equal(true)
-		hasFlag('ZZ').should.equal(false)
+		expect(hasFlag('RU')).to.equal(true)
+		expect(hasFlag('ZZ')).to.equal(false)
 	})
 })
