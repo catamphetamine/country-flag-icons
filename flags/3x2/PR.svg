@@ -1,12 +1,12 @@
-<?xml version="1.0" encoding="UTF-8"?>
-
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 85.333 512 341.333">
-<rect y="85.337" fill="#FFFFFF" width="512" height="341.326"/>
-<g>
-	<rect y="85.337" fill="#D80027" width="512" height="68.263"/>
-	<rect y="221.863" fill="#D80027" width="512" height="68.263"/>
-	<rect y="358.4" fill="#D80027" width="512" height="68.263"/>
+<?xml version="1.0" encoding="utf-8"?>
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 513 342">
+<rect y="0" fill="#FFFFFF" width="513" height="342"/>
+<g fill="#EE0000">
+	<rect y="0" width="513" height="68.4"/>
+	<rect y="136.8" width="513" height="68.4"/>
+	<rect y="273.6" width="513" height="68.4"/>
 </g>
-<polygon fill="#0052B4" points="256,256.006 0,426.668 0,85.331 "/>
-<polygon fill="#FFFFFF" points="83.477,195.132 98.584,241.63 147.478,241.63 107.924,270.369 123.031,316.868   83.477,288.13 43.922,316.868 59.032,270.369 19.478,241.63 68.37,241.63 "/>
+<polygon fill="#0044FF" points="256.5,171 0,342 0,0 "/>
+<polygon fill="#FFFFFF" points="84,110.1 99.1,156.6 148,156.6 108.4,185.4 123.5,231.9 84,203.1 44.4,231.9 59.5,185.4 20,156.6
+	68.9,156.6 "/>
 </svg>
