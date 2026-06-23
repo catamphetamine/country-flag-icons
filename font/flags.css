@@ -1,0 +1,1064 @@
+@font-face {
+    font-family: 'flags';
+    src: url("./flags.ttf") format("truetype");
+}
+.icon-flag {
+   font-family: 'flags' !important;
+   font-size: 18px;
+   font-style: normal;
+}
+.icon-flag[code="DM"]:before {
+   content: "\1f1e9\1f1f2";
+}
+
+.icon-flag[code="FR"]:before {
+   content: "\1f1eb\1f1f7";
+}
+
+.icon-flag[code="DZ"]:before {
+   content: "\1f1e9\1f1ff";
+}
+
+.icon-flag[code="GA"]:before {
+   content: "\1f1ec\1f1e6";
+}
+
+.icon-flag[code="PH"]:before {
+   content: "\1f1f5\1f1ed";
+}
+
+.icon-flag[code="SS"]:before {
+   content: "\1f1f8\1f1f8";
+}
+
+.icon-flag[code="RW"]:before {
+   content: "\1f1f7\1f1fc";
+}
+
+.icon-flag[code="SD"]:before {
+   content: "\1f1f8\1f1e9";
+}
+
+.icon-flag[code="SE"]:before {
+   content: "\1f1f8\1f1ea";
+}
+
+.icon-flag[code="SR"]:before {
+   content: "\1f1f8\1f1f7";
+}
+
+.icon-flag[code="EH"]:before {
+   content: "\1f1ea\1f1ed";
+}
+
+.icon-flag[code="GW"]:before {
+   content: "\1f1ec\1f1fc";
+}
+
+.icon-flag[code="JP"]:before {
+   content: "\1f1ef\1f1f5";
+}
+
+.icon-flag[code="HM"]:before {
+   content: "\1f1ed\1f1f2";
+}
+
+.icon-flag[code="JE"]:before {
+   content: "\1f1ef\1f1ea";
+}
+
+.icon-flag[code="GU"]:before {
+   content: "\1f1ec\1f1fa";
+}
+
+.icon-flag[code="GB"]:before {
+   content: "\1f1ec\1f1e7";
+}
+
+.icon-flag[code="PK"]:before {
+   content: "\1f1f5\1f1f0";
+}
+
+.icon-flag[code="SG"]:before {
+   content: "\1f1f8\1f1ec";
+}
+
+.icon-flag[code="RU"]:before {
+   content: "\1f1f7\1f1fa";
+}
+
+.icon-flag[code="DO"]:before {
+   content: "\1f1e9\1f1f4";
+}
+
+.icon-flag[code="GT"]:before {
+   content: "\1f1ec\1f1f9";
+}
+
+.icon-flag[code="KW"]:before {
+   content: "\1f1f0\1f1fc";
+}
+
+.icon-flag[code="IL"]:before {
+   content: "\1f1ee\1f1f1";
+}
+
+.icon-flag[code="GG"]:before {
+   content: "\1f1ec\1f1ec";
+}
+
+.icon-flag[code="GP"]:before {
+   content: "\1f1ec\1f1f5";
+}
+
+.icon-flag[code="DK"]:before {
+   content: "\1f1e9\1f1f0";
+}
+
+.icon-flag[code="SB"]:before {
+   content: "\1f1f8\1f1e7";
+}
+
+.icon-flag[code="PY"]:before {
+   content: "\1f1f5\1f1fe";
+}
+
+.icon-flag[code="PN"]:before {
+   content: "\1f1f5\1f1f3";
+}
+
+.icon-flag[code="BQ-BO"]:before {
+   content: "\1f1e7\1f1f6\1f1d2\1f1e7\1f1f4";
+}
+
+.icon-flag[code="ST"]:before {
+   content: "\1f1f8\1f1f9";
+}
+
+.icon-flag[code="SC"]:before {
+   content: "\1f1f8\1f1e8";
+}
+
+.icon-flag[code="DJ"]:before {
+   content: "\1f1e9\1f1ef";
+}
+
+.icon-flag[code="GQ"]:before {
+   content: "\1f1ec\1f1f6";
+}
+
+.icon-flag[code="GF"]:before {
+   content: "\1f1ec\1f1eb";
+}
+
+.icon-flag[code="KR"]:before {
+   content: "\1f1f0\1f1f7";
+}
+
+.icon-flag[code="IM"]:before {
+   content: "\1f1ee\1f1f2";
+}
+
+.icon-flag[code="KE"]:before {
+   content: "\1f1f0\1f1ea";
+}
+
+.icon-flag[code="KG"]:before {
+   content: "\1f1f0\1f1ec";
+}
+
+.icon-flag[code="GB-NIR"]:before {
+   content: "\1f1ec\1f1e7\1f1d2\1f1f3\1f1ee\1f1f7";
+}
+
+.icon-flag[code="HK"]:before {
+   content: "\1f1ed\1f1f0";
+}
+
+.icon-flag[code="KP"]:before {
+   content: "\1f1f0\1f1f5";
+}
+
+.icon-flag[code="IO"]:before {
+   content: "\1f1ee\1f1f4";
+}
+
+.icon-flag[code="GD"]:before {
+   content: "\1f1ec\1f1e9";
+}
+
+.icon-flag[code="GS"]:before {
+   content: "\1f1ec\1f1f8";
+}
+
+.icon-flag[code="SA"]:before {
+   content: "\1f1f8\1f1e6";
+}
+
+.icon-flag[code="RE"]:before {
+   content: "\1f1f7\1f1ea";
+}
+
+.icon-flag[code="PM"]:before {
+   content: "\1f1f5\1f1f2";
+}
+
+.icon-flag[code="SV"]:before {
+   content: "\1f1f8\1f1fb";
+}
+
+.icon-flag[code="RS"]:before {
+   content: "\1f1f7\1f1f8";
+}
+
+.icon-flag[code="PL"]:before {
+   content: "\1f1f5\1f1f1";
+}
+
+.icon-flag[code="GR"]:before {
+   content: "\1f1ec\1f1f7";
+}
+
+.icon-flag[code="GE"]:before {
+   content: "\1f1ec\1f1ea";
+}
+
+.icon-flag[code="IN"]:before {
+   content: "\1f1ee\1f1f3";
+}
+
+.icon-flag[code="MV"]:before {
+   content: "\1f1f2\1f1fb";
+}
+
+.icon-flag[code="LR"]:before {
+   content: "\1f1f1\1f1f7";
+}
+
+.icon-flag[code="MA"]:before {
+   content: "\1f1f2\1f1e6";
+}
+
+.icon-flag[code="NZ"]:before {
+   content: "\1f1f3\1f1ff";
+}
+
+.icon-flag[code="AU"]:before {
+   content: "\1f1e6\1f1fa";
+}
+
+.icon-flag[code="BN"]:before {
+   content: "\1f1e7\1f1f3";
+}
+
+.icon-flag[code="BY"]:before {
+   content: "\1f1e7\1f1fe";
+}
+
+.icon-flag[code="TT"]:before {
+   content: "\1f1f9\1f1f9";
+}
+
+.icon-flag[code="UG"]:before {
+   content: "\1f1fa\1f1ec";
+}
+
+.icon-flag[code="TC"]:before {
+   content: "\1f1f9\1f1e8";
+}
+
+.icon-flag[code="ES-CT"]:before {
+   content: "\1f1ea\1f1f8\1f1d2\1f1e8\1f1f9";
+}
+
+.icon-flag[code="XA"]:before {
+   content: "\1f1fd\1f1e6";
+}
+
+.icon-flag[code="YE"]:before {
+   content: "\1f1fe\1f1ea";
+}
+
+.icon-flag[code="AC"]:before {
+   content: "\1f1e6\1f1e8";
+}
+
+.icon-flag[code="CK"]:before {
+   content: "\1f1e8\1f1f0";
+}
+
+.icon-flag[code="BO"]:before {
+   content: "\1f1e7\1f1f4";
+}
+
+.icon-flag[code="AT"]:before {
+   content: "\1f1e6\1f1f9";
+}
+
+.icon-flag[code="LS"]:before {
+   content: "\1f1f1\1f1f8";
+}
+
+.icon-flag[code="MW"]:before {
+   content: "\1f1f2\1f1fc";
+}
+
+.icon-flag[code="NL"]:before {
+   content: "\1f1f3\1f1f1";
+}
+
+.icon-flag[code="MU"]:before {
+   content: "\1f1f2\1f1fa";
+}
+
+.icon-flag[code="CI"]:before {
+   content: "\1f1e8\1f1ee";
+}
+
+.icon-flag[code="BM"]:before {
+   content: "\1f1e7\1f1f2";
+}
+
+.icon-flag[code="BZ"]:before {
+   content: "\1f1e7\1f1ff";
+}
+
+.icon-flag[code="TW"]:before {
+   content: "\1f1f9\1f1fc";
+}
+
+.icon-flag[code="US"]:before {
+   content: "\1f1fa\1f1f8";
+}
+
+.icon-flag[code="XC"]:before {
+   content: "\1f1fd\1f1e8";
+}
+
+.icon-flag[code="BQ-SA"]:before {
+   content: "\1f1e7\1f1f6\1f1d2\1f1f8\1f1e6";
+}
+
+.icon-flag[code="TA"]:before {
+   content: "\1f1f9\1f1e6";
+}
+
+.icon-flag[code="VI"]:before {
+   content: "\1f1fb\1f1ee";
+}
+
+.icon-flag[code="TV"]:before {
+   content: "\1f1f9\1f1fb";
+}
+
+.icon-flag[code="BL"]:before {
+   content: "\1f1e7\1f1f1";
+}
+
+.icon-flag[code="AW"]:before {
+   content: "\1f1e6\1f1fc";
+}
+
+.icon-flag[code="CH"]:before {
+   content: "\1f1e8\1f1ed";
+}
+
+.icon-flag[code="MC"]:before {
+   content: "\1f1f2\1f1e8";
+}
+
+.icon-flag[code="MT"]:before {
+   content: "\1f1f2\1f1f9";
+}
+
+.icon-flag[code="NO"]:before {
+   content: "\1f1f3\1f1f4";
+}
+
+.icon-flag[code="LC"]:before {
+   content: "\1f1f1\1f1e8";
+}
+
+.icon-flag[code="MG"]:before {
+   content: "\1f1f2\1f1ec";
+}
+
+.icon-flag[code="LT"]:before {
+   content: "\1f1f1\1f1f9";
+}
+
+.icon-flag[code="MP"]:before {
+   content: "\1f1f2\1f1f5";
+}
+
+.icon-flag[code="AD"]:before {
+   content: "\1f1e6\1f1e9";
+}
+
+.icon-flag[code="CL"]:before {
+   content: "\1f1e8\1f1f1";
+}
+
+.icon-flag[code="AS"]:before {
+   content: "\1f1e6\1f1f8";
+}
+
+.icon-flag[code="BH"]:before {
+   content: "\1f1e7\1f1ed";
+}
+
+.icon-flag[code="UA"]:before {
+   content: "\1f1fa\1f1e6";
+}
+
+.icon-flag[code="TR"]:before {
+   content: "\1f1f9\1f1f7";
+}
+
+.icon-flag[code="BQ-SE"]:before {
+   content: "\1f1e7\1f1f6\1f1d2\1f1f8\1f1ea";
+}
+
+.icon-flag[code="YT"]:before {
+   content: "\1f1fe\1f1f9";
+}
+
+.icon-flag[code="TD"]:before {
+   content: "\1f1f9\1f1e9";
+}
+
+.icon-flag[code="BI"]:before {
+   content: "\1f1e7\1f1ee";
+}
+
+.icon-flag[code="AR"]:before {
+   content: "\1f1e6\1f1f7";
+}
+
+.icon-flag[code="CM"]:before {
+   content: "\1f1e8\1f1f2";
+}
+
+.icon-flag[code="AE"]:before {
+   content: "\1f1e6\1f1ea";
+}
+
+.icon-flag[code="CZ"]:before {
+   content: "\1f1e8\1f1ff";
+}
+
+.icon-flag[code="MQ"]:before {
+   content: "\1f1f2\1f1f6";
+}
+
+.icon-flag[code="LU"]:before {
+   content: "\1f1f1\1f1fa";
+}
+
+.icon-flag[code="MF"]:before {
+   content: "\1f1f2\1f1eb";
+}
+
+.icon-flag[code="LB"]:before {
+   content: "\1f1f1\1f1e7";
+}
+
+.icon-flag[code="MD"]:before {
+   content: "\1f1f2\1f1e9";
+}
+
+.icon-flag[code="MS"]:before {
+   content: "\1f1f2\1f1f8";
+}
+
+.icon-flag[code="AG"]:before {
+   content: "\1f1e6\1f1ec";
+}
+
+.icon-flag[code="CX"]:before {
+   content: "\1f1e8\1f1fd";
+}
+
+.icon-flag[code="CO"]:before {
+   content: "\1f1e8\1f1f4";
+}
+
+.icon-flag[code="TF"]:before {
+   content: "\1f1f9\1f1eb";
+}
+
+.icon-flag[code="VN"]:before {
+   content: "\1f1fb\1f1f3";
+}
+
+.icon-flag[code="ZM"]:before {
+   content: "\1f1ff\1f1f2";
+}
+
+.icon-flag[code="GB-SCT"]:before {
+   content: "\1f1ec\1f1e7\1f1d2\1f1f8\1f1e8\1f1f9";
+}
+
+.icon-flag[code="TG"]:before {
+   content: "\1f1f9\1f1ec";
+}
+
+.icon-flag[code="CN"]:before {
+   content: "\1f1e8\1f1f3";
+}
+
+.icon-flag[code="BJ"]:before {
+   content: "\1f1e7\1f1ef";
+}
+
+.icon-flag[code="AQ"]:before {
+   content: "\1f1e6\1f1f6";
+}
+
+.icon-flag[code="CY"]:before {
+   content: "\1f1e8\1f1fe";
+}
+
+.icon-flag[code="AF"]:before {
+   content: "\1f1e6\1f1eb";
+}
+
+.icon-flag[code="LV"]:before {
+   content: "\1f1f1\1f1fb";
+}
+
+.icon-flag[code="OM"]:before {
+   content: "\1f1f4\1f1f2";
+}
+
+.icon-flag[code="MR"]:before {
+   content: "\1f1f2\1f1f7";
+}
+
+.icon-flag[code="NI"]:before {
+   content: "\1f1f3\1f1ee";
+}
+
+.icon-flag[code="LA"]:before {
+   content: "\1f1f1\1f1e6";
+}
+
+.icon-flag[code="ME"]:before {
+   content: "\1f1f2\1f1ea";
+}
+
+.icon-flag[code="MH"]:before {
+   content: "\1f1f2\1f1ed";
+}
+
+.icon-flag[code="GB-WLS"]:before {
+   content: "\1f1ec\1f1e7\1f1d2\1f1fc\1f1f1\1f1f8";
+}
+
+.icon-flag[code="CC"]:before {
+   content: "\1f1e8\1f1e8";
+}
+
+.icon-flag[code="BG"]:before {
+   content: "\1f1e7\1f1ec";
+}
+
+.icon-flag[code="TJ"]:before {
+   content: "\1f1f9\1f1ef";
+}
+
+.icon-flag[code="VU"]:before {
+   content: "\1f1fb\1f1fa";
+}
+
+.icon-flag[code="WF"]:before {
+   content: "\1f1fc\1f1eb";
+}
+
+.icon-flag[code="UY"]:before {
+   content: "\1f1fa\1f1fe";
+}
+
+.icon-flag[code="ZA"]:before {
+   content: "\1f1ff\1f1e6";
+}
+
+.icon-flag[code="ZW"]:before {
+   content: "\1f1ff\1f1fc";
+}
+
+.icon-flag[code="VC"]:before {
+   content: "\1f1fb\1f1e8";
+}
+
+.icon-flag[code="TK"]:before {
+   content: "\1f1f9\1f1f0";
+}
+
+.icon-flag[code="BF"]:before {
+   content: "\1f1e7\1f1eb";
+}
+
+.icon-flag[code="BQ"]:before {
+   content: "\1f1e7\1f1f6";
+}
+
+.icon-flag[code="CU"]:before {
+   content: "\1f1e8\1f1fa";
+}
+
+.icon-flag[code="NE"]:before {
+   content: "\1f1f3\1f1ea";
+}
+
+.icon-flag[code="NR"]:before {
+   content: "\1f1f3\1f1f7";
+}
+
+.icon-flag[code="MK"]:before {
+   content: "\1f1f2\1f1f0";
+}
+
+.icon-flag[code="NP"]:before {
+   content: "\1f1f3\1f1f5";
+}
+
+.icon-flag[code="NG"]:before {
+   content: "\1f1f3\1f1ec";
+}
+
+.icon-flag[code="BS"]:before {
+   content: "\1f1e7\1f1f8";
+}
+
+.icon-flag[code="CW"]:before {
+   content: "\1f1e8\1f1fc";
+}
+
+.icon-flag[code="BD"]:before {
+   content: "\1f1e7\1f1e9";
+}
+
+.icon-flag[code="UM"]:before {
+   content: "\1f1fa\1f1f2";
+}
+
+.icon-flag[code="VA"]:before {
+   content: "\1f1fb\1f1e6";
+}
+
+.icon-flag[code="UZ"]:before {
+   content: "\1f1fa\1f1ff";
+}
+
+.icon-flag[code="XK"]:before {
+   content: "\1f1fd\1f1f0";
+}
+
+.icon-flag[code="WS"]:before {
+   content: "\1f1fc\1f1f8";
+}
+
+.icon-flag[code="TH"]:before {
+   content: "\1f1f9\1f1ed";
+}
+
+.icon-flag[code="CA"]:before {
+   content: "\1f1e8\1f1e6";
+}
+
+.icon-flag[code="BE"]:before {
+   content: "\1f1e7\1f1ea";
+}
+
+.icon-flag[code="CV"]:before {
+   content: "\1f1e8\1f1fb";
+}
+
+.icon-flag[code="AI"]:before {
+   content: "\1f1e6\1f1ee";
+}
+
+.icon-flag[code="BR"]:before {
+   content: "\1f1e7\1f1f7";
+}
+
+.icon-flag[code="LY"]:before {
+   content: "\1f1f1\1f1fe";
+}
+
+.icon-flag[code="NF"]:before {
+   content: "\1f1f3\1f1eb";
+}
+
+.icon-flag[code="MY"]:before {
+   content: "\1f1f2\1f1fe";
+}
+
+.icon-flag[code="MN"]:before {
+   content: "\1f1f2\1f1f3";
+}
+
+.icon-flag[code="NU"]:before {
+   content: "\1f1f3\1f1fa";
+}
+
+.icon-flag[code="AZ"]:before {
+   content: "\1f1e6\1f1ff";
+}
+
+.icon-flag[code="BA"]:before {
+   content: "\1f1e7\1f1e6";
+}
+
+.icon-flag[code="BV"]:before {
+   content: "\1f1e7\1f1fb";
+}
+
+.icon-flag[code="AM"]:before {
+   content: "\1f1e6\1f1f2";
+}
+
+.icon-flag[code="CR"]:before {
+   content: "\1f1e8\1f1f7";
+}
+
+.icon-flag[code="TL"]:before {
+   content: "\1f1f9\1f1f1";
+}
+
+.icon-flag[code="XO"]:before {
+   content: "\1f1fd\1f1f4";
+}
+
+.icon-flag[code="TM"]:before {
+   content: "\1f1f9\1f1f2";
+}
+
+.icon-flag[code="TZ"]:before {
+   content: "\1f1f9\1f1ff";
+}
+
+.icon-flag[code="VE"]:before {
+   content: "\1f1fb\1f1ea";
+}
+
+.icon-flag[code="AL"]:before {
+   content: "\1f1e6\1f1f1";
+}
+
+.icon-flag[code="BW"]:before {
+   content: "\1f1e7\1f1fc";
+}
+
+.icon-flag[code="CD"]:before {
+   content: "\1f1e8\1f1e9";
+}
+
+.icon-flag[code="LK"]:before {
+   content: "\1f1f1\1f1f0";
+}
+
+.icon-flag[code="MO"]:before {
+   content: "\1f1f2\1f1f4";
+}
+
+.icon-flag[code="MX"]:before {
+   content: "\1f1f2\1f1fd";
+}
+
+.icon-flag[code="NC"]:before {
+   content: "\1f1f3\1f1e8";
+}
+
+.icon-flag[code="NA"]:before {
+   content: "\1f1f3\1f1e6";
+}
+
+.icon-flag[code="MZ"]:before {
+   content: "\1f1f2\1f1ff";
+}
+
+.icon-flag[code="LI"]:before {
+   content: "\1f1f1\1f1ee";
+}
+
+.icon-flag[code="MM"]:before {
+   content: "\1f1f2\1f1f2";
+}
+
+.icon-flag[code="CF"]:before {
+   content: "\1f1e8\1f1eb";
+}
+
+.icon-flag[code="BB"]:before {
+   content: "\1f1e7\1f1e7";
+}
+
+.icon-flag[code="VG"]:before {
+   content: "\1f1fb\1f1ec";
+}
+
+.icon-flag[code="TO"]:before {
+   content: "\1f1f9\1f1f4";
+}
+
+.icon-flag[code="TN"]:before {
+   content: "\1f1f9\1f1f3";
+}
+
+.icon-flag[code="AO"]:before {
+   content: "\1f1e6\1f1f4";
+}
+
+.icon-flag[code="BT"]:before {
+   content: "\1f1e7\1f1f9";
+}
+
+.icon-flag[code="AX"]:before {
+   content: "\1f1e6\1f1fd";
+}
+
+.icon-flag[code="CG"]:before {
+   content: "\1f1e8\1f1ec";
+}
+
+.icon-flag[code="ML"]:before {
+   content: "\1f1f2\1f1f1";
+}
+
+.icon-flag[code="JO"]:before {
+   content: "\1f1ef\1f1f4";
+}
+
+.icon-flag[code="IT"]:before {
+   content: "\1f1ee\1f1f9";
+}
+
+.icon-flag[code="IC"]:before {
+   content: "\1f1ee\1f1e8";
+}
+
+.icon-flag[code="GH"]:before {
+   content: "\1f1ec\1f1ed";
+}
+
+.icon-flag[code="SM"]:before {
+   content: "\1f1f8\1f1f2";
+}
+
+.icon-flag[code="PA"]:before {
+   content: "\1f1f5\1f1e6";
+}
+
+.icon-flag[code="SZ"]:before {
+   content: "\1f1f8\1f1ff";
+}
+
+.icon-flag[code="GB-ENG"]:before {
+   content: "\1f1ec\1f1e7\1f1d2\1f1ea\1f1f3\1f1ec";
+}
+
+.icon-flag[code="PW"]:before {
+   content: "\1f1f5\1f1fc";
+}
+
+.icon-flag[code="SL"]:before {
+   content: "\1f1f8\1f1f1";
+}
+
+.icon-flag[code="DE"]:before {
+   content: "\1f1e9\1f1ea";
+}
+
+.icon-flag[code="GI"]:before {
+   content: "\1f1ec\1f1ee";
+}
+
+.icon-flag[code="FM"]:before {
+   content: "\1f1eb\1f1f2";
+}
+
+.icon-flag[code="KH"]:before {
+   content: "\1f1f0\1f1ed";
+}
+
+.icon-flag[code="ET"]:before {
+   content: "\1f1ea\1f1f9";
+}
+
+.icon-flag[code="FO"]:before {
+   content: "\1f1eb\1f1f4";
+}
+
+.icon-flag[code="EC"]:before {
+   content: "\1f1ea\1f1e8";
+}
+
+.icon-flag[code="SN"]:before {
+   content: "\1f1f8\1f1f3";
+}
+
+.icon-flag[code="SY"]:before {
+   content: "\1f1f8\1f1fe";
+}
+
+.icon-flag[code="SX"]:before {
+   content: "\1f1f8\1f1fd";
+}
+
+.icon-flag[code="PT"]:before {
+   content: "\1f1f5\1f1f9";
+}
+
+.icon-flag[code="SO"]:before {
+   content: "\1f1f8\1f1f4";
+}
+
+.icon-flag[code="EU"]:before {
+   content: "\1f1ea\1f1fa";
+}
+
+.icon-flag[code="JM"]:before {
+   content: "\1f1ef\1f1f2";
+}
+
+.icon-flag[code="HR"]:before {
+   content: "\1f1ed\1f1f7";
+}
+
+.icon-flag[code="KI"]:before {
+   content: "\1f1f0\1f1ee";
+}
+
+.icon-flag[code="KZ"]:before {
+   content: "\1f1f0\1f1ff";
+}
+
+.icon-flag[code="IE"]:before {
+   content: "\1f1ee\1f1ea";
+}
+
+.icon-flag[code="KM"]:before {
+   content: "\1f1f0\1f1f2";
+}
+
+.icon-flag[code="IR"]:before {
+   content: "\1f1ee\1f1f7";
+}
+
+.icon-flag[code="GY"]:before {
+   content: "\1f1ec\1f1fe";
+}
+
+.icon-flag[code="GN"]:before {
+   content: "\1f1ec\1f1f3";
+}
+
+.icon-flag[code="FJ"]:before {
+   content: "\1f1eb\1f1ef";
+}
+
+.icon-flag[code="PG"]:before {
+   content: "\1f1f5\1f1ec";
+}
+
+.icon-flag[code="SK"]:before {
+   content: "\1f1f8\1f1f0";
+}
+
+.icon-flag[code="RO"]:before {
+   content: "\1f1f7\1f1f4";
+}
+
+.icon-flag[code="SJ"]:before {
+   content: "\1f1f8\1f1ef";
+}
+
+.icon-flag[code="PF"]:before {
+   content: "\1f1f5\1f1eb";
+}
+
+.icon-flag[code="FK"]:before {
+   content: "\1f1eb\1f1f0";
+}
+
+.icon-flag[code="EG"]:before {
+   content: "\1f1ea\1f1ec";
+}
+
+.icon-flag[code="IS"]:before {
+   content: "\1f1ee\1f1f8";
+}
+
+.icon-flag[code="ID"]:before {
+   content: "\1f1ee\1f1e9";
+}
+
+.icon-flag[code="KY"]:before {
+   content: "\1f1f0\1f1fe";
+}
+
+.icon-flag[code="IQ"]:before {
+   content: "\1f1ee\1f1f6";
+}
+
+.icon-flag[code="KN"]:before {
+   content: "\1f1f0\1f1f3";
+}
+
+.icon-flag[code="HU"]:before {
+   content: "\1f1ed\1f1fa";
+}
+
+.icon-flag[code="EE"]:before {
+   content: "\1f1ea\1f1ea";
+}
+
+.icon-flag[code="ER"]:before {
+   content: "\1f1ea\1f1f7";
+}
+
+.icon-flag[code="FI"]:before {
+   content: "\1f1eb\1f1ee";
+}
+
+.icon-flag[code="GM"]:before {
+   content: "\1f1ec\1f1f2";
+}
+
+.icon-flag[code="SH"]:before {
+   content: "\1f1f8\1f1ed";
+}
+
+.icon-flag[code="PS"]:before {
+   content: "\1f1f5\1f1f8";
+}
+
+.icon-flag[code="PR"]:before {
+   content: "\1f1f5\1f1f7";
+}
+
+.icon-flag[code="SI"]:before {
+   content: "\1f1f8\1f1ee";
+}
+
+.icon-flag[code="PE"]:before {
+   content: "\1f1f5\1f1ea";
+}
+
+.icon-flag[code="QA"]:before {
+   content: "\1f1f6\1f1e6";
+}
+
+.icon-flag[code="GL"]:before {
+   content: "\1f1ec\1f1f1";
+}
+
+.icon-flag[code="ES"]:before {
+   content: "\1f1ea\1f1f8";
+}
+
+.icon-flag[code="HT"]:before {
+   content: "\1f1ed\1f1f9";
+}
